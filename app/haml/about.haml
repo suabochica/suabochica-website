@@ -1,0 +1,81 @@
+!!! XML
+!!!
+/ About
+%html
+  %head
+    %title Sergio L. Benítez D. - About
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{:content => "Un diseñador y desarrollador de interfaces y experiencias de usuario desde la capital de Colombia", :name => "description"}
+    %meta{:content => "Sergio L. Benítez D.", :name => "author"}
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+
+    = Haml::Engine.new(File.read('app/haml/partials/_stylesheets.haml')).render
+
+  %body
+    = Haml::Engine.new(File.read('app/haml/partials/_header.haml')).render
+
+    %div.wpr-back
+      %a#btn-back.btn-back{:href => "/public/index.html", "data-icon" => "i"}
+
+    %div#main#sc-about.main.pt-page
+      .article.pt-element.pt-element--infromleft
+        .post
+          .post-content
+            :markdown
+              # Mucho gusto
+
+              Nacido un 21 de junio en el corazón de la cordillera de los andes que atraviesa a mi controversial pero querida Colombia, procuro compartir mis ideas desde los 2.600 metros de altura en donde se ubica geográficamente la capital de mi país.
+
+              > El 21 de junio es la fecha del solsticio de verano. Este hecho resalta mi empatía con el sol
+
+              El nombre del dominio alude a la olvidada cultura muisca. Dicha cultura corresponde a la población indígena que habitó en tiempos pasados los territorios que hoy comprenden los departamentos de Cundinamarca y Boyacá. En su mitología _Sua_ representa la deidad del Sol. Por otra parte, _Bochica_ es una encarnación solar consolidada como _el héroe civilizador_, ya que su misión fue predicar las buenas costumbres y algunos preceptos morales cuando los muiscas invertían su tiempo en holgazanería y vicio. Finalmente, las iniciales de estas deidades coinciden con las de mi primer nombre y mi primer apellido, otorgando significado al enlace que he establecido con estos elementos.
+
+              Mis intereses se enfocan en los medios multimedia de la era digital y en comprender el diseño como herramienta de comunicación. Interpreto el diseño como un servicio a terceros que consiste en determinar anticipadamente una finalidad que cumpla con una serie de requisitos definidos por un contexto.
+
+              Manifiesto gran entusiasmo por el deporte en sus distintas facetas e invierto tiempo para practicarlo varias veces por semana. Fanático del fútbol, espero algún día presenciar la grandeza que mostró La Mechita en la década de los 80s.
+
+              Admiro todo el trabajo de nintendo y soy seguidor de la saga The Legend of Zelda. Si bien los medios consolidaron como juego maestro _The Legend of Zelda: Ocarina of time_ para mí es _The Legend of Zelda: A link to the past_ nunca me canso de jugarlo.
+
+              Aprecio la lectura y respeto el trabajo del autor bogotano Mario Mendoza que ha logrado consagrar la capital colombiana como una ciudad literaria en cada una de sus novelas. Contemplo el cine como medio audiovisual y disfruto todas las obras del japonés Hayao Miyazaki.
+
+              Me identifico con la frase "El mundo es como un libro, si no viajas es como si solo leyeras la primera página". En consecuencia, espero viajar por varias partes del mundo con el fin de percibir otras culturas y a su vez conocerme más.
+
+              <div class="wrapper row">
+                <div class="col-6">
+                  <h2> Sueños cumplidos</h2>
+                  <ul>
+                    <li>  Correr la media maratón de Bogotá (mmb) </li>
+                    <li>  Viajar por Surámerica </li>
+                    <li>  Conocer La Habana </li>
+                    <li>  Hacer snowboarding </li>
+                    <li>  Asistir a un mundial de fútbol sub-20 </li>
+                    <li>  Graduarme de la universidad </li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <h2> Sueños por cumplir</h2>
+                  <ul>
+                    <li>  Correr una maratón </li>
+                    <li>  Conocer Tokio </li>
+                    <li>  Asistir a un E3 </li>
+                    <li>  Viajar en bicicleta </li>
+                    <li>  Asistir a un mundial de fútbol de mayores </li>
+                    <li>  Asistir a un grand slam </li>
+                    <li>  Hacer un trabajo de voluntariado </li>
+                  </ul>
+                </div>
+              </div>
+              ## Panoplia
+
+              +  MacBookPro 13"
+              +  Bamboo wacom pen&touch
+              +  Ultra slim bluetooth keyboard
+              +  Moto G
+              +  Nintendo 3DS
+              +  Gafas ópticas OAKLEY 0OX8O27
+              +  Audífonos SONY MDR-ZX210
+              +  Bicicleta wheeled personalizada
+          / !About
+
+    %footer
+      = Haml::Engine.new(File.read('app/haml/partials/_scripts.haml')).render

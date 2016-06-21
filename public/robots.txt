@@ -1,0 +1,8 @@
+User-Agent: *
+Disallow: 
+Allow: /public
+Allow: /unity
+Allow: /widgets
+Allow: /musicapp
+
+Sitemap: http://suabochica.com/sitemap.xml.gz

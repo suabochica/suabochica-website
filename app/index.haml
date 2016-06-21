@@ -1,0 +1,27 @@
+!!! XML
+!!!
+%html
+  %head
+    %title Sergio L. Benítez D. - Home
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{:content => "Un diseñador y desarrollador de interfaces y experiencias de usuario desde la capital de Colombia", :name => "description"}
+    %meta{:content => "Sergio L. Benítez D.", :name => "author"}
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+
+    = Haml::Engine.new(File.read('app/haml/partials/_stylesheets.haml')).render
+
+  %body.bg-image
+    = Haml::Engine.new(File.read('app/haml/partials/_header.haml')).render
+    %div#main.main.pt-page
+      %div#sc-home.sc-home.pt-element.pt-element--infromdown
+        %h1 "exponiendo pensamientos a 2.600 mts de altura"
+        %div.sc-buttons
+          %div.btn-media
+            %a{:href => "https://github.com/SoujiroHub", "data-icon" => "b",:target => "_blank"}
+          %div.btn-media
+            %a{:href => "https://co.linkedin.com/in/slbenitezd", "data-icon" => "h",:target => "_blank"}
+          %div.btn-media
+            %a{:href => "https://instagram.com/sergiokun21/", "data-icon" => "a",:target => "_blank"}
+
+    %footer
+      = Haml::Engine.new(File.read('app/haml/partials/_scripts.haml')).render

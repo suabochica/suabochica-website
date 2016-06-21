@@ -1,0 +1,283 @@
+=sib-header
+    header
+        background: $gray-dark
+        border-bottom: 5px solid $black
+        height: 50px
+        width: 100%
+        text-transform: uppercase
+        position: fixed
+        z-index: 3
+
+        .print
+            display: none
+
+        .top-nav
+            white-space: nowrap
+            width: 100%
+
+            a
+                color: $white
+
+                &:hover
+                    color: $pantone-orange
+
+            .symbol
+                font: normal normal bold 24px/26px "SibFontIcon"
+                color: $white
+                display: inline-block
+                position: absolute
+                text-decoration: none
+                margin: 12px 0 0 16px
+                z-index: 2
+                left: 48%
+
+            .links
+                font: normal normal bold 1.5em/0.6em "BrandonGrotesqueBold"
+                letter-spacing: 0.5vw
+                display: inline-block
+                width: 48%
+                height: 30px
+                position: relative
+                margin: 0
+                padding: 20px 30px 0 0
+
+                a
+                    padding: 0 10px
+
+                &:last-child
+                    padding: 20px 0 0 26px
+
+=sc-article
+    .article
+        background-color: $white
+        color: $text-color
+        margin: 0 auto
+        padding: 0
+        max-width: $max-width
+        position: relative
+        top: 55px
+        border-style: solid
+        border-width: 0 20px
+        border-image: url("../assets/images/png/border_ptrn.png") 23 22 22 round repeat
+
+        .post
+            width: 100%
+
+            .post-content
+                margin: 0 auto
+                max-width: 55vw
+                padding: 10px 0
+
+                h1
+                    text-align: center
+                    margin: 8px auto 0
+                    font-size: 48px
+                    line-height: 50px
+                    max-width: 640px
+
+                h2
+                    font-size: 36px
+                    line-height: 38px
+                    margin: 8px 0
+
+                h3
+                    font-size: 24px
+                    line-height: 27px
+                    margin: 8px 0
+
+                h4
+                    color: $gray-light
+                    font-size: 21px
+                    line-height: 24px
+                    margin: 4px 0
+                    text-align: center
+                    text-transform: uppercase
+                    letter-spacing: 0.2em
+
+                h5
+                    font-size: 18px
+                    line-height: 20px
+                    font-style: italic
+                    color: $gray-light
+                    margin: 4px 0
+                    text-align: center
+
+                p
+                    text-align: justify
+                    font-size: 16px
+                    line-height: 21px
+                    margin: 21px 0
+
+                    a
+                        color: $pantone-orange
+                    a:hover
+                        color: $pantone-yellow
+                    a:visited
+                        color: $gray-light
+
+                ul
+                    list-style: disc outside none
+                    margin: 21px
+
+                    li
+                        margin: 5px 0
+                        font-size: 16px
+                        line-height: 21px
+                        word-wrap: break-word
+
+                iframe
+                    display: block
+                    margin: 30px auto
+                    width: 50vw
+                    height: 50vh
+
+                img
+                    display: block
+                    margin: 0px auto
+                    width: 50vw
+                    height: auto
+                    background-color: $white
+
+                figure
+                    margin: 25px auto
+                    padding: 5px
+                    display: table
+                    background-color: $black
+
+                    figcaption
+                        font-size: 11px
+                        line-height: 14px
+                        text-align: center
+                        padding: 10px 5px 5px 5px
+                        color: $white
+
+                blockquote
+                    border-left: 10px solid $gray-light
+                    margin: 1.5em 10px
+                    padding: 0.5em 10px
+
+                    p
+                        display: inline
+                        margin: 0
+                        font-size: 14px
+                        line-height: 19px
+                hr
+                    margin: 5vh auto
+                    text-align: center
+                    border-color: $black
+                    border-width: 0
+                    border-style: dotted
+
+                    &:after
+                        content: "···"
+                        font-size: 40px
+
+                table
+                    margin: 1vh auto
+                    border-spacing: 0
+                    border-collapse: collapse
+                    text-align: left
+
+                    tr
+                        border: 1px solid $gray-dark
+                        &:nth-child(odd)
+                            background-color: $gray-light
+                        &:last-child
+                            font-weight: bold
+                        th
+                            background-color: $black
+                            color: $white
+                            padding: 2vh 2vw 2vh 1vw 
+
+                        td
+                            color: $gray-dark
+                            word-wrap: break-word
+                            padding: 1vh 1vw 1vh 1vw
+
+
+=box-slide-effect
+    .wpr-showcase
+        background-color: $white
+        width: $max-width
+        margin: 0 auto
+        top: 55px
+        position: relative
+        padding: 12vh 0
+
+        .box
+            height: 216px
+            cursor: default
+            text-align: center
+            overflow: hidden
+            text-align: center
+            position: relative
+
+            .icon
+                display: block
+                position: relative
+                font-size: 60px
+                line-height: 170px
+                padding: 30px 0 0 0
+
+            .mask
+                height: 100%
+                width: 100%
+                position: absolute
+                overflow: hidden
+                top: 0
+                left: 0
+
+                h2
+                    text-transform: uppercase
+                    color: $white
+                    text-align: center
+                    font-size: 17px
+                    padding: 10px
+                    margin: 20px 0 0 0
+                    background: $black
+
+                p
+                    font-size: 14px
+                    text-align: center
+                    color: $white
+                    padding: 10px 20px 20px
+
+
+                a.info
+                    display: inline-block
+                    text-decoration: none
+                    font-weight: bolder
+                    margin-top: 50px
+                    padding: 7px 14px
+                    border-radius: 5px
+                    border: 5px solid
+                    color: $black
+
+                    &:hover
+                        border: 5px solid $black
+                        background: $black
+                        color: $white
+
+        .slide-effect
+            .icon
+                transition: all 0.2s ease-in-out
+
+            .mask
+                background-color: rgba(146,96,91,0.3)
+                transform: translateX(-300px)
+                opacity: 1
+                transition: all 0.2s ease-in-out
+
+            h2
+                background: rgba(255, 255, 255, 0.5)
+                color: #000
+                box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5)
+
+            &:hover .icon
+                transform: translateX(300px)
+
+            &:hover .mask
+                transform: translateX(0px)
+                transition-delay: 0.1s
+
+

@@ -1,0 +1,202 @@
+/**
+ * Main styles for a personal website
+ * Author: Sergio Leonardo Benítez Díaz
+ * @sl.benitezd
+ */
+
+//-----------------------------------------------------------------------------
+// TOC
+//-----------------------------------------------------------------------------
+
+//-----------------------------------------------------------------------------
+// 1.0 Variables
+//-----------------------------------------------------------------------------
+$font-stack: "FrutigerLTStd-Light", Helvetica, sans-serif
+
+$text-color: #555555
+$headings-color: #0F0F0F
+$black: #0D0D0D
+$gray-dark: #272727
+$gray-light: #B3B3B3
+$white: #F4F4F4
+
+$sib-blue: #3B8BBA
+$sib-green: #5EB95E
+$sib-orange: #FF6633
+$sib-purple: #996699
+$sib-red: #DD514C
+$sib-yellow: #FFCC33
+$sib-teal: #167C80
+$sib-springreen: #00FF7F
+$sib-mediumorchid: #BA55D3
+$sib-crimson: #DC143C
+
+$pantone-yellow: #FFCD00
+$pantone-orange: #FF9933
+
+//-----------------------------------------------------------------------------
+// 2.0 Resets and overrides
+//-----------------------------------------------------------------------------
+
+@import 'partials/reset'
+
+//-----------------------------------------------------------------------------
+// 3.0 Grid
+//-----------------------------------------------------------------------------
+
+@import 'partials/grid'
+
+//-----------------------------------------------------------------------------
+// 4.0 Font icon
+//-----------------------------------------------------------------------------
+
+@import 'partials/fonts'
+@import 'partials/font_icon'
+
+//-----------------------------------------------------------------------------
+// 5.0 Mixins
+//-----------------------------------------------------------------------------
+@import 'partials/mixins'
+
+//-----------------------------------------------------------------------------
+// 6.0 Animations and keyframes
+//-----------------------------------------------------------------------------
+
+@import 'partials/animations'
+@import 'partials/keyframes'
+
+//-----------------------------------------------------------------------------
+// 7.0 Global styles
+//-----------------------------------------------------------------------------
+
+body
+    font: 100% $font-stack
+
+body.bg-image
+    background: url("../assets/images/png/me.png") center center no-repeat fixed
+    background-size: cover
+
++sib-header
+
+.wpr-back
+    top: 64px
+    opacity: 1
+    left: 85vw
+    width: 100%
+    max-width: $max-width
+    position: fixed
+    margin: 0 auto
+    z-index: 4
+
+    .btn-back
+        font-size: 22pt
+
+    a
+        color: $black
+
+    a:hover
+        color: $pantone-yellow
+
+.main
+    min-height: 100%
+    position: relative
+    top: 0
+    z-index: 2
+    padding: 0 0 55px 0
+
+    .sc-home
+        min-weight: 100%
+        h1
+            text-align: center
+            text-transform: uppercase
+            letter-spacing: 0.8vw
+            font: normal normal bold 3vw/27px "BrandonGrotesqueBold"
+            color: $gray-dark
+            padding: 48% 10% 0 10%
+
+    .sc-buttons
+        max-width: 400px
+        margin: 0 auto
+        text-align: center
+        .btn-media
+            position: relative
+            height: 36px
+            width: 36px
+            display: inline-block
+            font-size: 36px
+            margin: 5px
+            a
+                color: $black
+            a:hover
+                color: $pantone-yellow
+            a:visited
+                color: $gray-dark
+
+    +sc-article
+
+    +box-slide-effect
+
+footer
+    visibility: hidden
+
+//-----------------------------------------------------------------------------
+// 8.0 Misc
+//-----------------------------------------------------------------------------
+
+.bg-blue
+    background-color: $sib-blue
+
+.bg-green
+    background-color: $sib-green
+
+.bg-orange
+    background-color: $sib-orange
+
+.bg-purple
+    background-color: $sib-purple
+
+.bg-red
+    background-color: $sib-red
+
+.bg-yellow
+    background-color: $sib-yellow
+
+.bg-springreen
+    background-color: $sib-springreen
+
+.bg-teal
+    background-color: $sib-teal
+
+.bg-mediumorchid
+    background-color: $sib-mediumorchid
+
+.bg-crimson
+    background-color: $sib-crimson
+
+.bg-porange
+    background-color: $pantone-orange
+
+.txt-left
+    text-align: left
+
+.txt-right
+    text-align: right
+
+.clear
+    clear: both
+
+.wrapper
+    margin: 25px 0
+    white-space: normal
+    margin: 0 auto
+    position: relative
+
+//-----------------------------------------------------------------------------
+// 9.0 Responsive design
+//-----------------------------------------------------------------------------
+
+@import 'partials/rd_small'
+@import 'partials/rd_medium'
+@import 'partials/rd_large'
+@import 'partials/rd_xlarge'
+
