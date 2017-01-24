@@ -14,11 +14,11 @@ $(document).ready ->
   $(".sc-web").addClass('bg-blue')
   $(".sc-types").addClass('bg-yellow')
   $(".sc-furniture").addClass('bg-red')
-  $(".sc-general").addClass('bg-teal')
   $(".sc-games").addClass('bg-orange')
-  $(".sc-events").addClass('bg-springreen')
+  $(".sc-general").addClass('bg-teal')
   $(".sc-iarts").addClass('bg-crimson')
   $(".sc-backpack").addClass('bg-mediumorchid')
+  $(".sc-events").addClass('bg-springreen')
 
   $(".row").each ->
     $(this).find(".box-identity").addClass('bg-green')

@@ -28,7 +28,7 @@ module.exports = function(grunt){
                     src:[ 'index.haml'],
                     dest:'public',
                     ext:'.html'
-                }]         
+                }]
             },
             showcase: {
                 files: [{
