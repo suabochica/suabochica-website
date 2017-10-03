@@ -1,10 +1,7 @@
 /node_modules/*
 
 # These files are ignored because grunt change them each time that is run.
-/public/*.html
-/public/html/*
-/public/js/*
-/public/css/*
+/public/*
 
 .eslintrc
 .stylelintrc
