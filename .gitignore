@@ -1,8 +1,10 @@
 /node_modules/*
 
 # These files are ignored because grunt change them each time that is run.
-public/*
-public/index.html
+public/*.html
+public/html/*
+public/js/*
+public/css/*
 
 app/.DS_Store
 app/haml/.DS_Store
