@@ -1,5 +1,5 @@
 User-Agent: *
-Disallow: 
+Disallow:
 Allow: /public
 Allow: /unity
 Allow: /widgets

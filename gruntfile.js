@@ -121,7 +121,7 @@ module.exports = function(grunt){
         },
     });
 
-    grunt.loadNpmTasks('grunt-contrib-haml');
+    grunt.loadNpmTasks('grunt-haml2html');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-coffee');
     grunt.loadNpmTasks('grunt-yui-compressor');
@@ -130,5 +130,5 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     grunt.registerTask('build', ['clean', 'haml', 'sass', 'coffee', 'min', 'cssmin',]);
-    grunt.registerTask('default', ['build', 'connect', 'watch']);
+    grunt.registerTask('dev', ['build', 'connect', 'watch']);
 };

@@ -1,3 +1,5 @@
+source 'https://rubygems.org'
+
 gem 'haml', '>= 4.0.7'
 gem 'sass', '>= 3.4.19'
 gem 'kramdown', '>= 1.0.9'
