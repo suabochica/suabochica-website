@@ -33,3 +33,6 @@ The project use `grunt` as task runner. To mount the development environment ple
 With `grunt` a task was configured to create the build of the website. :
 
     grunt build
+
+## Netlify
+This project uses Netifly to manage continous integration in the content updates of the website. Review the `netlifu.toml` file to know the repository setup.
