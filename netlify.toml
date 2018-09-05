@@ -1,6 +1,9 @@
 [build]
-    publish = "public"
+    publish = "public/"
     command = "grunt build"
+
+[context.deploy-preview]
+  publish = "public/"
 
 [[redirects]]
   from = "/public"
