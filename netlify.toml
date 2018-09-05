@@ -3,8 +3,8 @@
     command = "grunt build"
 
 [[redirects]]
-  from = "/"
-  to = "/public"
+  from = "/public"
+  to = "/"
   status = 200
 
 [[headers]]
