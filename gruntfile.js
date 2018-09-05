@@ -6,7 +6,7 @@ module.exports = function(grunt){
         connect: {
             server: {
                 options: {
-                    base: './',
+                    base: './public',
                     port: '4000',
                     host: '*',
                     livereload: true
@@ -23,20 +23,20 @@ module.exports = function(grunt){
         haml: {
             index: {
                 files: [{
-                    expand:true,
-                    cwd:'app',
-                    src:[ 'index.haml'],
-                    dest:'public',
-                    ext:'.html'
+                    expand: true,
+                    cwd: 'app',
+                    src: [ 'index.haml'],
+                    dest: 'public',
+                    ext: '.html'
                 }]
             },
             showcase: {
                 files: [{
-                    expand:true,
-                    cwd:'app/haml',
-                    src:[ '**/*.haml', '!partials/*.haml'],
-                    dest:'public/html',
-                    ext:'.html'
+                    expand: true,
+                    cwd: 'app/haml',
+                    src: [ '**/*.haml', '!partials/*.haml'],
+                    dest: 'public/html',
+                    ext: '.html'
                 }]
             }
         },
@@ -44,11 +44,11 @@ module.exports = function(grunt){
         sass: {
             dist:{
                 files:[{
-                    expand:true,
-                    cwd:'app/sass',
-                    src:['**/*.sass'],
-                    dest:'public/css',
-                    ext:'.css'
+                    expand: true,
+                    cwd: 'app/sass',
+                    src: ['**/*.sass'],
+                    dest: 'public/css',
+                    ext: '.css'
                 }]
             }
         },
@@ -65,6 +65,64 @@ module.exports = function(grunt){
                     dest: 'public/js',
                     ext: '.js'
                 }]
+            }
+        },
+
+        imagemin: {
+            png: {
+                options: {
+                    optimizationLevel: 7,
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'app/assets/images/png',
+                    src: ['*.png'],
+                    dest: 'public/assets/images/png',
+                    ext: '.png',
+                }]
+            },
+            jpg: {
+                options: {
+                    progressive: true,
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'app/assets/images/jpg',
+                    src: ['*.jpg'],
+                    dest: 'public/assets/images/jpg',
+                    ext: '.jpg',
+                }]
+            }
+        },
+
+        copy: {
+            main: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'app/assets/favicon',
+                        src: ['favicon.ico'],
+                        dest: 'public/assets/favicon/',
+                        filter: 'isFile',
+                    }, {
+                        expand: true,
+                        cwd: 'app/assets/pdf',
+                        src: ['*.pdf'],
+                        dest: 'public/assets/pdf/',
+                    }, {
+                        expand: true,
+                        cwd: 'app/assets/fonts',
+                        src: ['**/*.{eot,svg,ttf,woff,otf}'],
+                        dest: 'public/assets/fonts/',
+                        filter: 'isFile',
+                    }, {
+                        expand: true,
+                        cwd: 'app',
+                        src: ['*.{txt,xml.gz}'],
+                        dest: 'public',
+                        filter: 'isFile',
+                    }
+                ]
             }
         },
 
@@ -96,7 +154,6 @@ module.exports = function(grunt){
         },
 
         watch: {
-
             haml:{
                 files:['app/haml/**/*.haml'],
                 tasks:['haml'],
@@ -125,10 +182,12 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-coffee');
     grunt.loadNpmTasks('grunt-yui-compressor');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-clean');
 
-    grunt.registerTask('build', ['clean', 'haml', 'sass', 'coffee', 'min', 'cssmin',]);
+    grunt.registerTask('build', ['clean', 'haml', 'sass', 'coffee', 'imagemin', 'copy' ,'min', 'cssmin']);
     grunt.registerTask('dev', ['build', 'connect', 'watch']);
 };
