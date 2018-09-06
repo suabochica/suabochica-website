@@ -3,9 +3,9 @@
 //-----------------------------------------------------------------------------
 
 %clearfix:after
-    display: block
     clear: both
     content: ''
+    display: block
 
 //-----------------------------------------------------------------------------
 // 3.2 Variables
@@ -28,11 +28,11 @@ $gutter-width: 1.5%
 //-----------------------------------------------------------------------------
 
 [class^="col-"]
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
     float: left
     margin: 0 $gutter-width 0 0
-    box-sizing: border-box
-    -webkit-box-sizing: border-box
-    -moz-box-sizing: border-box
 
     &:first-child
         margin: 0 $gutter-width

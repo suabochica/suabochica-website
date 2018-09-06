@@ -2,10 +2,7 @@
 
 # These files are ignored because grunt change them each time that is run.
 public/.DS_Store
-public/*.html
-public/html/*
-public/js/*
-public/css/*
+public/**/*
 
 .DS_Store
 app/.DS_Store
