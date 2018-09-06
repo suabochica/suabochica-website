@@ -3,9 +3,9 @@
         background: $gray-dark
         border-bottom: 5px solid $black
         height: 50px
-        width: 100%
-        text-transform: uppercase
         position: fixed
+        text-transform: uppercase
+        width: 100%
         z-index: 3
 
         .print
@@ -22,24 +22,24 @@
                     color: $gray-light
 
             .symbol
-                font: normal normal bold 24px/26px "SibFontIcon"
                 color: $white
                 display: inline-block
+                font: normal normal bold 24px/26px "SibFontIcon"
+                left: 48%
+                margin: 12px 0 0 16px
                 position: absolute
                 text-decoration: none
-                margin: 12px 0 0 16px
                 z-index: 2
-                left: 48%
 
             .links
-                font: normal normal bold 1.5em/0.6em "BrandonGrotesqueBold"
-                letter-spacing: 0.5vw
                 display: inline-block
-                width: 48%
+                font: normal normal bold 1.5em/0.6em "BrandonGrotesqueBold"
                 height: 30px
-                position: relative
+                letter-spacing: 0.5vw
                 margin: 0
                 padding: 20px 30px 0 0
+                position: relative
+                width: 48%
 
                 a
                     padding: 0 10px
@@ -50,15 +50,15 @@
 =sc-article
     .article
         background-color: $white
-        color: $text-color
-        margin: 0 auto
-        padding: 0
-        max-width: $max-width
-        position: relative
-        top: 55px
+        border-image: url("../assets/images/png/border_ptrn.png") 23 22 22 round repeat
         border-style: solid
         border-width: 0 20px
-        border-image: url("../assets/images/png/border_ptrn.png") 23 22 22 round repeat
+        color: $text-color
+        margin: 0 auto
+        max-width: $max-width
+        padding: 0
+        position: relative
+        top: 55px
 
         .post
             width: 100%
@@ -69,11 +69,11 @@
                 padding: 10px 0
 
                 h1
-                    text-align: center
-                    margin: 8px auto 0
                     font-size: 48px
                     line-height: 50px
+                    margin: 8px auto 0
                     max-width: 640px
+                    text-align: center
 
                 h2
                     font-size: 36px
@@ -88,25 +88,25 @@
                 h4
                     color: $gray-light
                     font-size: 21px
+                    letter-spacing: 0.2em
                     line-height: 24px
                     margin: 4px 0
                     text-align: center
                     text-transform: uppercase
-                    letter-spacing: 0.2em
 
                 h5
-                    font-size: 18px
-                    line-height: 20px
-                    font-style: italic
                     color: $gray-light
+                    font-size: 18px
+                    font-style: italic
+                    line-height: 20px
                     margin: 4px 0
                     text-align: center
 
                 p
-                    text-align: justify
                     font-size: 16px
                     line-height: 21px
                     margin: 21px 0
+                    text-align: justify
 
                     a
                         color: $pantone-orange
@@ -120,36 +120,36 @@
                     margin: 21px
 
                     li
-                        margin: 5px 0
                         font-size: 16px
                         line-height: 21px
+                        margin: 5px 0
                         word-wrap: break-word
 
                 iframe
                     display: block
+                    height: 50vh
                     margin: 30px auto
                     width: 50vw
-                    height: 50vh
 
                 img
+                    background-color: $white
                     display: block
+                    height: auto
                     margin: 0px auto
                     width: 50vw
-                    height: auto
-                    background-color: $white
 
                 figure
+                    background-color: $black
+                    display: table
                     margin: 25px auto
                     padding: 5px
-                    display: table
-                    background-color: $black
 
                     figcaption
+                        color: $white
                         font-size: 11px
                         line-height: 14px
-                        text-align: center
                         padding: 10px 5px 5px 5px
-                        color: $white
+                        text-align: center
 
                 blockquote
                     border-left: 10px solid $gray-light
@@ -158,32 +158,35 @@
 
                     p
                         display: inline
-                        margin: 0
                         font-size: 14px
                         line-height: 19px
+                        margin: 0
                 hr
+                    border-color: $black
+                    border-style: dotted
+                    border-width: 0
                     margin: 5vh auto
                     text-align: center
-                    border-color: $black
-                    border-width: 0
-                    border-style: dotted
 
-                    &:after
+                    &::after
                         content: "···"
                         font-size: 40px
 
                 table
-                    margin: 1vh auto
-                    border-spacing: 0
                     border-collapse: collapse
+                    border-spacing: 0
+                    margin: 1vh auto
                     text-align: left
 
                     tr
                         border: 1px solid $gray-dark
+
                         &:nth-child(odd)
                             background-color: $gray-light
+
                         &:last-child
                             font-weight: bold
+
                         th
                             background-color: $black
                             color: $white
@@ -191,66 +194,66 @@
 
                         td
                             color: $gray-dark
-                            word-wrap: break-word
                             padding: 1vh 1vw 1vh 1vw
+                            word-wrap: break-word
 
 
 =box-slide-effect
     .wpr-showcase
         background-color: $white
-        width: $max-width
         margin: 0 auto
-        top: 55px
-        position: relative
         padding: 12vh 0
+        position: relative
+        top: 55px
+        width: $max-width
 
         .box
-            height: 216px
             cursor: default
-            text-align: center
+            height: 216px
             overflow: hidden
-            text-align: center
             position: relative
+            text-align: center
+            text-align: center
 
             .icon
                 display: block
-                position: relative
                 font-size: 60px
                 line-height: 170px
                 padding: 30px 0 0 0
+                position: relative
 
             .mask
                 height: 100%
-                width: 100%
-                position: absolute
-                overflow: hidden
-                top: 0
                 left: 0
+                overflow: hidden
+                position: absolute
+                top: 0
+                width: 100%
 
                 h2
-                    text-transform: uppercase
-                    color: $white
-                    text-align: center
-                    font-size: 17px
-                    padding: 10px
-                    margin: 20px 0 0 0
                     background: $black
+                    color: $white
+                    font-size: 17px
+                    margin: 20px 0 0 0
+                    padding: 10px
+                    text-align: center
+                    text-transform: uppercase
 
                 p
-                    font-size: 14px
-                    text-align: center
                     color: $white
+                    font-size: 14px
                     padding: 10px 20px 20px
+                    text-align: center
 
 
                 a.info
+                    background-color: $black
+                    color: $white
                     display: inline-block
-                    text-decoration: none
                     font-weight: bolder
                     margin-top: 50px
                     padding: 12px 24px
-                    background-color: $black
-                    color: $white
+                    text-decoration: none
 
                     &:hover
                         background-color: $gray-light
@@ -262,14 +265,14 @@
 
             .mask
                 background-color: rgba(146,96,91,0.3)
-                transform: translateX(-300px)
                 opacity: 1
+                transform: translateX(-300px)
                 transition: all 0.2s ease-in-out
 
             h2
                 background: rgba(255, 255, 255, 0.5)
-                color: #000
                 box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5)
+                color: #000
 
             &:hover .icon
                 transform: translateX(300px)

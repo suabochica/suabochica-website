@@ -79,13 +79,13 @@ body.bg-image
 +sib-header
 
 .wpr-back
-    top: 64px
-    opacity: 1
     left: 85vw
-    width: 100%
-    max-width: $max-width
-    position: fixed
     margin: 0 auto
+    max-width: $max-width
+    opacity: 1
+    position: fixed
+    top: 64px
+    width: 100%
     z-index: 4
 
     .btn-back
@@ -94,95 +94,100 @@ body.bg-image
     a
         color: $black
 
-    a:hover
-        color: $pantone-yellow
+        &:hover
+            color: $pantone-yellow
 
 .main
     min-height: 100%
+    padding: 0 0 55px 0
     position: relative
     top: 0
     z-index: 2
-    padding: 0 0 55px 0
 
     .sc-home
         min-weight: 100%
+
         h1
+            color: $gray-dark
+            font: normal normal bold 3vw/27px "BrandonGrotesqueBold"
+            letter-spacing: 0.8vw
+            padding: 48% 10% 0 10%
             text-align: center
             text-transform: uppercase
-            letter-spacing: 0.8vw
-            font: normal normal bold 3vw/27px "BrandonGrotesqueBold"
-            color: $gray-dark
-            padding: 48% 10% 0 10%
 
     .sc-buttons
-        max-width: 400px
         margin: 0 auto
+        max-width: 400px
         text-align: center
+
         .btn-media
-            position: relative
-            height: 36px
-            width: 36px
             display: inline-block
             font-size: 36px
+            height: 36px
             margin: 5px
+            position: relative
+            width: 36px
+
             a
                 color: $pantone-yellow
-            a:hover
-                color: $gray-light
-            a:visited
-                color: $sib-blue
+
+                &:hover
+                    color: $gray-light
+
+                &:visited
+                    color: $sib-blue
 
     +sc-article
 
     +box-slide-effect
 
 pre
-    position: relative
-    margin: 0 0 1.625em
-    white-space: pre
-    word-wrap: normal
     background-color: $black
     color: $gray-light
+    margin: 0 0 1.625em
+    position: relative
+    white-space: pre
+    word-wrap: normal
 
-    &:before
-        position: absolute
-        top: 0
-        right: 0
-        padding-right: .5em
-        opacity: 1
-        line-height: 1.5
+    &::before
         cursor: default
         font-size: 1em
+        line-height: 1.5
+        opacity: 1
+        padding-right: .5em
+        position: absolute
+        right: 0
+        top: 0
 
     code
-        overflow-x: scroll
         display: block
-        padding: 0 1em
-        line-height: 2.0em
         font-size: 1.5em
+        line-height: 2.0em
+        overflow-x: scroll
+        padding: 0 1em
 
-.css:before
+.css::before
     content: "CSS"
 
-.html:before
+.html_:before
     content: "HTML"
 
-.javascript:before
+.javascript::before
     content: "JavaScript"
 
-.jquery:before
+.jquery::before
     content: "jQuery"
 
-.php:before
+.php::before
     content: "PHP"
 
-.scss:before
+.scss::before
     content: "SCSS"
 
-.sublime-snippet:before
+.sublime-snippet::before
     content: "Sublime Snippet"
 
-.shell
+.shell::before
     content: "Shell"
 
 footer
@@ -236,10 +241,10 @@ footer
     clear: both
 
 .wrapper
-    margin: 25px 0
-    white-space: normal
     margin: 0 auto
+    margin: 25px 0
     position: relative
+    white-space: normal
 
 //-----------------------------------------------------------------------------
 // 9.0 Responsive design
