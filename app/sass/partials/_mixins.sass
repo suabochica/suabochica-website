@@ -1,284 +1,283 @@
 =sib-header
-    header
-        background: $gray-dark
-        border-bottom: 5px solid $black
-        height: 50px
-        position: fixed
-        text-transform: uppercase
-        width: 100%
-        z-index: 3
+  header
+    background: $gray-dark
+    border-bottom: 5px solid $black
+    height: 50px
+    position: fixed
+    text-transform: uppercase
+    width: 100%
+    z-index: 3
 
-        .print
-            display: none
+    .print
+      display: none
 
-        .top-nav
-            white-space: nowrap
-            width: 100%
+    .top-nav
+      white-space: nowrap
+      width: 100%
 
-            a
-                color: $pantone-orange
+      a
+        color: $pantone-orange
 
-                &:hover
-                    color: $gray-light
+        &:hover
+          color: $gray-light
 
-            .symbol
-                color: $white
-                display: inline-block
-                font: normal normal bold 24px/26px "SibFontIcon"
-                left: 48%
-                margin: 12px 0 0 16px
-                position: absolute
-                text-decoration: none
-                z-index: 2
+      .symbol
+        color: $white
+        display: inline-block
+        font: normal normal bold 24px/26px "SibFontIcon"
+        left: 48%
+        margin: 12px 0 0 16px
+        position: absolute
+        text-decoration: none
+        z-index: 2
 
-            .links
-                display: inline-block
-                font: normal normal bold 1.5em/0.6em "BrandonGrotesqueBold"
-                height: 30px
-                letter-spacing: 0.5vw
-                margin: 0
-                padding: 20px 30px 0 0
-                position: relative
-                width: 48%
+      .links
+        display: inline-block
+        font: normal normal bold 1.5em/0.6em "BrandonGrotesqueBold"
+        height: 30px
+        letter-spacing: 0.5vw
+        margin: 0
+        padding: 20px 30px 0 0
+        position: relative
+        width: 48%
 
-                a
-                    padding: 0 10px
+        a
+          padding: 0 10px
 
-                &:last-child
-                    padding: 20px 0 0 26px
+        &:last-child
+          padding: 20px 0 0 26px
 
 =sc-article
-    .article
-        background-color: $white
-        border-image: url("../assets/images/png/border_ptrn.png") 23 22 22 round repeat
-        border-style: solid
-        border-width: 0 20px
-        color: $text-color
+  .article
+    background-color: $white
+    border-image: url("../assets/images/png/border_ptrn.png") 23 22 22 round repeat
+    border-style: solid
+    border-width: 0 20px
+    color: $text-color
+    margin: 0 auto
+    max-width: $max-width
+    padding: 0
+    position: relative
+    top: 55px
+
+    .post
+      width: 100%
+
+      .post-content
         margin: 0 auto
-        max-width: $max-width
-        padding: 0
-        position: relative
-        top: 55px
+        max-width: 55vw
+        padding: 10px 0
 
-        .post
-            width: 100%
+        h1
+          font-size: 48px
+          line-height: 50px
+          margin: 8px auto 0
+          max-width: 640px
+          text-align: center
 
-            .post-content
-                margin: 0 auto
-                max-width: 55vw
-                padding: 10px 0
+        h2
+          font-size: 36px
+          line-height: 38px
+          margin: 8px 0
 
-                h1
-                    font-size: 48px
-                    line-height: 50px
-                    margin: 8px auto 0
-                    max-width: 640px
-                    text-align: center
+        h3
+          font-size: 24px
+          line-height: 27px
+          margin: 8px 0
 
-                h2
-                    font-size: 36px
-                    line-height: 38px
-                    margin: 8px 0
+        h4
+          color: $gray-light
+          font-size: 21px
+          letter-spacing: 0.2em
+          line-height: 24px
+          margin: 4px 0
+          text-align: center
+          text-transform: uppercase
 
-                h3
-                    font-size: 24px
-                    line-height: 27px
-                    margin: 8px 0
+        h5
+          color: $gray-light
+          font-size: 18px
+          font-style: italic
+          line-height: 20px
+          margin: 4px 0
+          text-align: center
 
-                h4
-                    color: $gray-light
-                    font-size: 21px
-                    letter-spacing: 0.2em
-                    line-height: 24px
-                    margin: 4px 0
-                    text-align: center
-                    text-transform: uppercase
+        p
+          font-size: 16px
+          line-height: 21px
+          margin: 21px 0
+          text-align: justify
 
-                h5
-                    color: $gray-light
-                    font-size: 18px
-                    font-style: italic
-                    line-height: 20px
-                    margin: 4px 0
-                    text-align: center
+          a
+            color: $pantone-orange
 
-                p
-                    font-size: 16px
-                    line-height: 21px
-                    margin: 21px 0
-                    text-align: justify
+            &:hover
+              color: $pantone-yellow
 
-                    a
-                        color: $pantone-orange
-                    a:hover
-                        color: $pantone-yellow
-                    a:visited
-                        color: $gray-light
+            &:visited
+              color: $gray-light
 
-                ul
-                    list-style: disc outside none
-                    margin: 21px
+        ul
+          list-style: disc outside none
+          margin: 21px
 
-                    li
-                        font-size: 16px
-                        line-height: 21px
-                        margin: 5px 0
-                        word-wrap: break-word
+          li
+            font-size: 16px
+            line-height: 21px
+            margin: 5px 0
+            word-wrap: break-word
 
-                iframe
-                    display: block
-                    height: 50vh
-                    margin: 30px auto
-                    width: 50vw
+        iframe
+          display: block
+          height: 50vh
+          margin: 30px auto
+          width: 50vw
 
-                img
-                    background-color: $white
-                    display: block
-                    height: auto
-                    margin: 0px auto
-                    width: 50vw
+        img
+          background-color: $white
+          display: block
+          height: auto
+          margin: 0px auto
+          width: 50vw
 
-                figure
-                    background-color: $black
-                    display: table
-                    margin: 25px auto
-                    padding: 5px
+        figure
+          background-color: $black
+          display: table
+          margin: 25px auto
+          padding: 5px
 
-                    figcaption
-                        color: $white
-                        font-size: 11px
-                        line-height: 14px
-                        padding: 10px 5px 5px 5px
-                        text-align: center
+          figcaption
+            color: $white
+            font-size: 11px
+            line-height: 14px
+            padding: 10px 5px 5px 5px
+            text-align: center
 
-                blockquote
-                    border-left: 10px solid $gray-light
-                    margin: 1.5em 10px
-                    padding: 0.5em 10px
+        blockquote
+          border-left: 10px solid $gray-light
+          margin: 1.5em 10px
+          padding: 0.5em 10px
 
-                    p
-                        display: inline
-                        font-size: 14px
-                        line-height: 19px
-                        margin: 0
-                hr
-                    border-color: $black
-                    border-style: dotted
-                    border-width: 0
-                    margin: 5vh auto
-                    text-align: center
+          p
+            display: inline
+            font-size: 14px
+            line-height: 19px
+            margin: 0
 
-                    &::after
-                        content: "···"
-                        font-size: 40px
+        hr
+          border-color: $black
+          border-style: dotted
+          border-width: 0
+          margin: 5vh auto
+          text-align: center
 
-                table
-                    border-collapse: collapse
-                    border-spacing: 0
-                    margin: 1vh auto
-                    text-align: left
+          &::after
+            content: "···"
+            font-size: 40px
 
-                    tr
-                        border: 1px solid $gray-dark
+        table
+          border-collapse: collapse
+          border-spacing: 0
+          margin: 1vh auto
+          text-align: left
 
-                        &:nth-child(odd)
-                            background-color: $gray-light
+          tr
+            border: 1px solid $gray-dark
 
-                        &:last-child
-                            font-weight: bold
+            &:nth-child(odd)
+              background-color: $gray-light
 
-                        th
-                            background-color: $black
-                            color: $white
-                            padding: 2vh 2vw 2vh 1vw
+            &:last-child
+              font-weight: bold
 
-                        td
-                            color: $gray-dark
-                            padding: 1vh 1vw 1vh 1vw
-                            word-wrap: break-word
+            th
+              background-color: $black
+              color: $white
+              padding: 2vh 2vw 2vh 1vw
 
+            td
+              color: $gray-dark
+              padding: 1vh 1vw 1vh 1vw
+              word-wrap: break-word
 
 =box-slide-effect
-    .wpr-showcase
-        background-color: $white
-        margin: 0 auto
-        padding: 12vh 0
+  .wpr-showcase
+    background-color: $white
+    margin: 0 auto
+    padding: 12vh 0
+    position: relative
+    top: 55px
+    width: $max-width
+
+    .box
+      cursor: default
+      height: 216px
+      overflow: hidden
+      position: relative
+      text-align: center
+      text-align: center
+
+      .icon
+        display: block
+        font-size: 60px
+        line-height: 170px
+        padding: 30px 0 0 0
         position: relative
-        top: 55px
-        width: $max-width
 
-        .box
-            cursor: default
-            height: 216px
-            overflow: hidden
-            position: relative
-            text-align: center
-            text-align: center
+      .mask
+        height: 100%
+        left: 0
+        overflow: hidden
+        position: absolute
+        top: 0
+        width: 100%
 
-            .icon
-                display: block
-                font-size: 60px
-                line-height: 170px
-                padding: 30px 0 0 0
-                position: relative
+        h2
+          background: $black
+          color: $white
+          font-size: 17px
+          margin: 20px 0 0 0
+          padding: 10px
+          text-align: center
+          text-transform: uppercase
 
-            .mask
-                height: 100%
-                left: 0
-                overflow: hidden
-                position: absolute
-                top: 0
-                width: 100%
+        p
+          color: $white
+          font-size: 14px
+          padding: 10px 20px 20px
+          text-align: center
 
-                h2
-                    background: $black
-                    color: $white
-                    font-size: 17px
-                    margin: 20px 0 0 0
-                    padding: 10px
-                    text-align: center
-                    text-transform: uppercase
+        a.info
+          background-color: $black
+          color: $white
+          display: inline-block
+          font-weight: bolder
+          margin-top: 50px
+          padding: 12px 24px
+          text-decoration: none
 
-                p
-                    color: $white
-                    font-size: 14px
-                    padding: 10px 20px 20px
-                    text-align: center
+          &:hover
+            background-color: $gray-light
+            color: $white
 
+    .slide-effect
+      .icon
+        transition: all 0.2s ease-in-out
 
-                a.info
-                    background-color: $black
-                    color: $white
-                    display: inline-block
-                    font-weight: bolder
-                    margin-top: 50px
-                    padding: 12px 24px
-                    text-decoration: none
+      .mask
+        background-color: rgba(146,96,91,0.3)
+        opacity: 1
+        transform: translateX(-300px)
+        transition: all 0.2s ease-in-out
 
-                    &:hover
-                        background-color: $gray-light
-                        color: $white
+      h2
+        background: rgba(255, 255, 255, 0.5)
+        box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5)
+        color: #000
 
-        .slide-effect
-            .icon
-                transition: all 0.2s ease-in-out
+      &:hover .icon
+        transform: translateX(300px)
 
-            .mask
-                background-color: rgba(146,96,91,0.3)
-                opacity: 1
-                transform: translateX(-300px)
-                transition: all 0.2s ease-in-out
-
-            h2
-                background: rgba(255, 255, 255, 0.5)
-                box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5)
-                color: #000
-
-            &:hover .icon
-                transform: translateX(300px)
-
-            &:hover .mask
-                transform: translateX(0px)
-                transition-delay: 0.1s
-
-
+      &:hover .mask
+        transform: translateX(0px)
+        transition-delay: 0.1s
