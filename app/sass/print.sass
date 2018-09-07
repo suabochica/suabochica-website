@@ -1,101 +1,102 @@
 @media print
-    body
-        background: #FFF
-        color: #000
+  body
+    background: #FFF
+    color: #000
 
-        header
-            .print
-                display: block !important
-            nav
-                display: none !important
-    .main
-        .article
+    header
+      .print
+        display: block !important
+      nav
+        display: none !important
+  .main
+    .article
+      border: none
+
+      .post
+        .post-content
+          float: none
+          font: Georgia, "Times New Roman", Times, serif
+          margin:  0
+          padding: 0
+          width: auto
+
+          figure img iframe
+            display: none !important
+
+          h1
+            font-size: 16pt
+            line-height: 12pt
+            text-align: center
+
+          h2
+            font-size: 14pt
+            line-height: 15pt
+
+          h3
+            font-size: 12pt
+            line-height: 14pt
+
+          h4
+            font-size: 11pt
+            letter-spacing: 1pt
+            line-height: 13pt
+            text-align: center
+            text-transform: uppercase
+
+          h5
+            font-size: 10pt
+            font-style: italic
+            line-height: 12pt
+            text-align: center
+
+          p
+            font-size: 8pt
+            line-height: 10pt
+            text-align: justify
+
+          blockquote
+            border-left: 2pt solid #FF6633
+
+            p
+              font-size: 7pt
+              line-height: 9pt
+              margin-left: 6pt
+
+          hr
             border: none
-            .post
-                .post-content
-                    float: none
-                    font: Georgia, "Times New Roman", Times, serif
-                    margin:  0
-                    padding: 0
-                    width: auto
+            margin: 6pt auto
+            text-align: center
 
-                    figure img iframe
-                        display: none !important
+            &::after
+              color: #FF6633
+              content: "···"
+              font-size: 20pt
 
-                    h1
-                        font-size: 16pt
-                        line-height: 12pt
-                        text-align: center
+          ul
+            list-style: disc outside none
 
-                    h2
-                        font-size: 14pt
-                        line-height: 15pt
+            li
+              font-size: 8pt
+              line-height: 10pt
+              page-break-inside: avoid
+              word-wrap: break-word
 
-                    h3
-                        font-size: 12pt
-                        line-height: 14pt
+          table
+            margin: 0 auto
 
-                    h4
-                        font-size: 11pt
-                        letter-spacing: 1pt
-                        line-height: 13pt
-                        text-align: center
-                        text-transform: uppercase
+          iframe
+            display: none !important
 
-                    h5
-                        font-size: 10pt
-                        font-style: italic
-                        line-height: 12pt
-                        text-align: center
+          img
+            height: auto
+            margin: 0 0 0 3.5cm
+            page-break-after: avoid
+            page-break-inside: avoid
+            width: 8cm
 
-                    p
-                        font-size: 8pt
-                        line-height: 10pt
-                        text-align: justify
+          figcaption
+            text-align: center
+            font-size: 7pt
 
-                    blockquote
-                        border-left: 2pt solid #FF6633
-
-                        p
-                            font-size: 7pt
-                            line-height: 9pt
-                            margin-left: 6pt
-
-                    hr
-                        border: none
-                        margin: 6pt auto
-                        text-align: center
-
-                        &::after
-                            color: #FF6633
-                            content: "···"
-                            font-size: 20pt
-
-                    ul
-                        list-style: disc outside none
-
-                        li
-                            font-size: 8pt
-                            line-height: 10pt
-                            page-break-inside: avoid
-                            word-wrap: break-word
-
-                    table
-                        margin: 0 auto
-
-                    iframe
-                        display: none !important
-
-                    img
-                        height: auto
-                        margin: 0 0 0 3.5cm
-                        page-break-after: avoid
-                        page-break-inside: avoid
-                        width: 8cm
-
-                    figcaption
-                        text-align: center
-                        font-size: 7pt
-
-    @page
-        margin: 1.5cm 1.5cm 2cm 1.5cm
+  @page
+    margin: 1.5cm 1.5cm 2cm 1.5cm

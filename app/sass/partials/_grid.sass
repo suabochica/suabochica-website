@@ -2,7 +2,8 @@
 // 3.1 Extends [http://inspirationalpixels.com/tutorials/grid-system-with-sass]
 //-----------------------------------------------------------------------------
 
-%clearfix:after
+%clearfix
+  &::after
     clear: both
     content: ''
     display: block
@@ -18,33 +19,33 @@ $gutter-width: 1.5%
 // 3.3 Rows
 //-----------------------------------------------------------------------------
 .row
-    @extend %clearfix
+  @extend %clearfix
 
-    & + &
-        margin-top: $gutter-width
+  & + &
+    margin-top: $gutter-width
 
 //-----------------------------------------------------------------------------
 // 3.4 Columns
 //-----------------------------------------------------------------------------
 
 [class^="col-"]
-    -moz-box-sizing: border-box
-    -webkit-box-sizing: border-box
-    box-sizing: border-box
-    float: left
-    margin: 0 $gutter-width 0 0
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  float: left
+  margin: 0 $gutter-width 0 0
 
-    &:first-child
-        margin: 0 $gutter-width
+  &:first-child
+    margin: 0 $gutter-width
 
 
 .col-4
-    width: (97% / 3) - ($gutter-width * 8 / 12)
+  width: (97% / 3) - ($gutter-width * 8 / 12)
 
 .col-6
-    width: (97% / 2) - ($gutter-width * 6 / 12)
+  width: (97% / 2) - ($gutter-width * 6 / 12)
 
 .col-12
-    width: 97%
+  width: 97%
 
 

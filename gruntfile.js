@@ -189,5 +189,5 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     grunt.registerTask('build', ['clean', 'haml', 'sass', 'coffee', 'imagemin', 'copy' ,'min', 'cssmin']);
-    grunt.registerTask('dev', ['build', 'connect', 'watch']);
+    grunt.registerTask('dev', ['clean', 'haml', 'sass', 'coffee', 'copy', 'min', 'connect', 'watch']);
 };
