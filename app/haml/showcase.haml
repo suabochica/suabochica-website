@@ -13,102 +13,102 @@
   %body
     = Haml::Engine.new(File.read('app/haml/partials/_header.haml')).render
 
-    %div.wpr-back
-      %a#btn-back.btn-back{:href => "/index.html", "data-icon" => "i"}
+    %section.back-button-container
+      %a#btn-back.back-button-anchor{:href => "/index.html", "data-icon" => "i"}
 
-    %div#main#sc-showcase.main.pt-page
-      %div.wpr-showcase.pt-element.pt-element--infromright
+    %section#main#sc-showcase.main-container.pt-page
+      %div.showcase-container.pt-element.pt-element--infromright
 
         %div.row
-          %div#box-ivcolombia.col-4.box-events.box.slide-effect
-            %div.icon{"data-icon" => "m"}
-            %div.mask
+          %div#box-ivcolombia.col-4.showcase-item-events.showcase-item.slide-effect
+            %div.showcase-item-icon{"data-icon" => "m"}
+            %div.showcase-item-mask
               %h2 Evento
               %p Septiembre, 2017
               %a.info{:href => "/html/showcase/colombiaiv-nolan-bushnell.html"} Colombia 4.0
-          %div#box-kokolock.col-4.box-general.box.slide-effect
-            %div.icon{"data-icon" => "k"}
-            %div.mask
+          %div#box-kokolock.col-4.showcase-item-general.showcase-item.slide-effect
+            %div.showcase-item-icon{"data-icon" => "k"}
+            %div.showcase-item-mask
               %h2 Emprendiendo
               %p Enero, 2017
               %a.info{:href => "/html/showcase/kokolock.html"} Kokolock
-          %div#box-setubuntu.col-4.box-web.box.slide-effect
-            %div.icon{"data-icon" => "f"}
-            %div.mask
+          %div#box-setubuntu.col-4.showcase-item-web.showcase-item.slide-effect
+            %div.showcase-item-icon{"data-icon" => "f"}
+            %div.showcase-item-mask
               %h2 Guía de Configuración
               %p Junio, 2016
               %a.info{:href => "/html/showcase/setubuntu.html"} Ubuntu 14.04 LTS
 
         %div.row
-          %div#box-sudamericaco.col-4.box-backpack.box.slide-effect
-            %div.icon{"data-icon" => "q"}
-            %div.mask
+          %div#box-sudamericaco.col-4.showcase-item-backpack.showcase-item.slide-effect
+            %div.showcase-item-icon{"data-icon" => "q"}
+            %div.showcase-item-mask
               %h2 Mochilero
               %p Marzo, 2016
               %a.info{:href => "/html/showcase/sudamericaco.html"} Sudamérica Colombia
-          %div#box-mastery.col-4.box-general.box.slide-effect
-            %div.icon{"data-icon" => "k"}
-            %div.mask
+          %div#box-mastery.col-4.showcase-item-general.showcase-item.slide-effect
+            %div.showcase-item-icon{"data-icon" => "k"}
+            %div.showcase-item-mask
               %h2 General
               %p Octubre, 2015
               %a.info{:href => "/html/showcase/mastery.html"} Maestría en Canadá
-          %div#box-ivcolombia.col-4.box-events.box.slide-effect
-            %div.icon{"data-icon" => "m"}
-            %div.mask
+          %div#box-ivcolombia.col-4.showcase-item-events.showcase-item.slide-effect
+            %div.showcase-item-icon{"data-icon" => "m"}
+            %div.showcase-item-mask
               %h2 Evento
               %p Septiembre, 2015
               %a.info{:href => "/html/showcase/colombiaiii.html"} Colombia 3.0
 
         %div.row
-          %div#box-sofhouse.col-4.box-identity.box.slide-effect
-            %div.icon{"data-icon" => "v"}
-            %div.mask
+          %div#box-sofhouse.col-4.showcase-item-identity.showcase-item.slide-effect
+            %div.showcase-item-icon{"data-icon" => "v"}
+            %div.showcase-item-mask
               %h2 Identidad Corporativa
               %p Junio, 2014
               %a.info{:href => "/html/showcase/sofhouse.html"} Sofhouse
-          %div#box-licamba.col-4.box-web.box.slide-effect
-            %div.icon{"data-icon" => "g"}
-            %div.mask
+          %div#box-licamba.col-4.showcase-item-web.showcase-item.slide-effect
+            %div.showcase-item-icon{"data-icon" => "g"}
+            %div.showcase-item-mask
               %h2 Páginas Web
               %p Julio, 2014
               %a.info{:href => "/html/showcase/licamba.html"} Licamba
-          %div#box-phi.col-4.box-editorial.box.slide-effect
-            %div.icon{"data-icon" => "r"}
-            %div.mask
+          %div#box-phi.col-4.showcase-item-editorial.showcase-item.slide-effect
+            %div.showcase-item-icon{"data-icon" => "r"}
+            %div.showcase-item-mask
               %h2 Editorial y Diagramación
               %p Septiembre, 2013
               %a.info{:href => "/html/showcase/phi.html"} CuadrantePhi
 
         %div.row
-          %div#box-types.col-4.box-types.box.slide-effect
-            %div.icon{"data-icon" => "j"}
-            %div.mask
+          %div#box-types.col-4.showcase-item-types.showcase-item.slide-effect
+            %div.showcase-item-icon{"data-icon" => "j"}
+            %div.showcase-item-mask
               %h2 Tipos Móviles
               %p Marzo, 2013
               %a.info{:href => "/html/showcase/types.html"} Galera
-          %div#box-indirectrl.col-4.box-games.box.slide-effect
-            %div.icon{"data-icon" => "l"}
-            %div.mask
+          %div#box-indirectrl.col-4.showcase-item-games.showcase-item.slide-effect
+            %div.showcase-item-icon{"data-icon" => "l"}
+            %div.showcase-item-mask
               %h2 Videojuegos
               %p Noviembre, 2012
               %a.info{:href => "/html/showcase/indirectrl.html"} Cotrol Indirecto
-          %div#box-narrdiablo.col-4.box-games.box.slide-effect
-            %div.icon{"data-icon" => "l"}
-            %div.mask
+          %div#box-narrdiablo.col-4.showcase-item-games.showcase-item.slide-effect
+            %div.showcase-item-icon{"data-icon" => "l"}
+            %div.showcase-item-mask
               %h2 Videojuegos
               %p Septiembre, 2012
               %a.info{:href => "/html/showcase/narrdiablo.html"} Narrativa
 
         %div.row
-          %div#box-funtlz.col-4.box-games.box.slide-effect
-            %div.icon{"data-icon" => "l"}
-            %div.mask
+          %div#box-funtlz.col-4.showcase-item-games.showcase-item.slide-effect
+            %div.showcase-item-icon{"data-icon" => "l"}
+            %div.showcase-item-mask
               %h2 Videojuegos
               %p Agosto, 2012
               %a.info{:href => "/html/showcase/funtlz.html"} Factor diversión
-          %div#box-tacito.col-4.box-furniture.box.slide-effect
-            %div.icon{"data-icon" => "p"}
-            %div.mask
+          %div#box-tacito.col-4.showcase-item-furniture.showcase-item.slide-effect
+            %div.showcase-item-icon{"data-icon" => "p"}
+            %div.showcase-item-mask
               %h2 Mobilario
               %p Junio, 2011
               %a.info{:href => "/html/showcase/tacito.html"} Tácito

@@ -76,9 +76,9 @@ body
     background: url("../assets/images/png/me.png") center center no-repeat fixed
     background-size: cover
 
-+sib-header
++mixin-header
 
-.wpr-back
+.back-button-container
   left: 85vw
   margin: 0 auto
   max-width: $max-width
@@ -88,7 +88,7 @@ body
   width: 100%
   z-index: 4
 
-  .btn-back
+  .back-button-anchor
     font-size: 22pt
 
   a
@@ -97,7 +97,7 @@ body
     &:hover
       color: $pantone-yellow
 
-.main
+.main-container
   min-height: 100%
   padding: 0 0 55px 0
   position: relative
@@ -137,9 +137,9 @@ body
         &:visited
           color: $sib-blue
 
-  +sc-article
+  +mixin-section-container
 
-  +box-slide-effect
+  +mixin-box--slide-effect
 
 pre
   background-color: $black
