@@ -12,13 +12,12 @@
     = Haml::Engine.new(File.read('app/haml/partials/_stylesheets.haml')).render
   %body
     = Haml::Engine.new(File.read('app/haml/partials/_header.haml')).render
-
     = Haml::Engine.new(File.read('app/haml/partials/_btn_backshow.haml')).render
 
-    %div#main.sc-types.main.pt-page
-      .article.pt-element.pt-element--scalefromup
-        .post
-          .post-content
+    %section#main.sc-types.main-container.pt-page
+      %section.section-container.pt-element.pt-element--scalefromup
+        .post-container
+          %article.post-content
             :markdown
 
               # Tipos móviles

@@ -21,16 +21,16 @@ $(document).ready ->
   $(".sc-events").addClass('bg-springreen')
 
   $(".row").each ->
-    $(this).find(".box-identity").addClass('bg-green')
-    $(this).find(".box-editorial").addClass('bg-purple')
-    $(this).find(".box-web").addClass('bg-blue')
-    $(this).find(".box-types").addClass('bg-yellow')
-    $(this).find(".box-furniture").addClass('bg-red')
-    $(this).find(".box-games").addClass("bg-orange")
-    $(this).find(".box-general").addClass('bg-teal')
-    $(this).find(".box-iarts").addClass('bg-crimson')
-    $(this).find(".box-backpack").addClass('bg-mediumorchid')
-    $(this).find(".box-events").addClass('bg-springreen')
+    $(this).find(".showcase-item-identity").addClass('bg-green')
+    $(this).find(".showcase-item-editorial").addClass('bg-purple')
+    $(this).find(".showcase-item-web").addClass('bg-blue')
+    $(this).find(".showcase-item-types").addClass('bg-yellow')
+    $(this).find(".showcase-item-furniture").addClass('bg-red')
+    $(this).find(".showcase-item-games").addClass("bg-orange")
+    $(this).find(".showcase-item-general").addClass('bg-teal')
+    $(this).find(".showcase-item-iarts").addClass('bg-crimson')
+    $(this).find(".showcase-item-backpack").addClass('bg-mediumorchid')
+    $(this).find(".showcase-item-events").addClass('bg-springreen')
     return
 
   $('p').each ->
