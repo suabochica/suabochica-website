@@ -5,6 +5,9 @@
 [context.deploy-preview]
   publish = "public/"
 
+[context.branch-deploy]
+  command = "grunt build"
+
 [[redirects]]
   from = "/public"
   to = "/"
