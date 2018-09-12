@@ -9,12 +9,12 @@
 
     = Haml::Engine.new(File.read('app/haml/partials/_stylesheets.haml')).render
 
-  %body.bg-image
+  %body.background-image
     = Haml::Engine.new(File.read('app/haml/partials/_header.haml')).render
     %div#main.main-container.pt-page
-      %div#sc-home.sc-home.pt-element.pt-element--infromdown
+      %div#sc-home.section-home.pt-element.pt-element--infromdown
         %h1 "exponiendo pensamientos a 2.600 mts de altura"
-        %div.sc-buttons
+        %div.section-buttons
           %div.btn-media
             %a{:href => "https://github.com/SoujiroHub", "data-icon" => "b",:target => "_blank"}
           %div.btn-media
