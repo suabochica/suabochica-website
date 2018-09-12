@@ -1,6 +1,5 @@
 ###!
-# background.js is a sectionript to set the color background for the differents
-# sections
+# background.js is a script to set the color background for the differents sections
 #
 # @author  Sergio Leonardo Benítez Díaz
 #

@@ -200,7 +200,7 @@
         $targetHashEl = $(targetHash, $container)
         if $targetHashEl.length
           newPosition = $targetHashEl.offset().top
-          $body.sectionrollTop newPosition
+          $body.scrollTop newPosition
         targetHash = null
       return
 
@@ -297,7 +297,7 @@
       # Run the onStart callback and set trigger
       options.onStart.render $container
       window.setTimeout (->
-        $body.sectionrollTop 0
+        $body.scrollTop 0
         $container.trigger 'ss.onStartEnd'
         return
       ), options.onStart.duration
