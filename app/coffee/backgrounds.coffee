@@ -1,5 +1,5 @@
 ###!
-# background.js is a script to set the color background for the differents
+# background.js is a sectionript to set the color background for the differents
 # sections
 #
 # @author  Sergio Leonardo Benítez Díaz
@@ -7,30 +7,30 @@
 ###
 
 $(document).ready ->
-  $("#sc-about").addClass('bg-porange')
-  $("#sc-showcase").addClass('bg-porange')
-  $(".sc-identity").addClass('bg-green')
-  $(".sc-editorial").addClass('bg-purple')
-  $(".sc-web").addClass('bg-blue')
-  $(".sc-types").addClass('bg-yellow')
-  $(".sc-furniture").addClass('bg-red')
-  $(".sc-games").addClass('bg-orange')
-  $(".sc-general").addClass('bg-teal')
-  $(".sc-iarts").addClass('bg-crimson')
-  $(".sc-backpack").addClass('bg-mediumorchid')
-  $(".sc-events").addClass('bg-springreen')
+  $("#section-about").addClass('background-porange')
+  $("#section-showcase").addClass('background-porange')
+  $(".section-identity").addClass('background-green')
+  $(".section-editorial").addClass('background-purple')
+  $(".section-web").addClass('background-blue')
+  $(".section-types").addClass('background-yellow')
+  $(".section-furniture").addClass('background-red')
+  $(".section-games").addClass('background-orange')
+  $(".section-general").addClass('background-teal')
+  $(".section-iarts").addClass('background-crimson')
+  $(".section-backpack").addClass('background-mediumorchid')
+  $(".section-events").addClass('background-springreen')
 
   $(".row").each ->
-    $(this).find(".showcase-item-identity").addClass('bg-green')
-    $(this).find(".showcase-item-editorial").addClass('bg-purple')
-    $(this).find(".showcase-item-web").addClass('bg-blue')
-    $(this).find(".showcase-item-types").addClass('bg-yellow')
-    $(this).find(".showcase-item-furniture").addClass('bg-red')
-    $(this).find(".showcase-item-games").addClass("bg-orange")
-    $(this).find(".showcase-item-general").addClass('bg-teal')
-    $(this).find(".showcase-item-iarts").addClass('bg-crimson')
-    $(this).find(".showcase-item-backpack").addClass('bg-mediumorchid')
-    $(this).find(".showcase-item-events").addClass('bg-springreen')
+    $(this).find(".showcase-item-identity").addClass('background-green')
+    $(this).find(".showcase-item-editorial").addClass('background-purple')
+    $(this).find(".showcase-item-web").addClass('background-blue')
+    $(this).find(".showcase-item-types").addClass('background-yellow')
+    $(this).find(".showcase-item-furniture").addClass('background-red')
+    $(this).find(".showcase-item-games").addClass("background-orange")
+    $(this).find(".showcase-item-general").addClass('background-teal')
+    $(this).find(".showcase-item-iarts").addClass('background-crimson')
+    $(this).find(".showcase-item-backpack").addClass('background-mediumorchid')
+    $(this).find(".showcase-item-events").addClass('background-springreen')
     return
 
   $('p').each ->
