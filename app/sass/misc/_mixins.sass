@@ -15,14 +15,8 @@
     white-space: nowrap
     width: 100%
 
-    a
-      color: $pantone-orange
-
-      &:hover
-        color: $gray-light
-
   .menu-symbol
-    color: $white
+    color: $pantone-orange
     display: inline-block
     font: normal normal bold 24px/26px "SibFontIcon"
     left: 48%
@@ -30,6 +24,9 @@
     position: absolute
     text-decoration: none
     z-index: 2
+
+    &:hover
+      color: $pantone-yellow
 
   .menu-links
     display: inline-block
@@ -41,11 +38,15 @@
     position: relative
     width: 48%
 
-    a
-      padding: 0 10px
-
     &:last-child
       padding: 20px 0 0 26px
+
+  .menu-links-anchors
+    color: $pantone-orange
+    padding: 0 10px
+
+    &:hover
+      color: $pantone-yellow
 
 =mixin-section-container
   .section-container
