@@ -155,7 +155,7 @@ module.exports = function(grunt){
 
         watch: {
             haml:{
-                files:['app/haml/**/*.haml'],
+                files:['app/*.haml', 'app/haml/**/*.haml'],
                 tasks:['haml'],
             },
 
