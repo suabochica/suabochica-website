@@ -21,7 +21,7 @@ Second, you should install the `npm` packages. Please run:
     npm install
 
 > ## Installation issues.
-> `Warning: You need to have Ruby and Haml installed and in your PATH for this task to work.``
+> `Warning: You need to have Ruby and Haml installed and in your PATH for this task to work.`
 > If you get this error, is because you don´t have the gems specified in the `Gemfile` installed in your machine. Please review this step.
 
 ## Development Environment
