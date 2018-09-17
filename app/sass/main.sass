@@ -9,15 +9,13 @@
 //-----------------------------------------------------------------------------
 
 //-----------------------------------------------------------------------------
-// 1.0 Variables
-//-----------------------------------------------------------------------------
-$font-stack: "FrutigerLTStd-Light", Helvetica, sans-serif
-
-//-----------------------------------------------------------------------------
 // 2.0 Resets and overrides
 //-----------------------------------------------------------------------------
 
 @import 'misc/reset'
+@import 'misc/variables'
+@import 'misc/global'
+@import 'misc/helpers'
 
 //-----------------------------------------------------------------------------
 // 3.0 Grid
@@ -31,11 +29,6 @@ $font-stack: "FrutigerLTStd-Light", Helvetica, sans-serif
 
 @import 'fonts/fonts'
 @import 'fonts/font_icon'
-
-//-----------------------------------------------------------------------------
-// 5.0 Mixins
-//-----------------------------------------------------------------------------
-@import 'misc/mixins'
 
 //-----------------------------------------------------------------------------
 // 6.0 Animations and keyframes
@@ -54,146 +47,18 @@ $font-stack: "FrutigerLTStd-Light", Helvetica, sans-serif
 // 8.0 Global styles
 //-----------------------------------------------------------------------------
 
-body
-  font: 100% $font-stack
-
-  &.background-image
-    background: url("../assets/images/png/me.png") center center no-repeat fixed
-    background-size: cover
-
-+mixin-header
-
-.back-button-container
-  left: 85vw
-  margin: 0 auto
-  max-width: $max-width
-  opacity: 1
-  position: fixed
-  top: 64px
-  width: 100%
-  z-index: 4
-
-  .back-button-anchor
-    color: $black
-    font-size: 22pt
-
-    &:hover
-      color: $pantone-yellow
-
-.main-container
-  min-height: 100%
-  padding: 0 0 55px 0
-  position: relative
-  top: 0
-  z-index: 2
-
-  .section-home
-    min-weight: 100%
-
-    h1
-      color: $gray-dark
-      font: normal normal bold 3vw/27px "BrandonGrotesqueBold"
-      letter-spacing: 0.8vw
-      padding: 48% 10% 0 10%
-      text-align: center
-      text-transform: uppercase
-
-  .section-buttons
-    margin: 0 auto
-    max-width: 400px
-    text-align: center
-
-    .btn-media
-      display: inline-block
-      font-size: 36px
-      height: 36px
-      margin: 5px
-      position: relative
-      width: 36px
-
-      a
-        color: $pantone-yellow
-
-        &:hover
-          color: $gray-light
-
-        &:visited
-          color: $sib-blue
-
-  +mixin-section-container
-
-  +mixin-box--slide-effect
-
-pre
-  background-color: $black
-  color: $gray-light
-  margin: 0 0 1.625em
-  position: relative
-  white-space: pre
-  word-wrap: normal
-
-  &::before
-    cursor: default
-    font-size: 1em
-    line-height: 1.5
-    opacity: 1
-    padding-right: .5em
-    position: absolute
-    right: 0
-    top: 0
-
-  code
-    display: block
-    font-size: 1.5em
-    line-height: 2.0em
-    overflow-x: scroll
-    padding: 0 1em
-
-.css::before
-  content: "CSS"
-
-.html::before
-  content: "HTML"
-
-.javascript::before
-  content: "JavaScript"
-
-.jquery::before
-  content: "jQuery"
-
-.php::before
-  content: "PHP"
-
-.scss::before
-  content: "SCSS"
-
-.sublime-snippet::before
-  content: "Sublime Snippet"
-
-.shell::before
-  content: "Shell"
-
-footer
-  visibility: hidden
+@import 'components/header/header'
+@import 'components/back/back'
+@import 'components/home/home'
+@import 'components/showcase/showcase'
+@import 'components/post/post'
 
 //-----------------------------------------------------------------------------
 // 9.0 Misc
 //-----------------------------------------------------------------------------
 
-.txt-left
-  text-align: left
-
-.txt-right
-  text-align: right
-
-.clear
-  clear: both
-
-.wrapper
-  margin: 0 auto
-  margin: 25px 0
-  position: relative
-  white-space: normal
+@import 'misc/global'
+@import 'misc/helpers'
 
 //-----------------------------------------------------------------------------
 // 9.0 Responsive design

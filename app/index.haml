@@ -13,13 +13,13 @@
     = Haml::Engine.new(File.read('app/haml/partials/_header.haml')).render
     %div#main.main-container.pt-page
       %div#sc-home.section-home.pt-element.pt-element--infromdown
-        %h1 "exponiendo pensamientos a 2.600 mts de altura"
-        %div.section-buttons
-          %div.btn-media
+        %h1.section-home-phrase "exponiendo pensamientos a 2.600 mts de altura"
+        %div.section-home-media
+          %div.section-home-media-button
             %a{:href => "https://github.com/suabochica", "data-icon" => "b",:target => "_blank"}
-          %div.btn-media
+          %div.section-home-media-button
             %a{:href => "https://co.linkedin.com/in/slbenitezd", "data-icon" => "h",:target => "_blank"}
-          %div.btn-media
+          %div.section-home-media-button
             %a{:href => "https://instagram.com/suabochica", "data-icon" => "a",:target => "_blank"}
 
     %footer
