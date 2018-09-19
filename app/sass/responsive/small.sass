@@ -1,6 +1,9 @@
 $gutter-width: 1.5%
 
 @media only screen and (max-width: 400px)
+  html
+    font-size: $font-size-base-sm
+
   .back-button-container
     left: 82vw
 
@@ -12,28 +15,28 @@ $gutter-width: 1.5%
 
   .post-content
     h1
-      font-size: 21px
-      line-height: 24px
+      font-size: $h1-font-size
+      line-height: $h1-line-height
 
     h2
-      font-size: 18px
-      line-height: 22px
+      font-size: $h2-font-size
+      line-height: $h2-line-height
 
     h3
-      font-size: 16px
-      line-height: 21px
+      font-size: $h3-font-size
+      line-height: $h3-line-height
 
     h4
-      font-size: 14px
-      line-height: 19px
+      font-size: $h4-font-size
+      line-height: $h4-line-height
 
     h5
       font-size: 12px
       line-height: 17px
 
     p
-      font-size: 11px
-      line-height: 16px
+      font-size: $paragraph-font-size
+      line-height: $paragraph-line-height
       text-align: left
       margin: 16px 0
 
@@ -41,22 +44,22 @@ $gutter-width: 1.5%
       margin: 16px
 
       li
-        font-size: 11px
-        line-height: 16px
+        font-size: $paragraph-font-size
+        line-height: $paragraph-line-height
         word-wrap: break-word
 
     figure
       figcaption
-        font-size: 8px
-        line-height: 13px
+        font-size: $blockquote-font-size
+        line-height: $blockquote-line-height
 
     blockquote
       border-left: 5px solid #B3B3B3
       margin: 1em 8px
 
       p
-        font-size: 9px
-        line-height: 14px
+        font-size: $blockquote-font-size
+        line-height: $blockquote-line-height
 
   .wrapper
     white-space: normal

@@ -9,11 +9,11 @@
 
     = Haml::Engine.new(File.read('app/haml/partials/_stylesheets.haml')).render
 
-  %body.background-image
+  %body.background-images
     = Haml::Engine.new(File.read('app/haml/partials/_header.haml')).render
     %div#main.main-container.pt-page
       %div#sc-home.section-home.pt-element.pt-element--infromdown
-        %p.section-home-phrase - Exponiendo pensamientos a 2.600 mts de altura -
+        %p.section-home-phrase - Exponiendo pensamientos a 2.600 metros de altura -
         %p.section-home-introduce Hola, soy Sergio Benítez, un desarrollador y diseñador que actualmente trabaja y vive en Bogotá.
         %div.section-home-media
           %div.section-home-media-button
@@ -25,12 +25,15 @@
       %div.section-home--flex.pt-element.pt-element--infromdown
         %div.section-work.pt-element.pt-element--infromdown
           %h2.work-label Trabajo
-          %p.work-enterprise Prodigious
+          %p.work-enterprise
+            %a{:href => "https://www.prodigious.com/",:target => "_blank"} Prodigious
           %p.work-position Senior Front-End
           %h2.work-label Trabajos previos
-          %p.work-enterprise LasPartes
+          %p.work-enterprise
+            %a{:href => "http://www.laspartes.com.co/catalogo/inicio",:target => "_blank"} LasPartes
           %p.work-position Senior Front-End and UI Designer
-          %p.work-enterprise Software House
+          %p.work-enterprise
+            %a{:href => "https://www.sofhouse.net/?page_id=11",:target => "_blank"} Software House
           %p.work-position Ful-Stack Developer and UI Designer
         %div.section-blog.pt-element.pt-element--infromdown
           %h2.blog-label Publicaciones
