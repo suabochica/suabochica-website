@@ -3,11 +3,13 @@
   padding: 30vh 10% 10vh 10%
 
 .section-home-phrase
-  color: $sib-blue
+  color: $sib-teal
   font: normal normal bold 32px "BrandonGrotesqueBold"
-  line-height: 1.5
+  font-size: $h1-font-size
+  line-height: $h1-line-height
   text-align: center
   text-transform: uppercase
+  padding-bottom: 24px
 
 .section-home-introduce
   color: $gray-dark
@@ -30,13 +32,11 @@
   width: 36px
 
   a
-    color: $pantone-yellow
+    color: $sib-blue
+    transition: color ease-in 0.2s
 
     &:hover
-      color: $gray-light
-
-    &:visited
-      color: $sib-blue
+      color: $sib-crimson
 
 .section-home--flex
   align-items: top
@@ -48,8 +48,23 @@
 .blog-label
   color: $gray-dark
   font-family: "BrandonGrotesqueBold"
-  font-size: 10px
+  font-size: 12px
   font-weight: 600
   letter-spacing: 2px
   margin: 40px 0 30px
   text-transform: uppercase
+
+.work-enterprise,
+.blog-title
+  a
+    color: $sib-blue
+    transition: color ease-in 0.2s
+
+    &:hover
+      color: $sib-crimson
+
+    &:before
+      left: 0
+
+    &:after
+      right: 0
