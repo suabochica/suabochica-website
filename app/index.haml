@@ -43,6 +43,10 @@
           %p.blog-title
             %a{:href => "html/showcase/2017-01-kokolock.html",:target => "_blank"} Kokolock
           %p.blog-date Enero, 2017
+          %h2.events-label Eventos
+          %p.events-title
+            %a{:href => "https://evidencesynthesishackathon.com/participants/",:target => "_blank"} Evidence Synthesis Hackathon
+          %p.events-date Abril, 2017
 
     %footer
       = Haml::Engine.new(File.read('app/haml/partials/_scripts.haml')).render
