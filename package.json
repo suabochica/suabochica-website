@@ -5,7 +5,9 @@
     "type": "git",
     "url": "https://github/SoujiroHub/sib-webpage"
   },
-  "dependencies": {},
+  "dependencies": {
+    "npm": "^6.4.1"
+  },
   "devDependencies": {
     "eslint-plugin-standard": "^2.0.1",
     "grunt": "~0.4.2",

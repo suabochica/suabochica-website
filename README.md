@@ -21,7 +21,7 @@ Second, you should install the `npm` packages. Please run:
     npm install
 
 > ## Installation issues.
-> `Warning: You need to have Ruby and Haml installed and in your PATH for this task to work.``
+> `Warning: You need to have Ruby and Haml installed and in your PATH for this task to work.`
 > If you get this error, is because you don´t have the gems specified in the `Gemfile` installed in your machine. Please review this step.
 
 ## Development Environment
@@ -36,3 +36,12 @@ With `grunt` a task was configured to create the build of the website. :
 
 ## Netlify
 This project uses Netifly to manage continous integration in the content updates of the website. Review the `netlifu.toml` file to know the repository setup.
+
+## Windows Setup
+To run this project in windows OS the next programs are required:
+- [RubyInstaller](https://rubyinstaller.org/downloads/) to install ruby on Windows
+- [Java](https://www.java.com/en/download/manual.jsp) to run the yui compressor nodejs module
+
+To install the gems you should use the next command:
+
+    ruby -S gem install {gem}

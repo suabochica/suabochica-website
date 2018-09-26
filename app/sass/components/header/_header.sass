@@ -1,0 +1,49 @@
+.header
+  background: $gray-dark
+  border-bottom: 5px solid $black
+  height: 50px
+  position: fixed
+  text-transform: uppercase
+  width: 100%
+  z-index: 3
+
+  .print
+    display: none
+
+.menu-nav
+  white-space: nowrap
+  width: 100%
+
+.menu-symbol
+  color: $pantone-orange
+  display: inline-block
+  font: normal normal bold 24px/26px "SibFontIcon"
+  left: 48%
+  margin: 12px 0 0 16px
+  position: absolute
+  text-decoration: none
+  z-index: 2
+
+  &:hover
+    color: $pantone-yellow
+
+.menu-links
+  display: inline-block
+  font: normal normal bold 1.5em/0.6em "BrandonGrotesqueBold"
+  height: 30px
+  letter-spacing: 0.5vw
+  margin: 0
+  padding: 20px 30px 0 0
+  position: relative
+  width: 48%
+
+  &:last-child
+    padding: 20px 0 0 26px
+
+.menu-links-anchors
+  color: $pantone-orange
+  padding: 0 10px
+  transition: color ease-in 0.2s
+
+  &:hover
+    color: $pantone-yellow

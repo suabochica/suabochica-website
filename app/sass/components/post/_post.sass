@@ -1,0 +1,153 @@
+.section-container
+  background-color: $white
+  border-image: url("../assets/images/png/border_ptrn.png") 23 22 22 round repeat
+  border-style: solid
+  border-width: 0 20px
+  color: $text-color
+  margin: 0 auto
+  max-width: $max-width
+  padding: 0
+  position: relative
+  top: 55px
+
+.post-container
+  width: 100%
+
+.post-content
+  margin: 0 auto
+  max-width: 64vw
+  padding: 10px 0
+
+  h1
+    font-family: "BrandonGrotesqueBold"
+    font-size: $h1-font-size
+    line-height: $h1-line-height
+    margin: 36px auto 28px auto
+    text-align: center
+    text-transform: uppercase
+
+  h2
+    font-size: $h2-font-size
+    line-height: $h2-line-height
+    margin: 8px 0 28px 0
+
+  h3
+    font-size: $h3-font-size
+    line-height: $h4-line-height
+    margin: 8px 0 28px 0
+
+  h4
+    color: $gray-light
+    font-size: $h4-font-size
+    letter-spacing: 0.2em
+    line-height: $h4-line-height
+    margin: 8px 0
+    text-align: center
+    text-transform: uppercase
+
+  h5
+    color: $gray-light
+    font-size: $paragraph-font-size
+    line-height: $paragraph-line-height
+    margin: 8px 0 28px 0
+    text-align: center
+
+  p
+    font-size: $paragraph-font-size
+    line-height: $paragraph-line-height
+    margin: 21px 0
+    text-align: justify
+
+    a
+      color: $pantone-orange
+
+      &:hover
+        color: $pantone-yellow
+
+      &:visited
+        color: $gray-light
+
+  ul
+    list-style: disc outside none
+    margin: 21px
+
+    li
+      font-size: $paragraph-font-size
+      line-height: $paragraph-line-height
+      margin: 5px 0
+      word-wrap: break-word
+
+  iframe
+    display: block
+    height: 50vh
+    margin: 30px auto
+    width: 50vw
+
+  img
+    background-color: $white
+    display: block
+    height: auto
+    margin: 0px auto
+    width: 50vw
+
+  figure
+    background-color: $black
+    display: table
+    margin: 25px auto
+    padding: 5px
+
+    figcaption
+      color: $white
+      font-size: $blockquote-font-size
+      line-height: $blockquote-line-height
+      padding: 10px 5px 5px 5px
+      text-align: center
+
+  blockquote
+    border-left: 10px solid $gray-light
+    margin: 1.5em 10px
+    padding: 0.5em 10px
+
+    p
+      font-size: $blockquote-font-size
+      line-height: $blockquote-line-height
+      display: inline
+      margin: 0
+
+  hr
+    border-color: $black
+    border-style: dotted
+    border-width: 0
+    margin: 5vh auto
+    text-align: center
+
+    &::after
+      content: "···"
+      font-size: 40px
+
+  table
+    font-size: $paragraph-font-size
+    line-height: $paragraph-line-height
+    border-collapse: collapse
+    border-spacing: 0
+    margin: 1vh auto
+    text-align: left
+
+    tr
+      border: 1px solid $gray-dark
+
+      &:nth-child(odd)
+        background-color: $gray-light
+
+      &:last-child
+        font-weight: bold
+
+      th
+        background-color: $black
+        color: $white
+        padding: 2vh 2vw 2vh 1vw
+
+      td
+        color: $gray-dark
+        padding: 1vh 1vw 1vh 1vw
+        word-wrap: break-word

@@ -1,0 +1,75 @@
+.showcase-container
+  background-color: $white
+  margin: 0 auto
+  padding: 12vh 0
+  position: relative
+  top: 55px
+  width: $max-width
+
+.showcase-item
+  cursor: default
+  height: 216px
+  overflow: hidden
+  position: relative
+  text-align: center
+
+.showcase-item-icon
+  display: block
+  font-size: 60px
+  line-height: 170px
+  padding: 30px 0 0 0
+  position: relative
+
+.showcase-item-mask
+  height: 100%
+  left: 0
+  overflow: hidden
+  position: absolute
+  top: 0
+  width: 100%
+
+.showcase-item-mask-title
+  background: $black
+  box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5)
+  color: $white
+  font-size: 17px
+  margin: 20px 0 0 0
+  padding: 10px
+  text-align: center
+  text-transform: uppercase
+
+.showcase-item-mask-date
+  color: $white
+  font-size: 14px
+  padding: 10px 20px 20px
+  text-align: center
+
+a.showcase-item-mask-link
+  background-color: $black
+  color: $white
+  display: inline-block
+  font-weight: bolder
+  margin-top: 50px
+  padding: 12px 24px
+  text-decoration: none
+
+  &:hover
+    background-color: $gray-light
+    color: $white
+
+.slide-effect
+  .showcase-item-icon
+    transition: all 0.2s ease-in-out
+
+  .showcase-item-mask
+    background-color: rgba(146,96,91,0.3)
+    opacity: 1
+    transform: translateX(-300px)
+    transition: all 0.2s ease-in-out
+
+  &:hover .showcase-item-icon
+    transform: translateX(300px)
+
+  &:hover .showcase-item-mask
+    transform: translateX(0px)
+    transition-delay: 0.1s
