@@ -1,0 +1,58 @@
+!!! XML
+!!!
+/ Colombia 4.0 - Nolan Bushnell
+%html
+  %head
+    %title Sergio L. Benítez D. - Bash
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{:content => "Un diseñador y desarrollador de interfaces y experiencias de usuario desde la capital de Colombia", :name => "description"}
+    %meta{:content => "Sergio L. Benítez D.", :name => "author"}
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+
+    = Haml::Engine.new(File.read('app/haml/partials/_stylesheets.haml')).render
+  %body
+    = Haml::Engine.new(File.read('app/haml/partials/_header.haml')).render
+    = Haml::Engine.new(File.read('app/haml/partials/_btn_backshow.haml')).render
+
+    %section#main.section-web.main-container.pt-page
+      %section.section-container.pt-element.pt-element--scalefromup
+        .post-container
+          %article.post-content
+            :markdown
+
+              # Bash
+              #### Septiembre, 2018
+              ##### Sergio L. Benítez D.
+
+              BASH es un UNIX **shell** y un lenguaje de comandos escrito por Brian Fox para el Proyecto GNU como un remplazo al software libre Bourne Shell. Fue liberado en 1989 y sus siglas significan Bourne-Again SHell.
+
+              > **Shell**: En computación un shell es una interfaz de usuario para acceder a los servicios del sistema operativo.
+
+              <figure>
+                ![Bash](https://cdn.tproger.ru/wp-content/uploads/2017/05/bashmini-1.png)
+                <figcaption> Img 1 - Identificador Bash </figcaption>
+              </figure>
+
+              A mi parecer, BASH es una de las herramientas más desapercibidas en el proceso de desarrollo y por eso no se considera necesario invertir tiempo para aprenderlo. Sin embargo, tarde o temprano el desarrollador se topará con BASH y por experiencia propia el tiempo invertido en entender BASH termina siendo rentable para aumentar la productividad y mejorar la capacidad de contribuir en el trabajo en equipo.
+
+              Esta serie utiliza el contenido del curso [Automate Daily Development Tasks with BASH](https://egghead.io/lessons/bash-course-overview-automate-daily-development-tasks-with-bash) dictado por **Cameron Nokes**. Me tome el atrevimiento de  reorganizar las lecciones para hacer más amigable el aprendizaje partiendo del principio de empezar por conceptos sencillos e ir evolucionando a conceptos complejos. A continuación comparto el temario de esta serie:
+
+              - Comando Básicos de BASH
+                1. Navegar en el sistema de archivos con BASH
+                2. Ver archivos y carpetas en BASH
+                3. Crear y borrar archivos y carpetas en BASH
+                4. Mover y copiar archivos y carpetas en BASH
+              - Comandos Avanzados de BASH
+                1. Búsquedas de texto con `grep`
+                2. Hacer peticiones HTTP en BASH con `curl`
+              - Carácteristicas de BASH
+                1. Encadenamiento de comandos con Pipes
+                2. Redireccionamiento de salidas en BASH
+                3. Crear y correr _scripts_ de BASH con argumento de línea de comando
+
+              Espero que el contenido de esta serie les sea de utilidad.
+
+              * * *
+    / !Bash
+    %footer
+      = Haml::Engine.new(File.read('app/haml/partials/_scripts.haml')).render
