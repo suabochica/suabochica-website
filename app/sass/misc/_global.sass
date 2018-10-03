@@ -8,54 +8,24 @@ body
     background: url("../assets/images/png/me.png") center center no-repeat fixed
     background-size: cover
 
+code
+  background-color: $white-code
+  font-family: 'Andale Mono'
+  font-size: 1em
+
 pre
-  background-color: $black
+  border-bottom: 4px solid $sib-orange
   color: $gray-light
   margin: 0 0 1.625em
   position: relative
   white-space: pre
   word-wrap: normal
 
-  &::before
-    cursor: default
-    font-size: 1em
-    line-height: 1.5
-    opacity: 1
-    padding-right: .5em
-    position: absolute
-    right: 0
-    top: 0
-
   code
+    background-color: $black
     display: block
-    font-size: 1.5em
-    line-height: 2.0em
-    overflow-x: scroll
-    padding: 0 1em
-
-.css::before
-  content: "CSS"
-
-.html::before
-  content: "HTML"
-
-.javascript::before
-  content: "JavaScript"
-
-.jquery::before
-  content: "jQuery"
-
-.php::before
-  content: "PHP"
-
-.scss::before
-  content: "SCSS"
-
-.sublime-snippet::before
-  content: "Sublime Snippet"
-
-.shell::before
-  content: "Shell"
+    line-height: 1.4
+    padding: 0.5em 1em
 
 footer
   visibility: hidden
