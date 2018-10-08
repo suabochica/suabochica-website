@@ -26,12 +26,12 @@
 
               En esta publicación vamos a desarrollar los siguientes contenidos:
 
-              1. Navegar en el sistema de archivos con Bash
-              2. Ver archivos y carpetas en Bash
-              3. Crear y borrar archivos y carpetas en Bash
-              4. Mover y copiar archivos y carpetas en Bash
+              1. [Navegar en el sistema de archivos con Bash](#navegar-el-sistema-de-archivos-con-bash)
+              2. [Ver archivos y carpetas en Bash](#ver-archivos-y-directorios-en-bash)
+              3. [Crear y borrar archivos y carpetas en Bash](#crear-y-borrar-archivos-y-directorios-en-bash)
+              4. [Mover y copiar archivos y carpetas en Bash](#mover-y-copiar-archivos-y-directorios-en-bash)
 
-              ## 1. Navegar el sistema de archivos con Bash
+              <h2 id="navegar-el-sistema-de-archivos-con-bash">1. Navegar el sistema de archivos con Bash</h2>
               En esta sección se describirá cómo cambiar el directorio de trabajo usando el comando `cd`. Asimismo, se va a explicar como mostrar en una lista los contenidos de un directorio usando el comando `ls`.   Por último se observará cómo funcionan las opciones `-l` y `-a`  del comando `ls`.
 
               Para empezar, se debe abrir la aplicación Terminal. A través de esta aplicación el usuario interactua con Bash en macOS. Al abrir la Terminal por primera vez, Bash se ubicará en el directorio _home_ del usuario. Usted puede ver en donde se encuentra en Bash mirando la información que se despliega en la Terminal como se muestra a continuación:
@@ -81,7 +81,7 @@
 
               En consecuencia, si usamos el comando `cd` sobre el directorio `/..` se va a regresar a la carpeta `repos`.
 
-              ## 2. Ver archivos y directorios en Bash
+              <h2 id="ver-archivos-y-directorios-en-bash">2. Ver archivos y directorios en Bash</h2>
               Algunas veces cuando se trabaja desde la línea de comandos, puede ser útil ver los contenidos de un archivo directamente desde la terminal o abrir el archivo con determinada aplicación. En esta sección se explicará como ver los archivos desde la terminal usando los comandos `cat` y `less`. Para abrir los archivos y directorios se usará el comando `open`.
 
               Tomaremos como referencia la estructura de archivos de un repositorio `npm` para indicar los propositos de los comandos `cat` y `less`. Estos repositorios suelen tener un archivo `package.json` en donde se listan todos los paquetes consumidos por la aplicación.
@@ -121,7 +121,7 @@
 
               El archivo JavaScript se abrirá con el editor de texto asociado (Visual Studio Code o Sublime).
 
-              ## 3. Crear y borrar archivos y directorios en Bash
+              <h2 id="crear-y-borrar-archivos-y-directorios-en-bash">3. Crear y borrar archivos y directorios en Bash</h2>
               Una de las cosas mas útiles que se pueden automatizar con Bash es crear y borrar archivos y directorios. En esta sección se explicará el comando `touch` para crear un archivo, y como anexar el contenido con el comando `echo`. Posteriormente, se revisará como crear directorios con el comando `mkdir` y por último se enseñara como remover archivos y directorios.
 
               Para crear un archivo en Bash, se usa el comando `touch` en conjunto con el nombre del archivo. Para este caso, el nombre del archivo sera `file.txt`. El siguiente comando creará el archivo `file.txt`:
@@ -203,7 +203,7 @@
                   $ ls
                   file2.txt
 
-              ## 4. Mover y copiar archivos y directorios con Bash
+              <h2 id="mover-y-copiar-archivos-y-directorios-en-bash">4. Mover y copiar archivos y directorios con Bash</h2>
 
               En esta sección se explicará como mover y renombrar archivos con el comando `mv` y como copiarlos con el el comando `cp`.
 
