@@ -1,13 +1,14 @@
 /node_modules/*
 
 # These files are ignored because grunt change them each time that is run.
-public/.DS_Store
+public/*.DS_Store
 public/**/*
 
 .DS_Store
-app/.DS_Store
-app/haml/.DS_Store
-app/sass/.DS_Store
+.vscode
+
+app/*.DS_Store
+app/**/*.DS_Store
 
 .eslintrc
 .stylelintrc
