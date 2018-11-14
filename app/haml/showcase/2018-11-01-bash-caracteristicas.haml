@@ -31,7 +31,7 @@
 
               ## Encadenamiento de comandos con Pipes (`|`)
 
-              Pipe (`|`) es una de las características mas poderosas en Bash ya que permiten encadenar de manera eficiente comandos y enviar datos a través de ellos. 
+              Pipe (`|`) es una de las características más poderosas en Bash ya que permite encadenar de manera eficiente una serie de comandos y enviar datos a través de ellos.
 
               Los pipes (una posible traducción al español sería tuberías o canalizaciones) son utilizados para dirigir la salida de un comando hacia la entrada de otro. Veamos que significa esto. Por ejemplo, para revisar los procesos que están corriendo en mi computador, yo puedo correr el comando `ps ax` y este arroja una tabla como la siguiente:
 
@@ -41,23 +41,23 @@
               | 57  | ?? | Ss   | 0:00.55 | /usr/sbin/syslogd |
               | ... | .. | ...  | ...     | ...               |
 
-              En esta tabla cada una de las filas representa un proceso que se esta corriendo en el computador y como podemos ver es una tonelada de información. Si deseamos ver todos los procesos de Chrome que están corriendo actualmente, podemos combinar el  comando `ps ax` con `grep` de la siguiente forma.
+              En esta tabla cada una de las filas representa un proceso que se esta corriendo en el computador. Si deseamos ver todos los procesos de Chrome que están corriendo actualmente, podemos combinar el  comando `ps ax` con `grep` de la siguiente forma.
 
               Primero ejecutamos el comando `ps ax` y luego canalizamos el comando `grep`. Normalmente, el comando `grep` se ejecuta sobre un archivo, pero cuando lo canalizamos, básicamente estamos diciendo que tome la salida del comando anterior, y la pase como entrada del siguiente comando.
 
                   $ ps ax | grep Chrome
 
-              Al correr este comando solo se van a mostrar los procesos de Chrome que se están corriendo. Esta salida es un ilegible, por tanto podemos ir más allá y canalizar el nuestra instrucción nuevamente con el comando `less` y así visualizar la salida de una manera diferente:
+              Al correr este comando solo se van a mostrar los procesos de Chrome que se están corriendo. Esta salida es ilegible, por tanto podemos ir más allá y canalizar nuestra instrucción nuevamente con el comando `less` y así visualizar la salida de una manera diferente:
 
                   $ ps ax | grep Chrome | less
 
               Otro buen ejemplo de pipes es cuando queremos ver el tamaño de un archivo luego de ser parseado con `uglifyjs` y comprimido con `gzip`
 
-              Luego de tener instalado a nivel global el comando `uglifyjs` a través de `npm` , podemos utilizar para crear la siguiente instrucción:
+              Luego de tener instalado a nivel global el comando `uglifyjs` a través de `npm` , podemos utilizar esta librería para crear la siguiente instrucción:
 
                   $ uglifyjs -c -m -- index.js
 
-              Las banderas `-c` y `-m` significan _compress_ y _mangle_ respectivamente.  Al final del comando pasamos el archivo que queremos comprimir. En este caso `index.js`. A partir de ahí, vamos a canalizar esta salida con `gzip`. Vamos a pasar el indicado `-9` la cual le dice a `gzip` que sea utilizado con la configuración para hacer la compresión máxima.
+              Las banderas `-c` y `-m` significan _compress_ y _mangle_ respectivamente. Al final del comando pasamos el archivo que queremos comprimir. En este caso `index.js`. A partir de ahí, vamos a canalizar esta salida con `gzip`. Vamos a pasar el indicador `-9` y así decirle a `gzip` que sea utilizado con la configuración para hacer la compresión máxima.
 
                   $ uglifyjs -c -m -- index.js | gzip -9
 
@@ -65,7 +65,7 @@
 
                   $ uglifyjs -c -m -- index.js | gzip -9 | wc
 
-              `wc` significa _word count_. Vamos a pasar la bandera `-c` para decirle al comando que en vez de darnos el reconteo de palabras no devuelva el conteo de sus entradas.
+              `wc` significa _word count_. Vamos a pasar la bandera `-c` para decirle al comando que en vez de darnos el reconteo de palabras nos devuelva el conteo de sus entradas.
 
                   $ uglifyjs -c -m -- index.js | gzip -9 | wc -c
 
@@ -75,7 +75,7 @@
 
               En esta lección veremos como redireccionar la salida de nuestros comandos usando el operador stdout (`>`) . Este operador nos dejar tomar una salida de un comando y enviársela a un archivo. Es posible adjuntar un archivo utilizando (`>>`).
 
-              Al correr un comando como `ls` , su salida es mostrada en la Terminal, la cual es llamada la _standard out_ (salida estándar en español). Si nosotros quisiéramos redirigir esta salida, usamos el operado de soporte angular (`>`) y damos un nombre al archivo de salida como `ls.txt`
+              Al correr un comando como `ls` , su salida es mostrada en la Terminal. La Terminal es la salida estandár. Si nosotros quisiéramos redirigir esta salida a un archivo, debemos usar el operador de soporte angular (`>`) y damos un nombre al archivo de salida como `ls.txt`
 
                   $ ls > ls.txt
 
@@ -217,9 +217,9 @@
 
               En este momento, si queremos correr este script en una carpeta diferente, tenemos que copiar el script allí, ejecutarlo y probablemente eliminarlo después de usarlo. Para evitar este proceso tan tedioso podemos agregar scripts a nuestra variable de entorno `$PATH`.
 
-              Esto hará que nuestros scripts estén disponibles para ejecutarse en Bash desde cualquier lugar del sistema de archivo que queramos. 
+              Esto hará que nuestros scripts estén disponibles para ejecutarse en Bash desde cualquier lugar del sistema de archivo que queramos.
 
-              Pero primero, veamos que es nuestra variable `$PATH` . Si ejecutamos `echo $PATH` vamos a obtener com salida una larga cadena de caracteres.
+              Pero primero, veamos qué es nuestra variable `$PATH`. Si ejecutamos `echo $PATH` vamos a obtener como salida una larga cadena de caracteres.
 
               ```
               /Users/sergiobenitezdiaz/.rbenv/shims:/Users/sergiobenitezdiaz/.nvm/versions/node/v8.9.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/ImageMagick/bin:/usr/local/bin

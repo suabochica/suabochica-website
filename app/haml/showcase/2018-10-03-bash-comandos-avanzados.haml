@@ -31,21 +31,21 @@
 
               ## 1. Búsquedas de texto con `grep`
 
-              En esta sección, se va a utilizar el comando `grep` para encontrar patrones de texto. Adicionalmente, se explicarán algunas opciones que el comando `grep` tiene la cuales al usarse en conjunto hace el comando más poderoso y fácil de leer.
+              En esta sección, se va a utilizar el comando `grep` para encontrar patrones de texto. Adicionalmente, se explicarán algunas opciones que el comando `grep` tiene las cuales lo hacen más poderoso y fácil de leer.
 
               Para empezar, revisemos el siguiente ejemplo:
 
                   $ grep "npm.config.get" lib/npm.js
 
-              Este comando recibe entre comillas (") el patrón de text que se desea buscar y el archivo sobre el que se va a realizar la búsqueda. El comando va imprimir un resultado en donde cada línea es una coincidencia que se encontró en el archivo. Estas coincidencias no son necesariamente una secuencia, las líneas pueden corresponder a diferentes partes del archivo, es por eso que esta primera aproximación del comando `grep` no es tan asertiva.
+              Este comando recibe entre comillas (") el patrón de texto que se desea buscar y el archivo sobre el que se va a realizar la búsqueda. El comando va imprimir un resultado en donde cada línea es una coincidencia que se encontró en el archivo. Estas coincidencias no son necesariamente una secuencia, las líneas pueden corresponder a diferentes partes del archivo, es por eso que esta primera aproximación del comando `grep` no es tan asertiva.
 
-              Del mismo modo, podemos indicar la búsqueda en multiples archivos. Para hace la búsqueda sobre cada archivo JavaScript de la carpeta padre `lib` se ejecuta:
+              Del mismo modo, podemos indicar la búsqueda en multiples archivos. Para hacer la búsqueda sobre cada archivo JavaScript de la carpeta padre `lib` se ejecuta:
 
                   $ grep "npm.config.get" lib/**/*.js
 
-              La salida de este comando va a imprimir una tonelada de archivos. La salida es ligeramente diferente cuando se hace la búsqueda sobre múltiples archivos. Primero se muestra el nombre del archivo en donde se encontró la coincidencia y luego la línea con la coincidencia. Si hay varias coincidencias en uno de los archivos, la salida repite la impresión del nombre del archivo y el texto de búsqueda cuantas veces haya se presente la coincidencia en ese archivo.
+              La salida de este comando va a imprimir una buena cantidad de archivos. La salida es ligeramente diferente cuando se hace la búsqueda sobre múltiples archivos. Primero se muestra el nombre del archivo en donde se encontró la coincidencia y luego la línea con la coincidencia. Si hay varias coincidencias en uno de los archivos, la salida repite la impresión del nombre del archivo y el texto de búsqueda cuantas veces se presente la coincidencia en ese archivo.
 
-              Ahora es momento de empezar a utilizar algunas de las opciones de `grep` para facilitar la lectura de la búsqueda de text. La primera opción que se va a utilizar es `--color` para colorear la coincidencia en el resultado:
+              Ahora es momento de empezar a utilizar algunas de las opciones de `grep` para facilitar la lectura de la búsqueda de texto. La primera opción que se va a utilizar es `--color` para colorear la coincidencia en el resultado:
 
                   $ grep --color "npm.config.get" lib/npm.js
 
@@ -69,7 +69,7 @@
 
               `curl` es como el usuario hace peticiones HTTP desde la línea de comando. Es eficiente para probar APIs porque le da al usuario control total sobre todos los encabezados que se envían, y no es necesario interactuar con una interfaz de usuario para enviar la petición.
 
-              En esta sección aprenderemos a hacer peticiones y cambiar el método HTTP , cómo establecer los encabezados, cómo enviar datos de formularios codificados en JSON. También veremos cómo aumentar la legibilidad de los resultados dividiendo solicitudes HTTP largas en varias líneas y dando un formato a las respuestas con `jsome`, un módulo de **nodejs**.
+              En esta sección aprenderemos a hacer peticiones HTTP, cambiar el método HTTP, cómo establecer los encabezados y cómo enviar datos de formularios codificados en JSON. También veremos cómo aumentar la legibilidad de los resultados dividiendo solicitudes HTTP largas en varias líneas y dando un formato a las respuestas con `jsome`, un módulo de **nodejs**.
 
               Para hacer una solicitud `GET` a un sitio web, tan solo usamos `curl` y luego pasamos URL como parámetro.
 
@@ -104,7 +104,7 @@
                 cf-ray: 45bf1ececc6795b6-IAD
               ```
 
-              El `301` nos indica  que la petición HTTP al API esta tratando de redirigirnos. De forma predeterminada `curl`   no sigue las redirecciones como usualmente lo hace un navegador.  Si hacemos la misma solicitud pero esta vez agregamos la barra inclinada `/`  al final del comando, la petición es éxitosa
+              El `301` nos indica  que la petición HTTP al API esta tratando de redirigirnos. De forma predeterminada `curl` no sigue las redirecciones como usualmente lo hace un navegador.  Si hacemos la misma solicitud pero esta vez agregamos la barra inclinada `/`  al final del comando, la petición es éxitosa
 
                   $ curl -i https://swapi.co/api/people/2/
 
@@ -120,7 +120,7 @@
 
                   $ curl -H "Authorization: Bearer 123" localhost:3000/api-protected/posts
 
-              Hasta el momento solo se han hecho peticiones HTTP `GET` .  Para cambiar el método se usa la opción `-X` y en este caso en particular vamos a hace un `POST`  de un contenido JSON.
+              Hasta el momento solo se han hecho peticiones HTTP `GET`. Para cambiar el método se usa la opción `-X` y en este caso en particular vamos a hacer un `POST` de un contenido JSON.
 
               Para ello se debe pasar un encabezado como `Content-Type: application/json`. Luego pasamos el cuerpo de la petición y se va a usar la bandera `-d` para indicar que posterior a esta bandera se va a definir la siguiente estructura JSON `{"title": "Bash", "author":"Sergio"}`. Por último se pasa la URL que va a recibir nuestra petición:
 
@@ -129,11 +129,11 @@
               Para verificar el éxito de nuestra petición `POST`, podemos hacer una petición `GET`:
 
                   $ curl http://localhost:3000/api/posts
-                {
-                  "title": "Bash",
-                  "author": "Sergio",
-                  "id": 1
-                }
+                  {
+                    "title": "Bash",
+                    "author": "Sergio",
+                    "id": 1
+                  }
 
               Esto indica que tenemos una nueva publicación en nuestro blog.
 
@@ -157,15 +157,14 @@
                   > -d '{"title": "Bash changed"}' \
                   > -H "Content-Type: application/json"
 
-              Y por último pasamos la URL a la que vamos hacer la petición. En este ejemplo vamos a cambiar la segunda publicación creada. Por tanto nuestro comando sera´:
-
+              Y por último pasamos la URL a la que vamos hacer la petición. En este ejemplo vamos a cambiar la segunda publicación creada. Por tanto nuestro comando será:
 
                   $ curl -i -X PUT \
                   > -d '{"title": "Bash changed"}' \
                   > -H "Content-Type: application/json"
                   > http://localhost:3000/api/posts/2
 
-              Si todo funciona nuestro API retornara un 200. Al tratar con respuestas HTTP grandes, puede ser útil guardar la respuesta en un archivo. Esto lo podemos hacer con la opción `-o`. Para ejemplificar el uso de esta bandera, vamos a utilizar `curl` incluyendo los encabezados de la respuesta, haciendo una redirección a `google.com`. Luego, usando la opción `-o`, vamos a guardar la respuesta en un archivo `google.txt`. El comando seria el siguiente:
+              Si todo funciona nuestro API retornará un 200. Al tratar con respuestas HTTP grandes, puede ser útil guardar la respuesta en un archivo. Esto lo podemos hacer con la opción `-o`. Para ejemplificar el uso de esta bandera, vamos a utilizar `curl` incluyendo los encabezados de la respuesta, haciendo una redirección a `google.com`. Luego, usando la opción `-o`, vamos a guardar la respuesta en un archivo `google.txt`. El comando seria el siguiente:
 
                   $ curl -iL https://google.com -o google.txt
 
@@ -177,7 +176,7 @@
 
               Cuando se trata con respuestas JSON grandes, estas pueden ser ilegibles con el formato establecido por defecto por Bash. Si recordamos la respuesta que recibimos del API de Star Wars, nos damos cuenta de lo díficil que resulta su lectura.
 
-              Una cosa que podemos hacer es utilizar el operador pipe `|`  y canalizar la respuesta a otro comando. Para ilustrar el uso del pipe, es necesario instalar el módulo `jsome`  a nivel global de **nodejs**:
+              Una cosa que podemos hacer es utilizar el operador pipe `|`  y canalizar la respuesta a otro comando. Para ilustrar el uso del pipe, es necesario instalar el módulo `jsome` a nivel global de **nodejs**:
 
                   $ curl https://swapi.com/api/people/1/ | jsome
 
