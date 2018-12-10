@@ -6,10 +6,10 @@ module.exports = function(grunt){
         connect: {
             server: {
                 options: {
+                    port: 4000,
+                    livereload: true,
                     base: './public',
-                    port: '4000',
-                    host: '*',
-                    livereload: true
+                    host: '*'
                 }
             }
         },
