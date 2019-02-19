@@ -35,7 +35,7 @@ With `grunt` a task was configured to create the build of the website. :
     grunt build
 
 ## Netlify
-This project uses Netifly to manage continous integration in the content updates of the website. Review the `netlifu.toml` file to know the repository setup.
+This project uses Netifly to manage continuous integration in the content updates of the website. Review the `netlify.toml` file to know the repository setup.
 
 ## Windows Setup
 To run this project in windows OS the next programs are required:
