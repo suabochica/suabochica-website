@@ -1,12 +1,12 @@
 [build]
     publish = "public/"
-    command = "grunt build"
+    command = "npm run build"
 
 [context.deploy-preview]
   publish = "public/"
 
 [context.branch-deploy]
-  command = "grunt build"
+  command = "npm run build"
 
 [[redirects]]
   from = "/public"

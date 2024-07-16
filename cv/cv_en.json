@@ -1,0 +1,391 @@
+{
+  "basics": {
+    "name": "Sergio Leonardo Benítez",
+    "label": "Full-Stack developer with more than 10 years of experience",
+    "image": "/me.webp",
+    "email": "sl.benitezd@gmail.com",
+    "phone": "+57 3118095133",
+    "url": "https://suabochica.com",
+    "summary": "+10 years of experience as a web developer, who supports the idea that a good design is the best programming guide. I like to bring the design concept to life through the correct client-side technologies. My duties range from interpreting UI wire frames and translating UX concepts into code to developing user functions, testing web application functionality, and sharing my views on architectural proposals. However, for me, the most important value is being a team worker who is constantly learning and cares about delivering high-quality products.",
+    "location": {
+      "address": "",
+      "postalCode": "111132",
+      "city": "Bogotá",
+      "countryCode": "CO",
+      "region": "Colombia"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "slbenitezd",
+        "url": "https://linkedin.com/in/slbenitezd"
+      },
+      {
+        "network": "X",
+        "username": "suabochica",
+        "url": "https://x.com/suabochica"
+      },
+      {
+        "network": "GitHub",
+        "username": "suabochica",
+        "url": "https://github.com/suabochica"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "adidas",
+      "position": "Software Engineer",
+      "url": "https://twitch.tv/midudev",
+      "startDate": "2022-06-13",
+      "endDate": "2024-07-05",
+      "summary": "Maintainer of a legacy micro frontend platform for trending products at adidas, enabling agnostic implementations of frontend technologies. I supported a product for the customization of adidas sporting goods in more than 6 markets. I implemented functionalities to enable the creation of orders for more than 100 clients with adiclub accounts in the United States. In this same project I maintained 4 legacy REST API services.",
+      "highlights": [
+        "adidas tech summit recognition as speaker."
+      ]
+    },
+    {
+      "name": "Endava",
+      "position": "Lead Frontend Developer",
+      "url": "https://twitch.tv/midudev",
+      "startDate": "2019-02-01",
+      "endDate": "2022-06-10",
+      "summary": "I helped implement a web application for intelligent construction management in the United States with a startup in Nashville. I participated with the development of 1 mobile application for the role of construction inspector and to have guarantees about the progress of construction. Internally, I led the functional programming community made up of 12 members, promoting a culture of knowledge transfer and studying the Haskell programming language.",
+      "highlights": [
+        "Lead of the front end community",
+        "Lead of the functional programming community"
+      ]
+    },
+    {
+      "name": "Prodigious LATAM",
+      "position": "Senior FrontEnd Developer",
+      "startDate": "2018-03-06",
+      "endDate": "2019-01-21",
+      "summary": "As a senior developer, I start to support my partners with front-end topics. I led a studio plan to teach front-end technologies to developers with back-end backgrounds. The plan trained 5 full-stack developers for the company. At the same time, I participated in a marketplace for outdoor products implement on Drupal. There, a UX concept based on soft animation was implemented for the client. These new visuals incremented in 30 seconds the user retainable on the web page.",
+      "highlights": [
+        "Acquia award for digital marketing B2C"
+      ]
+    },
+    {
+      "name": "Prodigious LATAM",
+      "position": "FrontEnd Developer",
+      "startDate": "2016-06-13",
+      "endDate": "2018-02-02",
+      "summary": "In Prodigious I worked on a large automotive project with approximately 800 persons on it distributed globally. Here I collaborated in the implementation of a car configuration and a test drive scheduler built under the web components architecture..",
+      "highlights": [
+        "Best new joiner assessment"
+      ]
+    },
+    {
+      "name": "Las Partes",
+      "position": "Web Designer/Developer",
+      "startDate": "2016-02-29",
+      "endDate": "2016-06-11",
+      "summary": "In Las Partes, I worked designing and developing digital solutions for the automotive market. From the design area, I created paper prototypes to evaluate the user interactions. From the developing area, I worked for an e-commerce platform built on PHP with the CodeIgniter."
+    },
+    {
+      "name": "Software House Ltda.",
+      "position": "Junior Developer",
+      "startDate": "2014-01-06",
+      "endDate": "2015-02-27",
+      "summary": "In Software House I worked developing features for a management school web platform built on Python/Django. Django requires knowledge of the architectural pattern Model Template View for implementing a user interface on computers. Software House was an official sponsor for the Django Bogotá meetup in 2015. There I had the chance to give a keynote about the task management tools for front-end technologies on Django."
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Jestar",
+      "position": "Volunteer",
+      "url": "https://jestar.com.co/",
+      "startDate": "2013-08-26",
+      "endDate": "2013-12-06",
+      "summary": "Description…"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Konrad Lorenz",
+      "url": "https://www.konradlorenz.edu.co/home-aspirantes/",
+      "area": "Game Development",
+      "studyType": "Diploma",
+      "startDate": "2014-07-07",
+      "endDate": "2014-12-12",
+      "score": "Approved",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    },
+    {
+      "institution": "Los Andes University",
+      "url": "https://uniandes.edu.co/",
+      "area": "System Engineer",
+      "studyType": "Bachelor",
+      "startDate": "2009-01-12",
+      "endDate": "2013-08-01",
+      "score": "3.85",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    },
+    {
+      "institution": "Los Andes University",
+      "url": "https://uniandes.edu.co/",
+      "area": "Design",
+      "studyType": "Emphasis",
+      "startDate": "2009-01-12",
+      "endDate": "2013-08-01",
+      "score": "3.85",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    },
+    {
+      "institution": "Los Andes University",
+      "url": "https://uniandes.edu.co/",
+      "area": "Visual Computing",
+      "studyType": "Emphasis",
+      "startDate": "2009-01-12",
+      "endDate": "2013-08-01",
+      "score": "3.85",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Digital Marketing B2C",
+      "date": "2018-10-24",
+      "awarder": "Acquia Awards",
+      "summary": "Winners in the category Excellence in Digital Marketing B2C with the Johnson Outdoors project in the Acquia Engage Awards."
+    },
+    {
+      "title": "Evidence Synthesis Hackathon",
+      "date": "2018-04-24",
+      "awarder": "Stockholm Environment Institute",
+      "summary": "I had the chance to participate in the Evidence Synthesis Hackathon with a proposal to update the ROSES Forms tool."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": [
+        "Web development",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Backend",
+        "JavaScript",
+        "Servidor"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Advanced",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Database",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Advanced",
+      "keywords": [
+        "Version control",
+        "Colaboración",
+        "Source code"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Advanced",
+      "keywords": [
+        "Version control",
+        "Collaboration",
+        "Source code",
+        "Git"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "React Framework",
+        "SSR",
+        "Static Generation"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    },
+    {
+      "language": "Portuguese",
+      "fluency": "Intermediate"
+    },
+    {
+      "language": "French",
+      "fluency": "Intermediate"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "mars.codes",
+      "isActive": true,
+      "description": "Interactive story with programming challenges to travel to Mars",
+      "highlights": [
+        "Choose your own adventure",
+        "In progress"
+      ],
+      "url": "https://mars.codes"
+    },
+    {
+      "name": "AdventJS",
+      "isActive": true,
+      "description": "JavaScript programming challenges for every day of December until Christmas",
+      "highlights": [
+        "+1 million visits",
+        "Multilanguage",
+        "JavaScript & TypeScript"
+      ],
+      "url": "https://advent.js/dev"
+    },
+    {
+      "name": "Codember",
+      "isActive": true,
+      "description": "Interactive programming game with challenges and secrets",
+      "highlights": [
+        "+2000 active users",
+        "Challenges for any language"
+      ],
+      "url": "https://codember.dev"
+    },
+    {
+      "name": "codi.link",
+      "isActive": true,
+      "description": "Playground of HTML, CSS and JavaScript code for sharing",
+      "highlights": [
+        "100k monthly visit",
+        "Developed by the community"
+      ],
+      "url": "https://codi.link",
+      "github": "https://github.com/midudev/codi.link"
+    },
+    {
+      "name": "Pruebas Técnicas",
+      "isActive": true,
+      "description": "List of technical tests of companies to practice programming",
+      "highlights": [
+        "100% free",
+        "+500 community solutions"
+      ],
+      "url": "https://pruebastecnicas.com",
+      "github": "https://github.com/midudev/pruebas-tecnicas"
+    },
+    {
+      "name": "miduConf",
+      "description": "Streaming programming conference for the Spanish-speaking community with top talks",
+      "highlights": [
+        "+15k tickets handed over",
+        "+50k live viewers"
+      ],
+      "url": "https://miduconf.com"
+    }
+  ]
+}
