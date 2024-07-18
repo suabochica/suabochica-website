@@ -105,11 +105,12 @@
     {
       "institution": "Konrad Lorenz",
       "url": "https://www.konradlorenz.edu.co/home-aspirantes/",
-      "area": "Game Development",
+      "area": "Video Game Development",
       "studyType": "Diploma",
       "startDate": "2014-07-07",
       "endDate": "2014-12-12",
       "score": "Approved",
+      "description": "Diploma in Video Game Development and Interactive Books, it is a high-level 120-hour course that will introduce you to the planning, design and development of your video game and the correct way to present the project to clients and investors.",
       "courses": [
         "DB1101 - Basic SQL"
       ]
@@ -122,6 +123,7 @@
       "startDate": "2009-01-12",
       "endDate": "2013-08-01",
       "score": "3.85",
+      "description": "The objective of the undergraduate program is to take advantage of the opportunities offered by information and communication technologies to improve the quality of life, transforming organizations and society through engineers committed to innovation and quality in their professional practice.",
       "courses": [
         "DB1101 - Basic SQL"
       ]
@@ -134,6 +136,7 @@
       "startDate": "2009-01-12",
       "endDate": "2013-08-01",
       "score": "3.85",
+      "description": "The design option aims to bring students from other disciplines basic notations of Product Design and Communication Design, providing basic tools and methodologies in Design, to expand their professional knowledge through exercises to explore and develop their creativity",
       "courses": [
         "DB1101 - Basic SQL"
       ]
@@ -146,6 +149,7 @@
       "startDate": "2009-01-12",
       "endDate": "2013-08-01",
       "score": "3.85",
+      "description": "The visual computing option aims to provide students with knowledge and skills to address the current challenges of applying visual computing in an interdisciplinary environment.",
       "courses": [
         "DB1101 - Basic SQL"
       ]
@@ -217,7 +221,7 @@
         "Web development",
         "Frontend",
         "CSS Framework",
-        "Diseño Responsive"
+        "Responsive Design"
       ]
     },
     {
@@ -237,14 +241,13 @@
         "Web development",
         "Backend",
         "JavaScript",
-        "Servidor"
+        "Server"
       ]
     },
     {
       "name": "MySQL",
       "level": "Advanced",
       "keywords": [
-        "Bases de Datos",
         "SQL",
         "Database",
         "Backend"
@@ -255,7 +258,7 @@
       "level": "Advanced",
       "keywords": [
         "Version control",
-        "Colaboración",
+        "Collaboration",
         "Source code"
       ]
     },

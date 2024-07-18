@@ -4,5 +4,56 @@ import Section from "@/components/Section.astro";
 ---
 
 <Section title="Education">
-  <h2>{}</h2>
+  <ul>
+    {
+      education.map(({ score, area, description, institution, startDate, endDate }) => {
+        return (
+          <li>
+            <article>
+              <header>
+                <div>
+                  <h3>{institution}</h3>
+                  <h4>{area}</h4>
+                </div>
+                <time>{startDate} - {endDate}</time>
+              </header>
+              <footer>
+                <p>{score}</p>
+                <p>{description}</p>
+              </footer>
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
 </Section>
+
+<style>
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  article h3 {
+    color: #111;
+  }
+
+  article h4 {
+    color: #222
+    font-weight: 400;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+  }
+
+  time {
+    font-size: 0.8em;
+    color: #666;
+  }
+</style>
