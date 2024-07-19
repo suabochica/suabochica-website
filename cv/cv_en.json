@@ -333,7 +333,10 @@
       "isActive": true,
       "description": "Interactive platform to customize adidas sporting goods",
       "highlights": [
-        "Champions are made in the lokcer room"
+        "+6 markets",
+        "i18n",
+        "React",
+        "Effect"
       ],
       "url": "https://vimeo.com/307223846"
     },
@@ -343,7 +346,7 @@
       "description": "adidas Hype is a page dedicated to the brand with the. three stripes. It contains news and stories about. adidas, its products and endorsers.",
       "highlights": [
         "+1 million visits",
-        "Multilanguage"
+        "i18n"
       ],
       "url": "https://www.adidas.co/hype-zapatillas_y_tenis"
     },
