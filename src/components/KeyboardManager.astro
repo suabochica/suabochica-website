@@ -49,7 +49,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
   return {
     id: network,
     section: "Social",
-    title: `Visitar ${network}`,
+    title: `Visit ${network}`,
     url,
     icon,
     hotkey: `Ctrl + ${firstLetter}`,
@@ -58,8 +58,8 @@ const profilesInfo = profiles.map(({ network, url }) => {
 ---
 
 <footer>
-  Pulsa <kbd>Cmd</kbd> + <kbd>K</kbd> en Mac o <kbd>Ctrl</kbd> + <kbd>K</kbd> en
-  Windows para ver los atajos
+  Press <kbd>Cmd</kbd> + <kbd>K</kbd> on Mac or <kbd>Ctrl</kbd> + <kbd>K</kbd> on
+  Windows/Linx to see the shortcuts
 </footer>
 
 <ninja-keys data-info={JSON.stringify(profilesInfo)} laceholder="Buscar atajo"

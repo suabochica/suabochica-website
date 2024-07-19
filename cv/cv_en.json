@@ -2,7 +2,7 @@
   "basics": {
     "name": "Sergio Leonardo Benítez",
     "label": "Full-Stack developer with more than 10 years of experience",
-    "image": "/me.webp",
+    "image": "/suabochica.jpeg",
     "email": "sl.benitezd@gmail.com",
     "phone": "+57 3118095133",
     "url": "https://suabochica.com",
@@ -329,66 +329,65 @@
   ],
   "projects": [
     {
-      "name": "mars.codes",
+      "name": "adidas Locker Room",
       "isActive": true,
-      "description": "Interactive story with programming challenges to travel to Mars",
+      "description": "Interactive platform to customize adidas sporting goods",
       "highlights": [
-        "Choose your own adventure",
-        "In progress"
+        "Champions are made in the lokcer room"
       ],
-      "url": "https://mars.codes"
+      "url": "https://vimeo.com/307223846"
     },
     {
-      "name": "AdventJS",
-      "isActive": true,
-      "description": "JavaScript programming challenges for every day of December until Christmas",
+      "name": "adidas Hype",
+      "isActive": false,
+      "description": "adidas Hype is a page dedicated to the brand with the. three stripes. It contains news and stories about. adidas, its products and endorsers.",
       "highlights": [
         "+1 million visits",
-        "Multilanguage",
-        "JavaScript & TypeScript"
+        "Multilanguage"
       ],
-      "url": "https://advent.js/dev"
+      "url": "https://www.adidas.co/hype-zapatillas_y_tenis"
     },
     {
-      "name": "Codember",
-      "isActive": true,
-      "description": "Interactive programming game with challenges and secrets",
+      "name": "built",
+      "isActive": false,
+      "description": "Connect and simplify doing business in real estate.",
       "highlights": [
-        "+2000 active users",
-        "Challenges for any language"
+        "43 of the top 100  U.S Banks",
+        "15 of the top 25 U.S. Construcition Lenders"
       ],
-      "url": "https://codember.dev"
+      "url": "https://getbuilt.com/"
     },
     {
-      "name": "codi.link",
-      "isActive": true,
-      "description": "Playground of HTML, CSS and JavaScript code for sharing",
+      "name": "Johnson Outdors",
+      "isActive": false,
+      "description": "We want people to get out and experience the great outdoors. We see it as our job to ensure that, from planning to unpacking, it's the best experience possible.",
       "highlights": [
-        "100k monthly visit",
-        "Developed by the community"
+        "6 brands supported",
+        "+500k USD net sale on 2018"
       ],
-      "url": "https://codi.link",
-      "github": "https://github.com/midudev/codi.link"
+      "url": "https://www.johnsonoutdoors.com/us"
     },
     {
-      "name": "Pruebas Técnicas",
-      "isActive": true,
-      "description": "List of technical tests of companies to practice programming",
+      "name": "Car Configurator",
+      "isActive": false,
+      "description": "Style your car.",
       "highlights": [
-        "100% free",
-        "+500 community solutions"
+        "6 car brand supported",
+        "BackboneJS",
+        "Sass"
       ],
-      "url": "https://pruebastecnicas.com",
-      "github": "https://github.com/midudev/pruebas-tecnicas"
+      "url": "https://www.nissan.co.uk/vehicles/new-vehicles/juke/version-explorer/configurator/cfg.shtml/BAZ9/Av4Dm4/exterior-colour"
     },
     {
-      "name": "miduConf",
-      "description": "Streaming programming conference for the Spanish-speaking community with top talks",
+      "name": "Test Drive Scheduler",
+      "isActive": false,
+      "description": "Book a test drive.",
       "highlights": [
-        "+15k tickets handed over",
-        "+50k live viewers"
+        "6 car brand supported",
+        "BackboneJS",
+        "Sass"
       ],
-      "url": "https://miduconf.com"
+      "url": "https://www.nissan.co.uk/vehicles/new-vehicles/qashqai.html#C400_cmp_story_4924-primary-modal"
     }
   ]
 }

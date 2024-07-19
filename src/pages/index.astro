@@ -13,7 +13,7 @@ import KeyboardManager from "@/components/KeyboardManager.astro";
 const { name, label } = basics;
 ---
 
-<Layout title=`Porfolio minimalista de ${name} - ${label}.`>
+<Layout title=`${name} - ${label}.`>
 	<main>
 		<Hero />
 		<About />
@@ -28,6 +28,7 @@ const { name, label } = basics;
 
 <style>
 	main {
+		background-color: #FBF1C7;
 		padding: 4rem;
 		margin: auto;
 		width: 100%;
