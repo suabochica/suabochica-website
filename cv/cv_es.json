@@ -1,0 +1,396 @@
+{
+  "basics": {
+    "name": "Sergio Leonardo Benítez",
+    "label": "Desarrollador Full-Stack con más de 10 años de experiencia.",
+    "image": "/suabochica.jpeg",
+    "email": "sl.benitezd@gmail.com",
+    "phone": "+57 3118095133",
+    "url": "https://suabochica.com",
+    "summary": "+10 años de experiencia como desarrollador web, que sustenta la idea de que un buen diseño es la mejor guía de programación. Me gusta darle vida al concepto de diseño usando las tecnologías correctas del lado del cliente. Mis tareas van desde interpretar bocetos de interfaz de usuario y traducir conceptos de experiencia de usuario en código hasta la implementación de caráctaristicas de un producto digital, probar la funcionalidad de aplicaciones web y compartir mis puntos de vista sobre propuestas arquitectónicas. No obstante, para mí, el valor más importante es ser un trabajador en equipo que está en constante aprendizaje y se preocupa por ofrecer productos de alta calidad.",
+    "location": {
+      "address": "",
+      "postalCode": "111132",
+      "city": "Bogotá",
+      "countryCode": "CO",
+      "region": "Colombia"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "slbenitezd",
+        "url": "https://linkedin.com/in/slbenitezd"
+      },
+      {
+        "network": "X",
+        "username": "suabochica",
+        "url": "https://x.com/suabochica"
+      },
+      {
+        "network": "GitHub",
+        "username": "suabochica",
+        "url": "https://github.com/suabochica"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "adidas",
+      "position": "Ingeniero de Software",
+      "url": "https://twitch.tv/midudev",
+      "startDate": "2022-06-13",
+      "endDate": "2024-07-05",
+      "summary": "Mantuve una plataforma micro frontend heredada para productos de tendencia en adidas, permitiendo implementaciones de microservicios agnósticas a tecnologías frontend. Apoyé un producto para la personalización de artículos deportivos adidas en más de 6 mercados. Implementé funcionalidades para permitir la creación de pedidos para más de 100 clientes con cuentas adiclub en Estados Unidos. En este mismo proyecto mantuve 4 servicios API REST heredados.",
+      "highlights": [
+        "Reconocimiento como expositor en el adidas tech summit 2023."
+      ]
+    },
+    {
+      "name": "Endava",
+      "position": "Desarrollador Líder Frontend",
+      "url": "https://twitch.tv/midudev",
+      "startDate": "2019-02-01",
+      "endDate": "2022-06-10",
+      "summary": "Ayudé a implementar una aplicación web para la gestión inteligente de la construcción de obras en Estados Unidos con una startup en Nashville. Participé en el desarrollo de 1 aplicación móvil para el rol de inspector de obras y tener garantías sobre el avance de la construcción. Internamente lideré la comunidad de programación funcional conformada por 12 miembros, promoviendo una cultura de transferencia de conocimiento y estudiando el lenguaje de programación Haskell.",
+      "highlights": [
+        "Líder de la comunidad frontend",
+        "Líder de la comunidad de programación funcional"
+      ]
+    },
+    {
+      "name": "Prodigious LATAM",
+      "position": "Desarrollador Frontend Senior",
+      "startDate": "2018-03-06",
+      "endDate": "2019-01-21",
+      "summary": "Como desarrollador senior, empecé a apoyar a mis compañeros junior con temas de frontend. Lideré un plan de estudio para enseñar tecnologías frontend a desarrolladores con experiencia en backend. El plan capacitó a 5 desarrolladores full-stack para la empresa. Al mismo tiempo, participé en un mercado de productos para actividades al aire libre implementado en Drupal. Allí se desarrolló para el cliente un concepto de UX basado en animación suave. Estas nuevas imágenes incrementaron en 30 segundos la permanencia del usuario en la página web.",
+      "highlights": [
+        "Premio Acquia para el digital marketing B2C"
+      ]
+    },
+    {
+      "name": "Prodigious LATAM",
+      "position": "Desarrollador Frontend",
+      "startDate": "2016-06-13",
+      "endDate": "2018-02-02",
+      "summary": "Trabajé en un gran proyecto automotriz con aproximadamente 800 personas distribuidas globalmente. Aquí colaboré en la implementación de una configuración de automóvil y un programador de pruebas de manejo construido bajo la arquitectura de componentes web.",
+      "highlights": [
+        "Mejor puntaje en la evaluación de nuevos miembros "
+      ]
+    },
+    {
+      "name": "Las Partes",
+      "position": "Diseñador/Desarrollador Web",
+      "startDate": "2016-02-29",
+      "endDate": "2016-06-11",
+      "summary": "Diseñé y desarrollé soluciones digitales para el mercado automotriz. Desde el área de diseño, creé prototipos en papel para evaluar las interacciones de los usuarios. Desde el área de desarrollo, trabajé para una plataforma de comercio electrónico construida en PHP con CodeIgniter para la venta de autopartes."
+    },
+    {
+      "name": "Software House Ltda.",
+      "position": "Desarrollador Junior",
+      "startDate": "2014-01-06",
+      "endDate": "2015-02-27",
+      "summary": "Desarrollé funciones para una plataforma web de administración de cursos en colegios, construida en Python/Django. Django requiere conocimiento del patrón arquitectónico Modelo Plantilla Vista para implementar una interfaz de usuario digital. Software House fue patrocinador oficial del meetup Django Bogotá en 2015. Allí tuve la oportunidad de dar una charla sobre las herramientas de gestión de tareas para tecnologías frontend en Django."
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Jestar",
+      "position": "Voluntario",
+      "url": "https://jestar.com.co/",
+      "startDate": "2013-08-26",
+      "endDate": "2013-12-06",
+      "summary": "Description…"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Konrad Lorenz",
+      "url": "https://www.konradlorenz.edu.co/home-aspirantes/",
+      "area": "Desarrollo de Juegos de Video",
+      "studyType": "Diploma",
+      "startDate": "2014-07-07",
+      "endDate": "2014-12-12",
+      "score": "Approved",
+      "description": "Diplomado en Desarrollo de Videojuegos y Libros Interactivos, es un curso de alto nivel de 120 horas que te introducirá en la planificación, diseño y desarrollo de tu videojuego y la forma correcta de presentar el proyecto a clientes e inversores.",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    },
+    {
+      "institution": "Universidad de Los Andes",
+      "url": "https://uniandes.edu.co/",
+      "area": "Ingeniería de Sistemas",
+      "studyType": "Pregrado",
+      "startDate": "2009-01-12",
+      "endDate": "2013-08-01",
+      "score": "3.85",
+      "description": "El objetivo del programa de pregrado es aprovechar las oportunidades que ofrecen las tecnologías de la información y las comunicaciones para mejorar la calidad de vida, transformando las organizaciones y la sociedad a través de ingenieros comprometidos con la innovación y la calidad en su ejercicio profesional.",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    },
+    {
+      "institution": "Universidad de Los Andes",
+      "url": "https://uniandes.edu.co/",
+      "area": "Diseño",
+      "studyType": "Opción Académica",
+      "startDate": "2009-01-12",
+      "endDate": "2013-08-01",
+      "score": "3.85",
+      "description": "La opción diseño pretende acercar a estudiantes de otras disciplinas las notaciones básicas del Diseño de Producto y Diseño de Comunicación, proporcionándoles herramientas y metodologías básicas en Diseño, para ampliar sus conocimientos profesionales a través de ejercicios para explorar y desarrollar su creatividad.",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    },
+    {
+      "institution": "Universidad de Los Andes",
+      "url": "https://uniandes.edu.co/",
+      "area": "Visual Computing",
+      "studyType": "Opción Académica",
+      "startDate": "2009-01-12",
+      "endDate": "2013-08-01",
+      "score": "3.85",
+      "description": "La opción de computación visual tiene como objetivo proporcionar a los estudiantes conocimientos y habilidades para abordar los desafíos actuales de la aplicación de la computación visual en un entorno interdisciplinario.",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Digital Marketing B2C",
+      "date": "2018-10-24",
+      "awarder": "Acquia Awards",
+      "summary": "Ganadores en la categoría Excelencia en Mercadeo Digital B2C con el proyecto Johnson Outdoors project en los premis Acquia Engage."
+    },
+    {
+      "title": "Evidence Synthesis Hackathon",
+      "date": "2018-04-24",
+      "awarder": "Stockholm Environment Institute",
+      "summary": "Participé en la Hackathon de Síntesis de Evidencia con la propuesta para automatizar el sistema de formularios ROSES."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Maestro",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Maestro",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Diseño Responsivo"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Maestro",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Avanzado",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "CSS Framework",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Avanzado",
+      "keywords": [
+        "Web development",
+        "Backend",
+        "JavaScript",
+        "Server"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Avanzado",
+      "keywords": [
+        "SQL",
+        "Database",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": [
+        "Version control",
+        "Collaboration",
+        "Source code"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado",
+      "keywords": [
+        "Version control",
+        "Collaboration",
+        "Source code",
+        "Git"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "level": "Avanzado",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "React Framework",
+        "SSR",
+        "Static Generation"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Avanzado",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Lenguaje Nativo"
+    },
+    {
+      "language": "Inlgés",
+      "fluency": "Francés"
+    },
+    {
+      "language": "Portugués",
+      "fluency": "Intermedio"
+    },
+    {
+      "language": "Francés",
+      "fluency": "Intermedio"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Deporte",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "adidas Locker Room",
+      "isActive": true,
+      "description": "Plataforma interactiva para personalizar los productos deportivos de adiads a tu gusto.",
+      "highlights": [
+        "+6 mercados",
+        "i18n",
+        "React",
+        "Effect"
+      ],
+      "url": "https://vimeo.com/307223846"
+    },
+    {
+      "name": "adidas Hype",
+      "isActive": false,
+      "description": "adidas Hype la linea de negocio que maneja las alianzas entre las figuras públicas y la marca las tres franjas (e.g., Y-3).",
+      "highlights": [
+        "+1 millon de visistas por campaña",
+        "i18n"
+      ],
+      "url": "https://www.adidas.co/hype-zapatillas_y_tenis"
+    },
+    {
+      "name": "built",
+      "isActive": false,
+      "description": "Conecte y simplifique los negocios en el sector inmobiliario.",
+      "highlights": [
+        "43 of the top 100  U.S Banks",
+        "15 of the top 25 U.S. Construcition Lenders"
+      ],
+      "url": "https://getbuilt.com/"
+    },
+    {
+      "name": "Johnson Outdors",
+      "isActive": false,
+      "description": "Queremos que la gente salga y experimente el aire libre.",
+      "highlights": [
+        "6 brands supported",
+        "+500k USD net sale on 2018"
+      ],
+      "url": "https://www.johnsonoutdoors.com/us"
+    },
+    {
+      "name": "CConfigurador de carros",
+      "isActive": false,
+      "description": "Dale tu estilo a tu nuevo carro.",
+      "highlights": [
+        "6 marcas de carros soportadas",
+        "BackboneJS",
+        "Sass"
+      ],
+      "url": "https://www.nissan.co.uk/vehicles/new-vehicles/juke/version-explorer/configurator/cfg.shtml/BAZ9/Av4Dm4/exterior-colour"
+    },
+    {
+      "name": "Programa una prueba de manejo",
+      "isActive": false,
+      "description": "Reserva una prueba de manejo.",
+      "highlights": [
+        "6 marcas de carros soportadas",
+        "BackboneJS",
+        "Sass"
+      ],
+      "url": "https://www.nissan.co.uk/vehicles/new-vehicles/qashqai.html#C400_cmp_story_4924-primary-modal"
+    }
+  ]
+}
