@@ -278,17 +278,6 @@
       ]
     },
     {
-      "name": "Next.js",
-      "level": "Avanzado",
-      "keywords": [
-        "Web development",
-        "Frontend",
-        "React Framework",
-        "SSR",
-        "Static Generation"
-      ]
-    },
-    {
       "name": "React",
       "level": "Avanzado",
       "keywords": [
@@ -335,7 +324,7 @@
   "projects": [
     {
       "name": "adidas Locker Room",
-      "isActive": true,
+      "isActive": true, 
       "description": "Plataforma interactiva para personalizar los productos deportivos de adiads a tu gusto.",
       "highlights": [
         "+6 mercados",
@@ -348,9 +337,9 @@
     {
       "name": "adidas Hype",
       "isActive": false,
-      "description": "adidas Hype la linea de negocio que maneja las alianzas entre las figuras públicas y la marca las tres franjas (e.g., Y-3).",
+      "description": "adidas Hype la línea de negocio que maneja las alianzas entre las figuras públicas y la marca las tres franjas (e.g., Y-3).",
       "highlights": [
-        "+1 millon de visistas por campaña",
+        "+1 millón de visitas por campaña",
         "i18n"
       ],
       "url": "https://www.adidas.co/hype-zapatillas_y_tenis"
@@ -358,7 +347,7 @@
     {
       "name": "built",
       "isActive": false,
-      "description": "Conecte y simplifique los negocios en el sector inmobiliario.",
+      "description": "Simplifique los negocios en el sector inmobiliario.",
       "highlights": [
         "43 of the top 100  U.S Banks",
         "15 of the top 25 U.S. Construcition Lenders"
@@ -370,8 +359,8 @@
       "isActive": false,
       "description": "Queremos que la gente salga y experimente el aire libre.",
       "highlights": [
-        "6 brands supported",
-        "+500k USD net sale on 2018"
+        "6 marcas soportadas",
+        "+500k USD de ventas netas 2018"
       ],
       "url": "https://www.johnsonoutdoors.com/us"
     },

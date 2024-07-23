@@ -8,7 +8,7 @@ const { currentLocale } = Astro;
 ---
 
 <!doctype html>
-<html lang={currentLocale}>
+<html lang={currentLocale} data-theme="light">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -24,7 +24,7 @@ const { currentLocale } = Astro;
 <style is:global>
 	html {
 		font-family: Menlo, Monaco, monospace;
-		background: white;
+		background: var(--main-bg-color);
 		letter-spacing: -0.024rem;
 	}
 
@@ -69,21 +69,53 @@ const { currentLocale } = Astro;
 	}
 
 	p {
-		color: grey;
-		font-size: .8rem
+		color: var(--main-gray-color);
+		font-size: 0.8rem;
 		line-height: 1.5;
-		margin: 0
-		text-wrap: prettyl
+		margin: 0;
+		text-wrap: prettyl;
 	}
 
 	.print {
 		display: none;
 	}
 
+	:root[data-theme="light"] {
+		--main-bg-color: #fbf1c7;
+		--main-bg1-color: #ebdbb2;
+		--main-bg2-color: #d5c4a1;
+		--main-fg-color: #3c3836;
+		--main-fg0-color: #282828;
+		--main-gray-color: #7c6f64;
+		--main-red-color: #9d0006;
+		--main-green-color: #79740e;
+		--main-yellow-color: #b57614;
+		--main-blue-color: #076678;
+		--main-purple-color: #8f3f71;
+		--main-aqua-color: #427b58;
+		--main-orange-color: #af3a03;
+	}
+
+	:root[data-theme="dark"] {
+		--main-bg-color: #282828;
+		--main-bg1-color: #3c3836;
+		--main-bg2-color: #504945;
+		--main-fg-color: #ebdbb2;
+		--main-fg0-color: #fbf1c7;
+		--main-gray-color: #f2e5bc;
+		--main-red-color: #cc241d;
+		--main-green-color: #98971a;
+		--main-yellow-color: #d79921;
+		--main-blue-color: #458588;
+		--main-purple-color: #b16286;
+		--main-aqua-color: #689d6a;
+		--main-orange-color: #d65d0e;
+	}
+
 	@media print {
 		.print {
 			display: block;
+			background-color: white;
 		}
 	}
-
 </style>

@@ -42,10 +42,7 @@ const SOCIAL_ICONS: SocialIcon = {
 `,
 };
 
-import { getI18N } from "@/i18n";
-
 const { currentLocale } = Astro;
-const i18n = getI18N({ currentLocale });
 
 const profilesInfo = profiles.map(({ network, url }) => {
   const icon = SOCIAL_ICONS[network as keyof SocialIcon];
@@ -76,9 +73,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
   )
 }
 
-<ninja-keys 
-  data-info={JSON.stringify(profilesInfo)}
-  placeholder="Buscar atajo"
+<ninja-keys data-info={JSON.stringify(profilesInfo)} placeholder="Buscar atajo"
 ></ninja-keys>
 
 <script>
@@ -152,9 +147,10 @@ const profilesInfo = profiles.map(({ network, url }) => {
     position: fixed;
     bottom: 0;
     padding-block: 1rem;
+    color: var(--main-gray-color);
     width: 100%;
-    background-color: #ebdbb2;
-    border-top: 1px solid #f9f5d7;
+    background-color: var(--main-bg1-color);
+    border-top: 1px solid var(--main-bg-color);
     font-size: 0.8rem;
     text-align: center;
     view-timeline: --revealing;
@@ -165,8 +161,8 @@ const profilesInfo = profiles.map(({ network, url }) => {
   }
 
   kbd {
-    background-color: #ebdbb2;
-    border: 1px solid #f9f5d7;
+    background-color: var(--main-bg1-color);
+    border: 1px solid var(--main-bg-color);
     border-radius: 3px;
     padding: 0.1rem 0.3rem;
   }
