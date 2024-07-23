@@ -6,13 +6,27 @@ import LinkedIn from "@/components/icons/LinkedIn.astro";
 import GitHub from "@/components/icons/GitHub.astro";
 import WorldMap from "@/components/icons/WorldMap.astro";
 import X from "@/components/icons/X.astro";
+
+import UnitedStates from "@/components/flags/UnitedStates.astro";
+import Colombia from "@/components/flags/Colombia.astro";
+
 import type { SocialIcon } from "@/types";
 
 import { getI18N } from "@/i18n";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
-const { name, label, location, email, profiles, image, phone } = i18n.basics;
+const {
+  name,
+  label,
+  location,
+  email,
+  emailTitle,
+  profiles,
+  image,
+  phone,
+  phoneTitle,
+} = i18n.basics;
 const { city, region } = location;
 
 const SOCIAL_ICONS: SocialIcon = {
@@ -44,7 +58,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
           email && (
             <a
               href={`mailto:${email}`}
-              title={`send an email to ${name}`}
+              title={`${emailTitle} ${name}`}
               target="_blank"
               rel="noopener noreferer"
             >
@@ -56,7 +70,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
           phone && (
             <a
               href={`tel:${phone}`}
-              title={`call to ${name} with this number ${phone}`}
+              title={`${phoneTitle} ${phone}`}
               target="_blank"
               rel="noopener noreferer"
             >
@@ -65,13 +79,13 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
           )
         }
         {
-          profiles.map(({ network, url, username }) => {
+          profiles.map(({ network, url, title }) => {
             const Icon = SOCIAL_ICONS[network];
 
             return (
               <a
                 href={url}
-                title={`visit the ${username}'s profile on ${network}`}
+                title={`${title} ${network}`}
                 target="_blank"
                 rel="noopener noreferer"
               >
@@ -79,6 +93,27 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
               </a>
             );
           })
+        }
+        {
+          currentLocale === "es" ? (
+            <a
+              href={`/en`}
+              title={`revisa el perfil de ${name} en inglés`}
+              target="_self"
+              rel="noopener noreferer"
+            >
+              <UnitedStates />
+            </a>
+          ) : (
+            <a
+              href={`/`}
+              title={`review the ${name} profile in Spanish`}
+              target="_self"
+              rel="noopener noreferer"
+            >
+              <Colombia />
+            </a>
+          )
         }
       </footer>
     </div>
@@ -152,7 +187,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
   }
 
   footer a:hover {
-    background: #f5f5f5;
+    background: #d5c4a1;
     border: 1px solid #ccc;
   }
 </style>

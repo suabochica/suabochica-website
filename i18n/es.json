@@ -4,7 +4,9 @@
     "label": "Desarrollador Full-Stack con más de 10 años de experiencia.",
     "image": "/suabochica.jpeg",
     "email": "sl.benitezd@gmail.com",
+    "emailTitle": "envía un correo a",
     "phone": "+57 3118095133",
+    "phoneTitle": "llama a Sergio al siguiente número: ",
     "url": "https://suabochica.com",
     "summary": "+10 años de experiencia como desarrollador web, que sustenta la idea de que un buen diseño es la mejor guía de programación. Me gusta darle vida al concepto de diseño usando las tecnologías correctas del lado del cliente. Mis tareas van desde interpretar bocetos de interfaz de usuario y traducir conceptos de experiencia de usuario en código hasta la implementación de caráctaristicas de un producto digital, probar la funcionalidad de aplicaciones web y compartir mis puntos de vista sobre propuestas arquitectónicas. No obstante, para mí, el valor más importante es ser un trabajador en equipo que está en constante aprendizaje y se preocupa por ofrecer productos de alta calidad.",
     "location": {
@@ -18,17 +20,20 @@
       {
         "network": "LinkedIn",
         "username": "slbenitezd",
-        "url": "https://linkedin.com/in/slbenitezd"
+        "url": "https://linkedin.com/in/slbenitezd",
+        "title": "visita el perfil de suabochica en: "
       },
       {
         "network": "X",
         "username": "suabochica",
-        "url": "https://x.com/suabochica"
+        "url": "https://x.com/suabochica",
+        "title": "visita el perfil de suabochica en: "
       },
       {
         "network": "GitHub",
         "username": "suabochica",
-        "url": "https://github.com/suabochica"
+        "url": "https://github.com/suabochica",
+        "title": "visita el perfil de suabochica en: "
       }
     ]
   },

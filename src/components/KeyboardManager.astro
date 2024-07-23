@@ -42,6 +42,11 @@ const SOCIAL_ICONS: SocialIcon = {
 `,
 };
 
+import { getI18N } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
 const profilesInfo = profiles.map(({ network, url }) => {
   const icon = SOCIAL_ICONS[network as keyof SocialIcon];
   const firstLetter = network.charAt(0).toUpperCase();
@@ -57,12 +62,23 @@ const profilesInfo = profiles.map(({ network, url }) => {
 });
 ---
 
-<footer>
-  Press <kbd>Cmd</kbd> + <kbd>K</kbd> on Mac or <kbd>Ctrl</kbd> + <kbd>K</kbd> on
-  Windows/Linx to see the shortcuts
-</footer>
+{
+  currentLocale === "es" ? (
+    <footer>
+      Presiona <kbd>Cmd</kbd> + <kbd>K</kbd> en Mac ó <kbd>Ctrl</kbd> +{" "}
+      <kbd>K</kbd> en Windows/Linux para ver los atajos
+    </footer>
+  ) : (
+    <footer>
+      Press <kbd>Cmd</kbd> + <kbd>K</kbd> on Mac or <kbd>Ctrl</kbd> +{" "}
+      <kbd>K</kbd> on Windows/Linux to see the shortcuts
+    </footer>
+  )
+}
 
-<ninja-keys data-info={JSON.stringify(profilesInfo)} laceholder="Buscar atajo"
+<ninja-keys 
+  data-info={JSON.stringify(profilesInfo)}
+  placeholder="Buscar atajo"
 ></ninja-keys>
 
 <script>
@@ -90,6 +106,24 @@ const profilesInfo = profiles.map(({ network, url }) => {
         section: "Acciones",
         handler: () => {
           window.print();
+        },
+      },
+      {
+        id: "en",
+        title: "🇺🇸 Profile in English",
+        hotkey: "Ctrl + E",
+        section: "Acciones",
+        handler: () => {
+          window.open("/en", "_self");
+        },
+      },
+      {
+        id: "es",
+        title: "🇨🇴 Perfil en Español",
+        hotkey: "Ctrl + U",
+        section: "Acciones",
+        handler: () => {
+          window.open("/", "_self");
         },
       },
       ...data,
