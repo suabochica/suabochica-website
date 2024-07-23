@@ -1,10 +1,17 @@
 ---
-import { basics } from "@/cv";
 import Section from "@/components/Section.astro";
 
-const { summary } = basics;
+import { getI18N } from "@/i18n";
+import { useTranslations, getLangFromUrl } from "i18n/utils";
+
+const language = getLangFromUrl(Astro.url);
+const translate = useTranslations(language);
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { summary } = i18n.basics;
 ---
 
-<Section title="About">
+<Section title={translate(".about")}>
   <p>{summary}</p>
 </Section>

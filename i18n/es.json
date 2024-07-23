@@ -109,7 +109,7 @@
       "studyType": "Diploma",
       "startDate": "2014-07-07",
       "endDate": "2014-12-12",
-      "score": "Approved",
+      "score": "Aprobado",
       "description": "Diplomado en Desarrollo de Videojuegos y Libros Interactivos, es un curso de alto nivel de 120 horas que te introducirá en la planificación, diseño y desarrollo de tu videojuego y la forma correcta de presentar el proyecto a clientes e inversores.",
       "courses": [
         "DB1101 - Basic SQL"
@@ -361,7 +361,7 @@
       "url": "https://getbuilt.com/"
     },
     {
-      "name": "Johnson Outdors",
+      "name": "Johnson Outdoors",
       "isActive": false,
       "description": "Queremos que la gente salga y experimente el aire libre.",
       "highlights": [
@@ -371,7 +371,7 @@
       "url": "https://www.johnsonoutdoors.com/us"
     },
     {
-      "name": "CConfigurador de carros",
+      "name": "Configurador de carros",
       "isActive": false,
       "description": "Dale tu estilo a tu nuevo carro.",
       "highlights": [

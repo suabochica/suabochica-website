@@ -1,30 +1,43 @@
 ---
-import { education } from "@/cv";
 import Section from "@/components/Section.astro";
+
+import { getI18N } from "@/i18n";
+import { useTranslations, getLangFromUrl } from "i18n/utils";
+
+const language = getLangFromUrl(Astro.url);
+const translate = useTranslations(language);
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { education } = i18n;
 ---
 
-<Section title="Education">
+<Section title={translate(".education")}>
   <ul>
     {
-      education.map(({ score, area, description, institution, startDate, endDate }) => {
-        return (
-          <li>
-            <article>
-              <header>
-                <div>
-                  <h3>{institution}</h3>
-                  <h4>{area}</h4>
-                </div>
-                <time>{startDate} - {endDate}</time>
-              </header>
-              <footer>
-                <p>{score}</p>
-                <p>{description}</p>
-              </footer>
-            </article>
-          </li>
-        );
-      })
+      education.map(
+        ({ score, area, description, institution, startDate, endDate }) => {
+          return (
+            <li>
+              <article>
+                <header>
+                  <div>
+                    <h3>{institution}</h3>
+                    <h4>{area}</h4>
+                  </div>
+                  <time>
+                    {startDate} - {endDate}
+                  </time>
+                </header>
+                <footer>
+                  <p>{score}</p>
+                  <p>{description}</p>
+                </footer>
+              </article>
+            </li>
+          );
+        },
+      )
     }
   </ul>
 </Section>
@@ -37,7 +50,7 @@ import Section from "@/components/Section.astro";
   }
 
   article h3 {
-    color: #FF4500;
+    color: #ff4500;
   }
 
   article h4 {
@@ -54,6 +67,6 @@ import Section from "@/components/Section.astro";
 
   time {
     font-size: 0.8em;
-    color: #F7562A;
+    color: #f7562a;
   }
 </style>

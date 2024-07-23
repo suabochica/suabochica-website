@@ -1,32 +1,40 @@
 ---
-import { work } from "@/cv"
-import Section from "@/components/Section.astro"
+import Section from "@/components/Section.astro";
+
+import { getI18N } from "@/i18n";
+import { useTranslations, getLangFromUrl } from "i18n/utils";
+
+const language = getLangFromUrl(Astro.url);
+const translate = useTranslations(language);
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { work } = i18n;
 ---
 
-<Section title="Work">
+<Section title={translate(".work")}>
   <ul>
     {
-      work.map(
-        ({ name, startDate, endDate, position, summary, highlights }) => {
-
-          return (
-            <li>
-              <article>
-                <header>
-                  <div>
-                    <h3>{name}</h3>
-                    <h4>{position}</h4>
-                  </div>
-                  <time>{startDate} - {endDate}</time>
-                </header>
-                <footer>
-                  <p>{summary}</p>
-                </footer>
-              </article>
-            </li>
-          );
-        },
-      )
+      work.map(({ name, startDate, endDate, position, summary }) => {
+        return (
+          <li>
+            <article>
+              <header>
+                <div>
+                  <h3>{name}</h3>
+                  <h4>{position}</h4>
+                </div>
+                <time>
+                  {startDate} - {endDate}
+                </time>
+              </header>
+              <footer>
+                <p>{summary}</p>
+              </footer>
+            </article>
+          </li>
+        );
+      })
     }
   </ul>
 </Section>
@@ -39,7 +47,7 @@ import Section from "@/components/Section.astro"
   }
 
   article h3 {
-    color: #FF4500;
+    color: #ff4500;
   }
 
   article h4 {
@@ -56,6 +64,6 @@ import Section from "@/components/Section.astro"
 
   time {
     font-size: 0.8em;
-    color: #F7562A;
+    color: #f7562a;
   }
 </style>

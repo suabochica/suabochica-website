@@ -1,0 +1,39 @@
+---
+import Layout from "@/layouts/Layout.astro";
+
+import About from "@/components/sections/About.astro";
+import Education from "@/components/sections/Education.astro";
+import Experience from "@/components/sections/Experience.astro";
+import Projects from "@/components/sections/Projects.astro";
+import Skills from "@/components/sections/Skills.astro";
+import Hero from "@/components/Hero.astro";
+import KeyboardManager from "@/components/KeyboardManager.astro";
+
+import { getI18N } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const {name, label} = i18n.basics;
+---
+
+<Layout title=`${name} - ${label}.`>
+	<main>
+		<Hero />
+		<About />
+		<Experience />
+		<Education />
+		<Projects />
+		<Skills />
+	</main>
+
+	<KeyboardManager />
+</Layout>
+
+<style>
+	main {
+		background-color: #fbf1c7;
+		padding: 4rem;
+		margin: auto;
+		width: 100%;
+	}
+</style>

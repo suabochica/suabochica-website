@@ -1,16 +1,20 @@
 ---
-import { basics } from "@/cv";
 import Section from "@/components/Section.astro";
-import Mail from "@/icons/Mail.astro";
-import Phone from "@/icons/Phone.astro";
-import LinkedIn from "@/icons/LinkedIn.astro";
-import GitHub from "@/icons/GitHub.astro";
-import WorldMap from "@/icons/WorldMap.astro";
-import X from "@/icons/X.astro";
+import Mail from "@/components/icons/Mail.astro";
+import Phone from "@/components//icons/Phone.astro";
+import LinkedIn from "@/components/icons/LinkedIn.astro";
+import GitHub from "@/components/icons/GitHub.astro";
+import WorldMap from "@/components/icons/WorldMap.astro";
+import X from "@/components/icons/X.astro";
 import type { SocialIcon } from "@/types";
 
-const { name, label, location, email, profiles, image, phone } = basics;
+import { getI18N } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { name, label, location, email, profiles, image, phone } = i18n.basics;
 const { city, region } = location;
+
 const SOCIAL_ICONS: SocialIcon = {
   LinkedIn,
   GitHub,
@@ -101,7 +105,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
   }
 
   h1 {
-    color: #FF4500;
+    color: #ff4500;
     font-size: 2rem;
   }
 
