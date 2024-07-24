@@ -35,4 +35,4 @@ This project uses Netlify to manage continuous integration in the content update
 - [ ] Add certificates section in en json.
 - [ ] Add one page cv.
 - [x] Add spanish json.
-- [ ] Check dark/light theme.
+- [x] Check dark/light theme.

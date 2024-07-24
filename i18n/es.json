@@ -210,16 +210,6 @@
       ]
     },
     {
-      "name": "JavaScript",
-      "level": "Maestro",
-      "keywords": [
-        "Desarrollo Web",
-        "Frontend",
-        "Backend",
-        "Fullstack"
-      ]
-    },
-    {
       "name": "Tailwind",
       "level": "Avanzado",
       "keywords": [
@@ -227,6 +217,16 @@
         "Frontend",
         "CSS Framework",
         "Responsive Design"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Maestro",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "Fullstack"
       ]
     },
     {
@@ -279,6 +279,16 @@
     },
     {
       "name": "React",
+      "level": "Avanzado",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "Redux",
       "level": "Avanzado",
       "keywords": [
         "Web development",
@@ -349,8 +359,8 @@
       "isActive": false,
       "description": "Simplifique los negocios en el sector inmobiliario.",
       "highlights": [
-        "43 of the top 100  U.S Banks",
-        "15 of the top 25 U.S. Construcition Lenders"
+        "43 en el top 100 de bancos en U.S",
+        "15 el top 25 de prestamos para construcción en U.S."
       ],
       "url": "https://getbuilt.com/"
     },

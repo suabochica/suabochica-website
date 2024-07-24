@@ -24,7 +24,7 @@ const { projects } = i18n;
                   <a href={url} title={`Ver el proyecto ${name}`}>
                     {name}
                   </a>
-                  {isActive && <span>&bull;</span>}
+                  {isActive && <span>•</span>}
                 </h3>
                 <p>{description}</p>
               </header>
@@ -68,7 +68,7 @@ const { projects } = i18n;
   }
 
   article a {
-    color: var(--main-gray-color);
+    color: var(--main-aqua-color);
   }
 
   article a:hover {

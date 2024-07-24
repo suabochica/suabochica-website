@@ -30,6 +30,6 @@ export const SECTION_TITLES = {
     '.work': 'Work',
     '.education': 'Education',
     '.projects': 'Projects',
-    '.skills': 'Skilss',
+    '.skills': 'Skills',
   },
 } as const

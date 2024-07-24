@@ -11,6 +11,12 @@ importers:
       '@astrojs/check':
         specifier: ^0.5.9
         version: 0.5.10(typescript@5.5.3)
+      '@fontsource/ia-writer-duo':
+        specifier: ^5.0.11
+        version: 5.0.11
+      '@fontsource/ia-writer-quattro':
+        specifier: ^5.0.11
+        version: 5.0.11
       astro:
         specifier: ^4.5.3
         version: 4.12.2(typescript@5.5.3)
@@ -330,6 +336,12 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource/ia-writer-duo@5.0.11':
+    resolution: {integrity: sha512-kNhf4Uatx+N/voqgHutRJ564PRB74WCco8LtS3b0q2kkZuvrU1QTk/Uig9gcqJ8mAvs33Pz0JnWhwHw1CFGfQw==}
+
+  '@fontsource/ia-writer-quattro@5.0.11':
+    resolution: {integrity: sha512-hozKVTLI+AXqgLm5PAk2W0aDFZbBzEi5q4KA+csZLyBW5inAjqfrgy/OBWO5oy4var7RG99oR1uO+YtSYUnS2w==}
 
   '@img/sharp-darwin-arm64@0.33.4':
     resolution: {integrity: sha512-p0suNqXufJs9t3RqLBO6vvrgr5OhgbWp76s5gTRvdmxmuv9E1rcaqGUsl3l4mKVmXPkTkTErXediAui4x+8PSA==}
@@ -2198,6 +2210,10 @@ snapshots:
 
   '@esbuild/win32-x64@0.21.5':
     optional: true
+
+  '@fontsource/ia-writer-duo@5.0.11': {}
+
+  '@fontsource/ia-writer-quattro@5.0.11': {}
 
   '@img/sharp-darwin-arm64@0.33.4':
     optionalDependencies:

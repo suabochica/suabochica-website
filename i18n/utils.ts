@@ -1,4 +1,4 @@
-import { SECTION_TITLES, defaultLanguage, showDefaultLanguage } from "./ui"
+import { SECTION_TITLES, defaultLanguage } from "./ui"
 
 export function getLangFromUrl(url: URL) {
   const [, language] = url.pathname.split('/')
@@ -18,17 +18,6 @@ export function getRouteFromUrl(url: URL): string | undefined {
   if (path === undefined) {
     return undefined
   }
-
-  const currentLanguage = getLangFromUrl(url)
-
-  const getKeyByValue = (
-    obj: Record<string, string>,
-    value: string
-  ): string | undefined => {
-    return Object.keys(obj).find((key) => obj[key] === value)
-  }
-  
-  return undefined
 }
 
 export function useTranslations(language: keyof typeof SECTION_TITLES) {
