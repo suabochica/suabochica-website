@@ -2,11 +2,13 @@
   "basics": {
     "name": "Sergio Leonardo Benítez",
     "label": "Full-Stack developer with more than 10 years of experience",
-    "image": "/suabochica.jpeg",
+    "image": "/suabochica.webp",
     "email": "sl.benitezd@gmail.com",
     "emailTitle": "send an email to ",
     "phone": "+57 3118095133",
     "phoneTitle": "call to Sergio at this number: ",
+    "blog": "https://blog.suabochica.com",
+    "blogTitle": "check suabochica's blog",
     "url": "https://suabochica.com",
     "summary": "+10 years of experience as a web developer, who supports the idea that a good design is the best programming guide. I like to bring the design concept to life through the correct client-side technologies. My duties range from interpreting UI wire frames and translating UX concepts into code to developing user functions, testing web application functionality, and sharing my views on architectural proposals. However, for me, the most important value is being a team worker who is constantly learning and cares about delivering high-quality products.",
     "location": {
@@ -21,19 +23,19 @@
         "network": "LinkedIn",
         "username": "slbenitezd",
         "url": "https://linkedin.com/in/slbenitezd",
-        "title": "visit the suabochica's profile on: "
+        "title": "visit the suabochica's profile on:"
       },
       {
         "network": "X",
         "username": "suabochica",
         "url": "https://x.com/suabochica",
-        "title": "visit the suabochica's profile on: "
+        "title": "visit the suabochica's profile on:"
       },
       {
         "network": "GitHub",
         "username": "suabochica",
         "url": "https://github.com/suabochica",
-        "title": "visit the suabochica's profile on: "
+        "title": "visit the suabochica's profile on:"
       }
     ]
   },

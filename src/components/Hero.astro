@@ -3,7 +3,8 @@ import Section from "@/components/Section.astro";
 import ThemeSwitch from "@/components/ThemeSwitch.astro";
 
 import Mail from "@/components/icons/Mail.astro";
-import Phone from "@/components//icons/Phone.astro";
+import Phone from "@/components/icons/Phone.astro";
+import Blog from "@/components/icons/Blog.astro"
 import LinkedIn from "@/components/icons/LinkedIn.astro";
 import GitHub from "@/components/icons/GitHub.astro";
 import WorldMap from "@/components/icons/WorldMap.astro";
@@ -24,10 +25,12 @@ const {
   location,
   email,
   emailTitle,
-  profiles,
-  image,
+  blog,
+  blogTitle,
   phone,
   phoneTitle,
+  image,
+  profiles,
 } = i18n.basics;
 const { city, region } = location;
 
@@ -77,6 +80,18 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
               rel="noopener noreferer"
             >
               <Phone />
+            </a>
+          )
+        }
+        {
+          blog && (
+            <a
+              href={`${blog}`}
+              title={`${blogTitle}`}
+              target="_blank"
+              rel="noopener noreferer"
+            >
+              <Blog />
             </a>
           )
         }
