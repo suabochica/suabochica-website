@@ -1,15 +1,15 @@
 [build]
-    publish = "public/"
-    command = "npm run build"
+    publish = "dist/"
+    command = "pnpm run build"
 
 [context.deploy-preview]
-  publish = "public/"
+  publish = "dist/"
 
 [context.branch-deploy]
-  command = "npm run build"
+  command = "pnpm run build"
 
 [[redirects]]
-  from = "/public"
+  from = "/dist"
   to = "/"
   status = 200
 

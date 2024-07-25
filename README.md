@@ -6,12 +6,12 @@ Project with the content that I want to share in my personal webpage. There, you
 🧰 Tech Stack
 -------------
 
-- ![JavaScript](https://www.javascript.com/)
-- ![TypeScript](https://www.typescriptlang.org/)
-- ![Astro](https://astro.build/)
-- ![JSON Resume](https://jsonresume.org)
-- ![Ninja Keys](https://github.com/ssleptsov/ninja-keys)
-- ![pnpm](https://pnpm.io/)
+- [JavaScript](https://www.javascript.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Astro](https://astro.build/)
+- [JSON Resume](https://jsonresume.org)
+- [Ninja Keys](https://github.com/ssleptsov/ninja-keys)
+- [pnpm](https://pnpm.io/)
 
 Installation
 -------------
@@ -34,5 +34,6 @@ This project uses Netlify to manage continuous integration in the content update
 - [x] Update theme.
 - [ ] Add certificates section in en json.
 - [ ] Add one page cv.
+- [ ] Connect with blog.
 - [x] Add spanish json.
 - [x] Check dark/light theme.
