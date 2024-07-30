@@ -15,6 +15,7 @@ Project with the content that I want to share in my personal webpage. There, you
 - [x] Connect with blog.
 - [x] Add spanish json.
 - [x] Check dark/light theme.
+- [x] Check design on small viewports.
 
 🧰 Tech Stack
 -------------
