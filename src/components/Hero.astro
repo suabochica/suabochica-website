@@ -4,7 +4,8 @@ import ThemeSwitch from "@/components/ThemeSwitch.astro";
 
 import Mail from "@/components/icons/Mail.astro";
 import Phone from "@/components/icons/Phone.astro";
-import Blog from "@/components/icons/Blog.astro"
+import Book from "@/components/icons/Book.astro"
+import File from "@/components/icons/File.astro"
 import LinkedIn from "@/components/icons/LinkedIn.astro";
 import GitHub from "@/components/icons/GitHub.astro";
 import WorldMap from "@/components/icons/WorldMap.astro";
@@ -27,6 +28,8 @@ const {
   emailTitle,
   blog,
   blogTitle,
+  cv,
+  cvTitle,
   phone,
   phoneTitle,
   image,
@@ -91,7 +94,19 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
               target="_blank"
               rel="noopener noreferer"
             >
-              <Blog />
+              <Book />
+            </a>
+          )
+        }
+        {
+          cv && (
+            <a
+              href={`${cv}`}
+              title={`${cvTitle}`}
+              target="_blank"
+              rel="noopener noreferer"
+            >
+              <File />
             </a>
           )
         }

@@ -11,7 +11,7 @@ Project with the content that I want to share in my personal webpage. There, you
 - [x] Add project section in en json.
 - [x] Update theme.
 - [ ] Add certificates section in en json.
-- [ ] Add one page cv.
+- [x] Add one page cv.
 - [x] Connect with blog.
 - [x] Add spanish json.
 - [x] Check dark/light theme.
