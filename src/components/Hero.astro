@@ -8,11 +8,11 @@ import Book from "@/components/icons/Book.astro";
 import File from "@/components/icons/File.astro";
 import LinkedIn from "@/components/icons/LinkedIn.astro";
 import GitHub from "@/components/icons/GitHub.astro";
-import WorldMap from "@/components/icons/WorldMap.astro";
+import MapPin from "@/components/icons/MapPin.astro";
+import Languages from "./icons/Languages.astro";
+import Globe from "./icons/Globe.astro";
 import X from "@/components/icons/X.astro";
-
-import UnitedStates from "@/components/flags/UnitedStates.astro";
-import Colombia from "@/components/flags/Colombia.astro";
+import Instagram from "./icons/Instagram.astro";
 
 import type { SocialIcon } from "@/types";
 
@@ -40,6 +40,7 @@ const { city, region } = location;
 const SOCIAL_ICONS: SocialIcon = {
   LinkedIn,
   GitHub,
+  Instagram,
   X,
 };
 
@@ -55,7 +56,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
       <h1>{name}</h1>
       <h2>{label}</h2>
       <span>
-        <WorldMap />
+        <MapPin />
         {city}, {region}
       </span>
       <footer>
@@ -130,20 +131,20 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
           currentLocale === "es" ? (
             <a
               href={`/en`}
-              title={`revisa el perfil de ${name} en inglés`}
+              title={`Perfil en inglés`}
               target="_self"
               rel="noopener noreferer"
             >
-              <UnitedStates />
+              <Globe />
             </a>
           ) : (
             <a
               href={`/`}
-              title={`review the ${name} profile in Spanish`}
+              title={`Profile in Spanish`}
               target="_self"
               rel="noopener noreferer"
             >
-              <Colombia />
+              <Languages />
             </a>
           )
         }
