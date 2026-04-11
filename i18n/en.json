@@ -1,18 +1,18 @@
 {
   "basics": {
     "name": "Sergio Leonardo Benítez",
-    "label": "Full-Stack developer with more than 10 years of experience",
+    "label": "Software developer with more than 11 years of experience",
     "image": "/suabochica.webp",
     "email": "sl.benitezd@gmail.com",
-    "emailTitle": "send an email to ",
+    "emailTitle": "Send an email to ",
     "phone": "+57 3118095133",
-    "phoneTitle": "call to Sergio at this number: ",
+    "phoneTitle": "Call to Sergio at this number: ",
     "blog": "https://blog.suabochica.com",
-    "blogTitle": "check suabochica's blog",
+    "blogTitle": "Check suabochica's blog",
     "cv": "https://drive.google.com/file/d/15Vy_4zBsiUU5B77iUR2BUOhy6ZtKk34a/view?usp=drive_link",
-    "cvTitle": "check suabochica's curriculum vitae",
+    "cvTitle": "Check suabochica's curriculum vitae",
     "url": "https://suabochica.com",
-    "summary": "+10 years of experience as a web developer, who supports the idea that a good design is the best programming guide. I like to bring the design concept to life through the correct client-side technologies. My duties range from interpreting UI wire frames and translating UX concepts into code to developing user functions, testing web application functionality, and sharing my views on architectural proposals. However, for me, the most important value is being a team worker who is constantly learning and cares about delivering high-quality products.",
+    "summary": "+11 years of experience as a software developer, who supports the idea that a good design is the best programming guide. I like to bring the design concept to life through the correct client-side technologies. My duties range from interpreting UI wire frames and translating UX concepts into code to developing user functions, testing web application functionality, and sharing my views on architectural proposals. However, for me, the most important value is being a team worker who is constantly learning and cares about delivering high-quality products.",
     "location": {
       "address": "",
       "postalCode": "111132",
@@ -25,36 +25,46 @@
         "network": "LinkedIn",
         "username": "slbenitezd",
         "url": "https://linkedin.com/in/slbenitezd",
-        "title": "visit the suabochica's profile on:"
+        "title": "Visit the suabochica's profile on:"
       },
       {
         "network": "X",
         "username": "suabochica",
         "url": "https://x.com/suabochica",
-        "title": "visit the suabochica's profile on:"
+        "title": "Visit the suabochica's profile on:"
       },
       {
         "network": "GitHub",
         "username": "suabochica",
         "url": "https://github.com/suabochica",
-        "title": "visit the suabochica's profile on:"
+        "title": "Visit the suabochica's profile on:"
       },
       {
         "network": "Instagram",
         "username": "suabochica",
         "url": "https://instagram.com/suabochica",
-        "title": "visit the suabochica's profile on:"
+        "title": "Visit the suabochica's profile on:"
       }
     ]
   },
   "work": [
     {
+      "name": "Mercado Libre",
+      "position": "Software Engineer",
+      "startDate": "2025-02-13",
+      "endDate": "2026-03-09",
+      "summary": "Frontend Software Engineer on Meli’s core platform, enabling 54K+ applications and 16K users through scalable micro-frontend architecture (Module Federation), delivering analytics, resource management, and traffic control services.",
+      "highlights": [
+        "Dark mode support implementation",
+        "Proposal for Framework Error System"
+      ]
+    },
+    {
       "name": "adidas",
       "position": "Software Engineer",
-      "url": "https://twitch.tv/midudev",
       "startDate": "2022-06-13",
       "endDate": "2024-07-05",
-      "summary": "Maintainer of a legacy micro frontend platform for trending products at adidas, enabling agnostic implementations of frontend technologies. I supported a product for the customization of adidas sporting goods in more than 6 markets. I implemented functionalities to enable the creation of orders for more than 100 clients with adiclub accounts in the United States. In this same project I maintained 4 legacy REST API services.",
+      "summary": "Responsible for maintaining a micro-frontend platform at adidas, enabling a decoupled and frontend-agnostic architecture. Contributed to a personalization product across 6 markets, implemented order creation for more than 100 adiClub users in the U.S., and managed 4 critical REST APIs for purchase orders.",
       "highlights": [
         "adidas tech summit recognition as speaker."
       ]
@@ -62,10 +72,9 @@
     {
       "name": "Endava",
       "position": "Lead Frontend Developer",
-      "url": "https://twitch.tv/midudev",
       "startDate": "2019-02-01",
       "endDate": "2022-06-10",
-      "summary": "I helped implement a web application for intelligent construction management in the United States with a startup in Nashville. I participated with the development of 1 mobile application for the role of construction inspector and to have guarantees about the progress of construction. Internally, I led the functional programming community made up of 12 members, promoting a culture of knowledge transfer and studying the Haskell programming language.",
+      "summary": "Contributed to the development of a web application for intelligent construction project management in the U.S., partnering with a Nashville-based startup. Developed a mobile application for construction inspectors, improving visibility and tracking of project progress. Led an internal functional programming community of 12 members, fostering knowledge sharing and promoting adoption of Haskell.",
       "highlights": [
         "Lead of the front end community",
         "Lead of the functional programming community"
@@ -307,6 +316,16 @@
         "JavaScript Library",
         "UI"
       ]
+    },
+        {
+      "name": "TanStack",
+      "level": "Avanzado",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
     }
   ],
   "languages": [
@@ -344,8 +363,20 @@
   ],
   "projects": [
     {
-      "name": "adidas Locker Room",
+      "name": "meli | Fury",
       "isActive": true,
+      "description": "The Mercado libre OS created to provides developers with a unified and self-service environment to efficiently create, deploy, manage, and monitor applications.",
+      "highlights": [
+        "+54K applications",
+        "16K users",
+        "React",
+        "Module Federation"
+      ],
+      "url": "https://medium.com/mercadolibre-tech/subpage/79a519305008"
+    },
+    {
+      "name": "adidas | Locker Room",
+      "isActive": false,
       "description": "Interactive platform to customize adidas sporting goods",
       "highlights": [
         "+6 markets",
@@ -356,7 +387,7 @@
       "url": "https://vimeo.com/307223846"
     },
     {
-      "name": "adidas Hype",
+      "name": "adidas | Hype",
       "isActive": false,
       "description": "adidas Hype is a page dedicated to the brand with the. three stripes. It contains news and stories about. adidas, its products and endorsers.",
       "highlights": [
@@ -366,7 +397,7 @@
       "url": "https://www.adidas.co/hype-zapatillas_y_tenis"
     },
     {
-      "name": "built",
+      "name": "Endava |built",
       "isActive": false,
       "description": "Connect and simplify doing business in real estate.",
       "highlights": [
@@ -376,7 +407,7 @@
       "url": "https://getbuilt.com/"
     },
     {
-      "name": "Johnson Outdors",
+      "name": "PDG | Johnson Outdors",
       "isActive": false,
       "description": "We want people to get out and experience the great outdoors. We see it as our job to ensure that, from planning to unpacking, it's the best experience possible.",
       "highlights": [
@@ -386,7 +417,7 @@
       "url": "https://www.johnsonoutdoors.com/us"
     },
     {
-      "name": "Car Configurator",
+      "name": "PDG | Car Configurator",
       "isActive": false,
       "description": "Style your car.",
       "highlights": [
@@ -397,7 +428,7 @@
       "url": "https://www.nissan.co.uk/vehicles/new-vehicles/juke/version-explorer/configurator/cfg.shtml/BAZ9/Av4Dm4/exterior-colour"
     },
     {
-      "name": "Test Drive Scheduler",
+      "name": "PDG | Test Drive Scheduler",
       "isActive": false,
       "description": "Book a test drive.",
       "highlights": [

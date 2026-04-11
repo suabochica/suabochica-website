@@ -1,18 +1,18 @@
 {
   "basics": {
     "name": "Sergio Leonardo Benítez",
-    "label": "Desarrollador Full-Stack con más de 10 años de experiencia.",
+    "label": "Desarrollador de software con más de 11 años de experiencia.",
     "image": "/suabochica.webp",
     "email": "sl.benitezd@gmail.com",
-    "emailTitle": "envía un correo a",
+    "emailTitle": "Envía un correo a",
     "phone": "+57 3118095133",
-    "phoneTitle": "llama a Sergio al siguiente número:",
+    "phoneTitle": "Llama a Sergio al siguiente número:",
     "blog": "https://blog.suabochica.com",
-    "blogTitle": "visita el blog de suabochica",
-    "cv": "https://drive.google.com/file/d/15Vy_4zBsiUU5B77iUR2BUOhy6ZtKk34a/view?usp=drive_link",
-    "cvTitle": "revisa el curriculum vitae de suabochica",
+    "blogTitle": "Visita el blog de suabochica",
+    "cv": "https://drive.google.com/file/d/1r25S5wm1xRsbvE0Gb9zdnN67hiEskeAW/view",
+    "cvTitle": "Visita el curriculum vitae de suabochica",
     "url": "https://suabochica.com",
-    "summary": "+10 años de experiencia como desarrollador web, que sustenta la idea de que un buen diseño es la mejor guía de programación. Me gusta darle vida al concepto de diseño usando las tecnologías correctas del lado del cliente. Mis tareas van desde interpretar bocetos de interfaz de usuario y traducir conceptos de experiencia de usuario en código hasta la implementación de caráctaristicas de un producto digital, probar la funcionalidad de aplicaciones web y compartir mis puntos de vista sobre propuestas arquitectónicas. No obstante, para mí, el valor más importante es ser un trabajador en equipo que está en constante aprendizaje y se preocupa por ofrecer productos de alta calidad.",
+    "summary": "+11 años de experiencia como desarrollador de software, que sustenta la idea de que un buen diseño es la mejor guía de programación. Me gusta darle vida al concepto de diseño usando las tecnologías correctas del lado del cliente. Mis tareas van desde interpretar bocetos de interfaces de usuario y traducir conceptos de experiencia de usuario en código, hasta la implementación de características de un producto digital, probar la funcionalidad de aplicaciones web y compartir mis puntos de vista sobre propuestas arquitectónicas. Para mí, el valor más importante es ser un trabajador en equipo que está en constante aprendizaje y se preocupa por ofrecer productos de alta calidad.",
     "location": {
       "address": "",
       "postalCode": "111132",
@@ -25,36 +25,46 @@
         "network": "LinkedIn",
         "username": "slbenitezd",
         "url": "https://linkedin.com/in/slbenitezd",
-        "title": "visita el perfil de suabochica en:"
+        "title": "Visita el perfil de suabochica en"
       },
       {
         "network": "X",
         "username": "suabochica",
         "url": "https://x.com/suabochica",
-        "title": "visita el perfil de suabochica en:"
+        "title": "Visita el perfil de suabochica en"
       },
       {
         "network": "GitHub",
         "username": "suabochica",
         "url": "https://github.com/suabochica",
-        "title": "visita el perfil de suabochica en:"
+        "title": "Visita el perfil de suabochica en"
       },
 {
         "network": "Instagram",
         "username": "suabochica",
         "url": "https://instagram.com/suabochica",
-        "title": "visita el perfil de suabochica en:"
+        "title": "Visita el perfil de suabochica en"
       }
     ]
   },
   "work": [
     {
+      "name": "Mercado Libre",
+      "position": "Ingeniero de Software",
+      "startDate": "2025-02-13",
+      "endDate": "2026-03-09",
+      "summary": "Ingeniero de Software Frontend en la plataforma central de Meli para el manejo de proyectos de tecnología, habilitando más de 54K aplicaciones y 16K usuarios a través de una arquitectura escalable de micro-frontends (Module Federation), proporcionando servicios de analítica, gestión de recursos y control de tráfico.",
+      "highlights": [
+        "Apoyo en la implementación del dark mode",
+        "Propuesta para el Sistema de Errores del Framework"
+      ]
+    },
+    {
       "name": "adidas",
       "position": "Ingeniero de Software",
-      "url": "https://twitch.tv/midudev",
       "startDate": "2022-06-13",
       "endDate": "2024-07-05",
-      "summary": "Mantuve una plataforma micro frontend heredada para productos de tendencia en adidas, permitiendo implementaciones de microservicios agnósticas a tecnologías frontend. Apoyé un producto para la personalización de artículos deportivos adidas en más de 6 mercados. Implementé funcionalidades para permitir la creación de pedidos para más de 100 clientes con cuentas adiclub en Estados Unidos. En este mismo proyecto mantuve 4 servicios API REST heredados.",
+      "summary": "Responsable del mantenimiento de una plataforma de micro-frontends en adidas, habilitando arquitectura desacoplada y agnóstica al frontend. Contribuí a un producto de personalización en 6 mercados, implementé creación de pedidos para más de 100 usuarios adiClub en Estado Unidos y gestioné 4 APIs REST críticas para órdenes de compra.",
       "highlights": [
         "Reconocimiento como expositor en el adidas tech summit 2023."
       ]
@@ -62,10 +72,9 @@
     {
       "name": "Endava",
       "position": "Desarrollador Líder Frontend",
-      "url": "https://twitch.tv/midudev",
       "startDate": "2019-02-01",
       "endDate": "2022-06-10",
-      "summary": "Ayudé a implementar una aplicación web para la gestión inteligente de la construcción de obras en Estados Unidos con una startup en Nashville. Participé en el desarrollo de 1 aplicación móvil para el rol de inspector de obras y tener garantías sobre el avance de la construcción. Internamente lideré la comunidad de programación funcional conformada por 12 miembros, promoviendo una cultura de transferencia de conocimiento y estudiando el lenguaje de programación Haskell.",
+      "summary": "Contribuí al desarrollo de una aplicación web para la gestión inteligente de proyectos de construcción en Estados Unidos, en colaboración con una startup con sede en Nashville. Desarrollé una aplicación móvil para inspectores de obras, mejorando la visibilidad y el seguimiento del progreso de los proyectos. Lideré una comunidad interna de programación funcional de 12 miembros, fomentando la transferencia de conocimiento y promoviendo la adopción de Haskell.",
       "highlights": [
         "Líder de la comunidad frontend",
         "Líder de la comunidad de programación funcional"
@@ -76,7 +85,7 @@
       "position": "Desarrollador Frontend Senior",
       "startDate": "2018-03-06",
       "endDate": "2019-01-21",
-      "summary": "Como desarrollador senior, empecé a apoyar a mis compañeros junior con temas de frontend. Lideré un plan de estudio para enseñar tecnologías frontend a desarrolladores con experiencia en backend. El plan capacitó a 5 desarrolladores full-stack para la empresa. Al mismo tiempo, participé en un mercado de productos para actividades al aire libre implementado en Drupal. Allí se desarrolló para el cliente un concepto de UX basado en animación suave. Estas nuevas imágenes incrementaron en 30 segundos la permanencia del usuario en la página web.",
+      "summary": "Lideré un plan de estudio para enseñar tecnologías frontend a desarrolladores con experiencia en backend. El plan capacitó a 5 desarrolladores full-stack para la empresa. Participé en un mercado de productos para actividades al aire libre implementado en Drupal. Allí se desarrolló para el cliente un concepto de UX basado en animación suave. Estas nuevas imágenes incrementaron en 30 segundos la permanencia del usuario en la página web.",
       "highlights": [
         "Premio Acquia para el digital marketing B2C"
       ]
@@ -86,7 +95,7 @@
       "position": "Desarrollador Frontend",
       "startDate": "2016-06-13",
       "endDate": "2018-02-02",
-      "summary": "Trabajé en un gran proyecto automotriz con aproximadamente 800 personas distribuidas globalmente. Aquí colaboré en la implementación de una configuración de automóvil y un programador de pruebas de manejo construido bajo la arquitectura de componentes web.",
+      "summary": "Trabajé en un proyecto automotriz con aproximadamente 800 personas distribuidas globalmente. Colaboré en la implementación de una configurador de características para automóviles y un programador de pruebas de manejo construido bajo la arquitectura de componentes web.",
       "highlights": [
         "Mejor puntaje en la evaluación de nuevos miembros "
       ]
@@ -134,7 +143,7 @@
       "institution": "Universidad de Los Andes",
       "url": "https://uniandes.edu.co/",
       "area": "Ingeniería de Sistemas",
-      "studyType": "Pregrado",
+      "studyType": "Pre grado",
       "startDate": "2009-01-12",
       "endDate": "2013-08-01",
       "score": "3.85",
@@ -306,6 +315,16 @@
         "JavaScript Library",
         "UI"
       ]
+    },
+    {
+      "name": "TanStack",
+      "level": "Avanzado",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
     }
   ],
   "languages": [
@@ -343,8 +362,20 @@
   ],
   "projects": [
     {
-      "name": "adidas Locker Room",
-      "isActive": true, 
+      "name": "meli | Fury",
+      "isActive": true,
+      "description": "El sistema operativo de Mercado Libre creado para proporcionar a los desarrolladores un entorno unificado y de autoservicio para crear, desplegar, gestionar y monitorear aplicaciones de manera eficiente.",
+      "highlights": [
+        "+54K aplicaciones",
+        "16K usuarios",
+        "React",
+        "Module Federation"
+      ],
+      "url": "https://medium.com/mercadolibre-tech/subpage/79a519305008"
+    },
+    {
+      "name": "adidas | Locker Room",
+      "isActive": false, 
       "description": "Plataforma interactiva para personalizar los productos deportivos de adiads a tu gusto.",
       "highlights": [
         "+6 mercados",
@@ -355,7 +386,7 @@
       "url": "https://vimeo.com/307223846"
     },
     {
-      "name": "adidas Hype",
+      "name": "adidas | Hype",
       "isActive": false,
       "description": "adidas Hype la línea de negocio que maneja las alianzas entre las figuras públicas y la marca las tres franjas (e.g., Y-3).",
       "highlights": [
@@ -365,7 +396,7 @@
       "url": "https://www.adidas.co/hype-zapatillas_y_tenis"
     },
     {
-      "name": "built",
+      "name": "Endava | built",
       "isActive": false,
       "description": "Simplifique los negocios en el sector inmobiliario.",
       "highlights": [
@@ -375,7 +406,7 @@
       "url": "https://getbuilt.com/"
     },
     {
-      "name": "Johnson Outdoors",
+      "name": "PDG | Johnson Outdoors",
       "isActive": false,
       "description": "Queremos que la gente salga y experimente el aire libre.",
       "highlights": [
@@ -385,7 +416,7 @@
       "url": "https://www.johnsonoutdoors.com/us"
     },
     {
-      "name": "Configurador de carros",
+      "name": "PDG | Configurador de carros",
       "isActive": false,
       "description": "Dale tu estilo a tu nuevo carro.",
       "highlights": [
@@ -396,7 +427,7 @@
       "url": "https://www.nissan.co.uk/vehicles/new-vehicles/juke/version-explorer/configurator/cfg.shtml/BAZ9/Av4Dm4/exterior-colour"
     },
     {
-      "name": "Programa una prueba de manejo",
+      "name": "PDG | Programa una prueba de manejo",
       "isActive": false,
       "description": "Reserva una prueba de manejo.",
       "highlights": [
