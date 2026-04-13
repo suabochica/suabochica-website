@@ -6,14 +6,14 @@ Project with the content that I want to share in my personal webpage based in a 
 ☑️ TODO List
 ---
 
+- [ ] Add certificates section in en json.
 - [x] Add work section in en json.
 - [x] Add education section in en json.
 - [x] Add project section in en json.
 - [x] Update theme.
-- [ ] Add certificates section in en json.
 - [x] Add one page cv.
 - [x] Connect with blog.
-- [x] Add spanish json.
+- [x] Add Spanish json.
 - [x] Check dark/light theme.
 - [x] Check design on small viewports.
 
