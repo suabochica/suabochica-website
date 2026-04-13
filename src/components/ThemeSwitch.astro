@@ -1,77 +1,64 @@
-<div class="theme-switch-wrapper">
-  <label class="theme-switch" for="checkbox">
-    <input type="checkbox" id="checkbox" />
-    <div class="slider round"></div>
-  </label>
-</div>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/theme-toggles@4.10.1/css/classic.min.css"
+/>
+
+<label id="switch-theme" class="theme-toggle" title="Toggle theme">
+  <input type="checkbox" />
+  <span class="theme-toggle-sr">Toggle theme</span>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+    width="1em"
+    height="1em"
+    fill="currentColor"
+    stroke-linecap="round"
+    class="theme-toggle__classic"
+    viewBox="0 0 32 32"
+  >
+    <clipPath id="theme-toggle__classic__cutout">
+      <path d="M0-5h30a1 1 0 0 0 9 13v24H0Z" />
+    </clipPath>
+    <g clip-path="url(#theme-toggle__classic__cutout)">
+      <circle cx="16" cy="16" r="9.34" />
+      <g stroke="currentColor" stroke-width="1.5">
+        <path d="M16 5.5v-4" />
+        <path d="M16 30.5v-4" />
+        <path d="M1.5 16h4" />
+        <path d="M26.5 16h4" />
+        <path d="m23.4 8.6 2.8-2.8" />
+        <path d="m5.7 26.3 2.9-2.9" />
+        <path d="m5.8 5.8 2.8 2.8" />
+        <path d="m23.4 23.4 2.9 2.9" />
+      </g>
+    </g>
+  </svg>
+</label>
 
 <style>
-  .theme-switch-wrapper {
-    display: flex;
+  .theme-toggle {
+    display: inline-flex;
     align-items: center;
-  }
-  .theme-switch {
-    display: inline-block;
-    height: 34px;
-    position: relative;
-    width: 60px;
-  }
-
-  .theme-switch input {
-    display: none;
-  }
-
-  .slider {
-    background-color: var(--main-fg0-color);
-    bottom: 0;
+    justify-content: center;
+    border: 1px solid var(--main-bg2-color);
     cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: 0.4s;
-  }
-
-  .slider:before {
-    background-color: var(--main-bg-color);
-    bottom: 4px;
-    content: "";
-    height: 26px;
-    left: 4px;
-    position: absolute;
-    transition: 0.4s;
-    width: 26px;
-  }
-
-  input:checked + .slider {
-    background-color: var(--main-gray-color);
-  }
-
-  input:checked + .slider:before {
-    transform: translateX(26px);
-  }
-
-  .slider.round {
-    border-radius: 34px;
-  }
-
-  .slider.round:before {
-    border-radius: 50%;
+    border-radius: 6px;
+    height: 32px;
+    width: 32px;
+    color: var(--main-fg0-color);
   }
 </style>
 
 <script>
-  const toggleSwitch = document.querySelector(
-    '.theme-switch input[type="checkbox"]'
-  );
+  const themeToggle = document.querySelector('#switch-theme input[type="checkbox"]');
 
   function switchTheme(ev: Event) {
     if ((ev.target as HTMLInputElement)?.checked) {
-      document.documentElement.setAttribute("data-theme", "dark");
+      document.documentElement.setAttribute('data-theme', 'dark');
     } else {
-      document.documentElement.setAttribute("data-theme", "light");
+      document.documentElement.setAttribute('data-theme', 'light');
     }
   }
 
-  toggleSwitch?.addEventListener("change", switchTheme, false);
+  themeToggle?.addEventListener('change', switchTheme, false);
 </script>
