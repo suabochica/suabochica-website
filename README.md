@@ -49,3 +49,4 @@ This project uses Netlify to manage continuous integration in the content update
 
 - Brand icons - https://svgl.app
 - Flat icons - https://lucide.dev/icons/
+- Toggles - https://toggles.dev using classic toggle.
