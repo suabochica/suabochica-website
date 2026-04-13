@@ -51,14 +51,33 @@
 
 <script>
   const themeToggle = document.querySelector('#switch-theme input[type="checkbox"]');
+  const STORAGE_KEY = 'theme-preference';
 
-  function switchTheme(ev: Event) {
-    if ((ev.target as HTMLInputElement)?.checked) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light');
+  function getThemePreference(): 'dark' | 'light' {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if (stored === 'dark' || stored === 'light') {
+      return stored;
+    }
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function applyTheme(theme: 'dark' | 'light') {
+    document.documentElement.setAttribute('data-theme', theme);
+    if (themeToggle) {
+      (themeToggle as HTMLInputElement).checked = theme === 'dark';
     }
   }
+
+  function switchTheme(ev: Event) {
+    const isDark = (ev.target as HTMLInputElement)?.checked;
+    const theme = isDark ? 'dark' : 'light';
+    localStorage.setItem(STORAGE_KEY, theme);
+    applyTheme(theme);
+  }
+
+  // Apply saved theme on page load
+  const savedTheme = getThemePreference();
+  applyTheme(savedTheme);
 
   themeToggle?.addEventListener('change', switchTheme, false);
 </script>

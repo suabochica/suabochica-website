@@ -14,8 +14,13 @@ const { currentLocale } = Astro;
 ---
 
 <!doctype html>
-<html lang={currentLocale} data-theme="light">
+<html lang={currentLocale}>
 	<head>
+		<script is:inline>
+			const theme = localStorage.getItem('theme-preference') ||
+				(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+			document.documentElement.setAttribute('data-theme', theme);
+		</script>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
