@@ -369,8 +369,8 @@
       "highlights": [
         "+54K applications",
         "16K users",
-        "React",
-        "Module Federation"
+        "Module Federation",
+        "React"
       ],
       "url": "https://medium.com/mercadolibre-tech/subpage/79a519305008"
     },
@@ -437,6 +437,40 @@
         "Sass"
       ],
       "url": "https://www.nissan.co.uk/vehicles/new-vehicles/qashqai.html#C400_cmp_story_4924-primary-modal"
+    },
+    {
+      "name": "Freelance | Carnes Supremo",
+      "isActive": false,
+      "description": "E-commerce for a local meat store.",
+      "highlights": [
+        "PHP",
+        "WooCommerce",
+        "Wordpress"
+      ],
+      "url": "https://cpsupremo.com"
+    },
+    {
+      "name": "Freelance | Licamba",
+      "isActive": false,
+      "description": "Website for the Liceo Campestre Bosque Andino, a local school in Sibaté.",
+      "highlights": [
+        "PHP",
+        "SEO",
+        "Wordpress"
+      ],
+      "url": "https://licamba.edu.co"
+    },
+        {
+      "name": "Freelance | Pruyecta",
+      "isActive": false,
+      "description": "Website to schedule a meet with the architecture consultant Angel&Angel.",
+      "highlights": [
+        "AstroJS",
+        "Next.js",
+        "Tailwind",
+        "Vercel"
+      ],
+      "url": "https://www.pruyecta.com"
     }
   ]
 }

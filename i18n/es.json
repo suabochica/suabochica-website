@@ -436,6 +436,40 @@
         "Sass"
       ],
       "url": "https://www.nissan.co.uk/vehicles/new-vehicles/qashqai.html#C400_cmp_story_4924-primary-modal"
+    },
+     {
+      "name": "Freelance | Carnes Supremo",
+      "isActive": false,
+      "description": "E-commerce para la venta de productos cárnicos, en Bogotá.",
+      "highlights": [
+        "PHP",
+        "WooCommerce",
+        "Wordpress"
+      ],
+      "url": "https://cpsupremo.com"
+    },
+    {
+      "name": "Freelance | Licamba",
+      "isActive": false,
+      "description": "Página web del Liceo Campestre Bosque Andino, una escuela local en Sibaté.",
+      "highlights": [
+        "PHP",
+        "SEO",
+        "Wordpress"
+      ],
+      "url": "https://licamba.edu.co"
+    },
+        {
+      "name": "Freelance | Pruyecta",
+      "isActive": false,
+      "description": "Página web para programar una reunión con el consultor de arquitectura del grupo Angel&Angel.",
+      "highlights": [
+        "AstroJS",
+        "Next.js",
+        "Tailwind",
+        "Vercel"
+      ],
+      "url": "https://www.pruyecta.com"
     }
   ]
 }
