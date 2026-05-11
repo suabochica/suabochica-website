@@ -23,6 +23,7 @@ export const SECTION_TITLES = {
     '.work': 'Trabajo',
     '.education': 'Educación',
     '.projects': 'Proyectos',
+    '.diplomas': 'Diplomas',
     '.skills': 'Habilidades',
   },
   en: {
@@ -30,6 +31,7 @@ export const SECTION_TITLES = {
     '.work': 'Work',
     '.education': 'Education',
     '.projects': 'Projects',
+    '.diplomas': 'Diplomas',
     '.skills': 'Skills',
   },
 } as const

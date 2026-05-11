@@ -39,7 +39,7 @@
         "url": "https://github.com/suabochica",
         "title": "Visita el perfil de suabochica en"
       },
-{
+      {
         "network": "Instagram",
         "username": "suabochica",
         "url": "https://instagram.com/suabochica",
@@ -86,9 +86,7 @@
       "startDate": "2018-03-06",
       "endDate": "2019-01-21",
       "summary": "Lideré un plan de estudio para enseñar tecnologías frontend a desarrolladores con experiencia en backend. El plan capacitó a 5 desarrolladores full-stack para la empresa. Participé en un mercado de productos para actividades al aire libre implementado en Drupal. Allí se desarrolló para el cliente un concepto de UX basado en animación suave. Estas nuevas imágenes incrementaron en 30 segundos la permanencia del usuario en la página web.",
-      "highlights": [
-        "Premio Acquia para el digital marketing B2C"
-      ]
+      "highlights": ["Premio Acquia para el digital marketing B2C"]
     },
     {
       "name": "Prodigious LATAM",
@@ -96,9 +94,7 @@
       "startDate": "2016-06-13",
       "endDate": "2018-02-02",
       "summary": "Trabajé en un proyecto automotriz con aproximadamente 800 personas distribuidas globalmente. Colaboré en la implementación de una configurador de características para automóviles y un programador de pruebas de manejo construido bajo la arquitectura de componentes web.",
-      "highlights": [
-        "Mejor puntaje en la evaluación de nuevos miembros "
-      ]
+      "highlights": ["Mejor puntaje en la evaluación de nuevos miembros "]
     },
     {
       "name": "Las Partes",
@@ -135,9 +131,7 @@
       "endDate": "2014-12-12",
       "score": "Aprobado",
       "description": "Diplomado en Desarrollo de Videojuegos y Libros Interactivos, es un curso de alto nivel de 120 horas que te introducirá en la planificación, diseño y desarrollo de tu videojuego y la forma correcta de presentar el proyecto a clientes e inversores.",
-      "courses": [
-        "DB1101 - Basic SQL"
-      ]
+      "courses": ["DB1101 - Basic SQL"]
     },
     {
       "institution": "Universidad de Los Andes",
@@ -148,9 +142,7 @@
       "endDate": "2013-08-01",
       "score": "3.85",
       "description": "El objetivo del programa de pregrado es aprovechar las oportunidades que ofrecen las tecnologías de la información y las comunicaciones para mejorar la calidad de vida, transformando las organizaciones y la sociedad a través de ingenieros comprometidos con la innovación y la calidad en su ejercicio profesional.",
-      "courses": [
-        "DB1101 - Basic SQL"
-      ]
+      "courses": ["DB1101 - Basic SQL"]
     },
     {
       "institution": "Universidad de Los Andes",
@@ -161,9 +153,7 @@
       "endDate": "2013-08-01",
       "score": "3.85",
       "description": "La opción diseño pretende acercar a estudiantes de otras disciplinas las notaciones básicas del Diseño de Producto y Diseño de Comunicación, proporcionándoles herramientas y metodologías básicas en Diseño, para ampliar sus conocimientos profesionales a través de ejercicios para explorar y desarrollar su creatividad.",
-      "courses": [
-        "DB1101 - Basic SQL"
-      ]
+      "courses": ["DB1101 - Basic SQL"]
     },
     {
       "institution": "Universidad de Los Andes",
@@ -174,9 +164,7 @@
       "endDate": "2013-08-01",
       "score": "3.85",
       "description": "La opción de computación visual tiene como objetivo proporcionar a los estudiantes conocimientos y habilidades para abordar los desafíos actuales de la aplicación de la computación visual en un entorno interdisciplinario.",
-      "courses": [
-        "DB1101 - Basic SQL"
-      ]
+      "courses": ["DB1101 - Basic SQL"]
     }
   ],
   "awards": [
@@ -193,12 +181,132 @@
       "summary": "Participé en la Hackathon de Síntesis de Evidencia con la propuesta para automatizar el sistema de formularios ROSES."
     }
   ],
-  "certificates": [
+  "diplomas": [
     {
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
+      "name": "Understanding TypeScript",
+      "date": "2017-11-24",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/course/understanding-typescript/",
+      "image": "./images/diplomas/udemy_understanding_typescript.png"
+    },
+    {
+      "name": "React Nanodegree",
+      "date": "2018-09-11",
+      "issuer": "Udacity",
+      "url": "https://www.udacity.com/course/react-nanodegree--nd019",
+      "image": "./images/diplomas/udacity_react_nanodegree.png"
+    },
+    {
+      "name": "The Complete NodeJS Developer",
+      "date": "2020-03-20",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/course/the-complete-nodejs-developer-course-2/?srsltid=AfmBOoqAKwyYIJNY-3mc2BU6Dp0ZhTSXM2OWdsGXEp9LOD_yq646ylRj",
+      "image": "./images/diplomas/udemy_nodejs.png"
+    },
+    {
+      "name": "RxJS in Practice",
+      "date": "2020-05-27",
+      "issuer": "Udemy",
+      "url": "https://www.udemy.com/course/rxjs-course/",
+      "image": "./images/diplomas/udemy_nodejs.png"
+    },
+    {
+      "name": "Just JavaScript",
+      "date": "2021-09-07",
+      "issuer": "JJS",
+      "url": "https://justjavascript.com/",
+      "image": "./images/diplomas/just_javascript.png"
+    },
+    {
+      "name": "Blockchain Developer Nanodegree",
+      "date": "2022-02-09",
+      "issuer": "Udacity",
+      "url": "https://www.udacity.com/course/blockchain-developer--nd1310",
+      "image": "./images/diplomas/udacity_blockchain_dev.png"
+    },
+    {
+      "name": "Modern JavaScript",
+      "date": "2025-08-29",
+      "issuer": "Fireship",
+      "url": "https://fireship.dev/c/modern-javascript",
+      "image": "./images/diplomas/fireship_modern_javascript.png"
+    },
+    {
+      "name": "React.gg",
+      "date": "2025-08-04",
+      "issuer": "Fireship",
+      "url": "https://fireship.dev/c/react",
+      "image": "./images/diplomas/fireship_react.png"
+    },
+    {
+      "name": "Advanced JavaScript",
+      "date": "2026-08-08",
+      "issuer": "Fireship",
+      "url": "https://fireship.dev/c/advanced-javascript",
+      "image": "./images/diplomas/fireship_advanced_javascript.png"
+    },
+    {
+      "name": "Query.gg",
+      "date": "2025-09-18",
+      "issuer": "Fireship",
+      "url": "https://fireship.dev/c/query",
+      "image": "./images/diplomas/fireship_query.png"
+    },
+    {
+      "name": "React + TypeScript",
+      "date": "2025-10-09",
+      "issuer": "Fireship",
+      "url": "https://fireship.dev/c/query",
+      "image": "./images/diplomas/fireship_react_typescript.png"
+    },
+    {
+      "name": "React Router",
+      "date": "2025-11-25",
+      "issuer": "Fireship",
+      "url": "https://fireship.dev/c/react-router",
+      "image": "./images/diplomas/fireship_react_router.png"
+    },
+    {
+      "name": "TypeScript",
+      "date": "2026-04-05",
+      "issuer": "Fireship",
+      "url": "https://fireship.dev/c/typescript",
+      "image": "./images/diplomas/fireship_typescript.png"
+    },
+    {
+      "name": "Deno",
+      "date": "2026-04-20",
+      "issuer": "Fireship",
+      "url": "https://fireship.dev/c/deno",
+      "image": "./images/diplomas/fireship_deno.png"
+    },
+    {
+      "name": "Linux",
+      "date": "2026-04-20",
+      "issuer": "Fireship",
+      "url": "https://fireship.dev/c/linux",
+      "image": "./images/diplomas/fireship_linux.png"
+    },
+    {
+      "name": "Supabase",
+      "date": "2026-04-20",
+      "issuer": "Fireship",
+      "url": "https://fireship.dev/c/supabase",
+      "image": "./images/diplomas/fireship_supabase.png"
+    },
+    {
+      "name": "Next.js",
+      "date": "2026-05-08",
+      "issuer": "Fireship",
+      "url": "https://fireship.dev/c/nextjs",
+      "image": "./images/diplomas/fireship_nextjs.png"
+    },
+    {
+      "name": "Git",
+      "date": "2026-05-11",
+      "issuer": "Fireship",
+      "url": "https://fireship.dev/c/git",
+      "image": "./images/diplomas/fireship_git.png"
     }
   ],
   "publications": [
@@ -214,19 +322,12 @@
     {
       "name": "HTML",
       "level": "Maestro",
-      "keywords": [
-        "Desarrollo Web",
-        "Frontend"
-      ]
+      "keywords": ["Desarrollo Web", "Frontend"]
     },
     {
       "name": "CSS",
       "level": "Maestro",
-      "keywords": [
-        "Desarrollo Web",
-        "Frontend",
-        "Diseño Responsivo"
-      ]
+      "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsivo"]
     },
     {
       "name": "Tailwind",
@@ -241,12 +342,7 @@
     {
       "name": "JavaScript",
       "level": "Maestro",
-      "keywords": [
-        "Desarrollo Web",
-        "Frontend",
-        "Backend",
-        "Fullstack"
-      ]
+      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
     },
     {
       "name": "TypeScript",
@@ -261,70 +357,37 @@
     {
       "name": "Node",
       "level": "Avanzado",
-      "keywords": [
-        "Web development",
-        "Backend",
-        "JavaScript",
-        "Server"
-      ]
+      "keywords": ["Web development", "Backend", "JavaScript", "Server"]
     },
     {
       "name": "MySQL",
       "level": "Avanzado",
-      "keywords": [
-        "SQL",
-        "Database",
-        "Backend"
-      ]
+      "keywords": ["SQL", "Database", "Backend"]
     },
     {
       "name": "Git",
       "level": "Avanzado",
-      "keywords": [
-        "Version control",
-        "Collaboration",
-        "Source code"
-      ]
+      "keywords": ["Version control", "Collaboration", "Source code"]
     },
     {
       "name": "GitHub",
       "level": "Avanzado",
-      "keywords": [
-        "Version control",
-        "Collaboration",
-        "Source code",
-        "Git"
-      ]
+      "keywords": ["Version control", "Collaboration", "Source code", "Git"]
     },
     {
       "name": "React",
       "level": "Avanzado",
-      "keywords": [
-        "Web development",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
-      ]
+      "keywords": ["Web development", "Frontend", "JavaScript Library", "UI"]
     },
     {
       "name": "Redux",
       "level": "Avanzado",
-      "keywords": [
-        "Web development",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
-      ]
+      "keywords": ["Web development", "Frontend", "JavaScript Library", "UI"]
     },
     {
       "name": "TanStack",
       "level": "Avanzado",
-      "keywords": [
-        "Web development",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
-      ]
+      "keywords": ["Web development", "Frontend", "JavaScript Library", "UI"]
     }
   ],
   "languages": [
@@ -348,10 +411,7 @@
   "interests": [
     {
       "name": "Deporte",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
+      "keywords": ["Ferrets", "Unicorns"]
     }
   ],
   "references": [
@@ -375,24 +435,16 @@
     },
     {
       "name": "adidas | Locker Room",
-      "isActive": false, 
+      "isActive": false,
       "description": "Plataforma interactiva para personalizar los productos deportivos de adiads a tu gusto.",
-      "highlights": [
-        "+6 mercados",
-        "i18n",
-        "React",
-        "Effect"
-      ],
+      "highlights": ["+6 mercados", "i18n", "React", "Effect"],
       "url": "https://vimeo.com/307223846"
     },
     {
       "name": "adidas | Hype",
       "isActive": false,
       "description": "adidas Hype la línea de negocio que maneja las alianzas entre las figuras públicas y la marca las tres franjas (e.g., Y-3).",
-      "highlights": [
-        "+1 millón de visitas por campaña",
-        "i18n"
-      ],
+      "highlights": ["+1 millón de visitas por campaña", "i18n"],
       "url": "https://www.adidas.co/hype-zapatillas_y_tenis"
     },
     {
@@ -409,66 +461,42 @@
       "name": "PDG | Johnson Outdoors",
       "isActive": false,
       "description": "Queremos que la gente salga y experimente el aire libre.",
-      "highlights": [
-        "6 marcas soportadas",
-        "+500k USD de ventas netas 2018"
-      ],
+      "highlights": ["6 marcas soportadas", "+500k USD de ventas netas 2018"],
       "url": "https://www.johnsonoutdoors.com/us"
     },
     {
       "name": "PDG | Configurador de carros",
       "isActive": false,
       "description": "Dale tu estilo a tu nuevo carro.",
-      "highlights": [
-        "6 marcas de carros soportadas",
-        "BackboneJS",
-        "Sass"
-      ],
+      "highlights": ["6 marcas de carros soportadas", "BackboneJS", "Sass"],
       "url": "https://www.nissan.co.uk/vehicles/new-vehicles/juke/version-explorer/configurator/cfg.shtml/BAZ9/Av4Dm4/exterior-colour"
     },
     {
       "name": "PDG | Programa una prueba de manejo",
       "isActive": false,
       "description": "Reserva una prueba de manejo.",
-      "highlights": [
-        "6 marcas de carros soportadas",
-        "BackboneJS",
-        "Sass"
-      ],
+      "highlights": ["6 marcas de carros soportadas", "BackboneJS", "Sass"],
       "url": "https://www.nissan.co.uk/vehicles/new-vehicles/qashqai.html#C400_cmp_story_4924-primary-modal"
     },
-     {
+    {
       "name": "Freelance | Carnes Supremo",
       "isActive": false,
       "description": "E-commerce para la venta de productos cárnicos, en Bogotá.",
-      "highlights": [
-        "PHP",
-        "WooCommerce",
-        "Wordpress"
-      ],
+      "highlights": ["PHP", "WooCommerce", "Wordpress"],
       "url": "https://cpsupremo.com"
     },
     {
       "name": "Freelance | Licamba",
       "isActive": false,
       "description": "Página web del Liceo Campestre Bosque Andino, una escuela local en Sibaté.",
-      "highlights": [
-        "PHP",
-        "SEO",
-        "Wordpress"
-      ],
+      "highlights": ["PHP", "SEO", "Wordpress"],
       "url": "https://licamba.edu.co"
     },
-        {
+    {
       "name": "Freelance | Pruyecta",
       "isActive": false,
       "description": "Página web para programar una reunión con el consultor de arquitectura del grupo Angel&Angel.",
-      "highlights": [
-        "AstroJS",
-        "Next.js",
-        "Tailwind",
-        "Vercel"
-      ],
+      "highlights": ["AstroJS", "Next.js", "Tailwind", "Vercel"],
       "url": "https://www.pruyecta.com"
     }
   ]
