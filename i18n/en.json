@@ -65,7 +65,9 @@
       "startDate": "2022-06-13",
       "endDate": "2024-07-05",
       "summary": "Responsible for maintaining a micro-frontend platform at adidas, enabling a decoupled and frontend-agnostic architecture. Contributed to a personalization product across 6 markets, implemented order creation for more than 100 adiClub users in the U.S., and managed 4 critical REST APIs for purchase orders.",
-      "highlights": ["adidas tech summit recognition as speaker."]
+      "highlights": [
+        "adidas tech summit recognition as speaker."
+      ]
     },
     {
       "name": "Endava",
@@ -84,7 +86,9 @@
       "startDate": "2018-03-06",
       "endDate": "2019-01-21",
       "summary": "As a senior developer, I start to support my partners with front-end topics. I led a studio plan to teach front-end technologies to developers with back-end backgrounds. The plan trained 5 full-stack developers for the company. At the same time, I participated in a marketplace for outdoor products implement on Drupal. There, a UX concept based on soft animation was implemented for the client. These new visuals incremented in 30 seconds the user retainable on the web page.",
-      "highlights": ["Acquia award for digital marketing B2C"]
+      "highlights": [
+        "Acquia award for digital marketing B2C"
+      ]
     },
     {
       "name": "Prodigious LATAM",
@@ -92,7 +96,9 @@
       "startDate": "2016-06-13",
       "endDate": "2018-02-02",
       "summary": "In Prodigious I worked on a large automotive project with approximately 800 persons on it distributed globally. Here I collaborated in the implementation of a car configuration and a test drive scheduler built under the web components architecture..",
-      "highlights": ["Best new joiner assessment"]
+      "highlights": [
+        "Best new joiner assessment"
+      ]
     },
     {
       "name": "Las Partes",
@@ -129,7 +135,9 @@
       "endDate": "2014-12-12",
       "score": "Approved",
       "description": "Diploma in Video Game Development and Interactive Books, it is a high-level 120-hour course that will introduce you to the planning, design and development of your video game and the correct way to present the project to clients and investors.",
-      "courses": ["DB1101 - Basic SQL"]
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
     },
     {
       "institution": "Los Andes University",
@@ -140,7 +148,9 @@
       "endDate": "2013-08-01",
       "score": "3.85",
       "description": "The objective of the undergraduate program is to take advantage of the opportunities offered by information and communication technologies to improve the quality of life, transforming organizations and society through engineers committed to innovation and quality in their professional practice.",
-      "courses": ["DB1101 - Basic SQL"]
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
     },
     {
       "institution": "Los Andes University",
@@ -151,7 +161,9 @@
       "endDate": "2013-08-01",
       "score": "3.85",
       "description": "The design option aims to bring students from other disciplines basic notations of Product Design and Communication Design, providing basic tools and methodologies in Design, to expand their professional knowledge through exercises to explore and develop their creativity",
-      "courses": ["DB1101 - Basic SQL"]
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
     },
     {
       "institution": "Los Andes University",
@@ -162,7 +174,9 @@
       "endDate": "2013-08-01",
       "score": "3.85",
       "description": "The visual computing option aims to provide students with knowledge and skills to address the current challenges of applying visual computing in an interdisciplinary environment.",
-      "courses": ["DB1101 - Basic SQL"]
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
     }
   ],
   "awards": [
@@ -320,17 +334,19 @@
     {
       "name": "HTML",
       "level": "Master",
-      "keywords": ["Web development", "Frontend"]
+      "keywords": [
+        "Web development",
+        "Frontend"
+      ]
     },
     {
       "name": "CSS",
       "level": "Master",
-      "keywords": ["Web development", "Frontend", "Diseño Responsive"]
-    },
-    {
-      "name": "JavaScript",
-      "level": "Master",
-      "keywords": ["Web development", "Frontend", "Backend", "Fullstack"]
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "Diseño Responsive"
+      ]
     },
     {
       "name": "Tailwind",
@@ -340,6 +356,16 @@
         "Frontend",
         "CSS Framework",
         "Responsive Design"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "Backend",
+        "Fullstack"
       ]
     },
     {
@@ -355,22 +381,109 @@
     {
       "name": "Node",
       "level": "Advanced",
-      "keywords": ["Web development", "Backend", "JavaScript", "Server"]
+      "keywords": [
+        "Web development",
+        "Backend",
+        "JavaScript",
+        "Server"
+      ]
+    },
+    {
+      "name": "Express",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Backend",
+        "JavaScript",
+        "Server"
+      ]
     },
     {
       "name": "MySQL",
       "level": "Advanced",
-      "keywords": ["SQL", "Database", "Backend"]
+      "keywords": [
+        "SQL",
+        "Database",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Linux",
+      "level": "Intermediate",
+      "keywords": [
+        "Operating System",
+        "Command Line",
+        "Server"
+      ]
     },
     {
       "name": "Git",
       "level": "Advanced",
-      "keywords": ["Version control", "Collaboration", "Source code"]
+      "keywords": [
+        "Version control",
+        "Collaboration",
+        "Source code"
+      ]
     },
     {
       "name": "GitHub",
       "level": "Advanced",
-      "keywords": ["Version control", "Collaboration", "Source code", "Git"]
+      "keywords": [
+        "Version control",
+        "Collaboration",
+        "Source code",
+        "Git"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "React + TypeScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "React Router",
+      "level": "Avanzado",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "React Query",
+      "level": "Avanzado",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "TanStack",
+      "level": "Advanced",
+      "keywords": [
+        "Web development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
     },
     {
       "name": "Next.js",
@@ -382,16 +495,6 @@
         "SSR",
         "Static Generation"
       ]
-    },
-    {
-      "name": "React",
-      "level": "Advanced",
-      "keywords": ["Web development", "Frontend", "JavaScript Library", "UI"]
-    },
-    {
-      "name": "TanStack",
-      "level": "Avanzado",
-      "keywords": ["Web development", "Frontend", "JavaScript Library", "UI"]
     }
   ],
   "languages": [
@@ -415,7 +518,10 @@
   "interests": [
     {
       "name": "Wildlife",
-      "keywords": ["Ferrets", "Unicorns"]
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
     }
   ],
   "references": [
@@ -441,14 +547,22 @@
       "name": "adidas | Locker Room",
       "isActive": false,
       "description": "Interactive platform to customize adidas sporting goods",
-      "highlights": ["+6 markets", "i18n", "React", "Effect"],
+      "highlights": [
+        "+6 markets",
+        "i18n",
+        "React",
+        "Effect"
+      ],
       "url": "https://vimeo.com/307223846"
     },
     {
       "name": "adidas | Hype",
       "isActive": false,
       "description": "adidas Hype is a page dedicated to the brand with the. three stripes. It contains news and stories about. adidas, its products and endorsers.",
-      "highlights": ["+1 million visits", "i18n"],
+      "highlights": [
+        "+1 million visits",
+        "i18n"
+      ],
       "url": "https://www.adidas.co/hype-zapatillas_y_tenis"
     },
     {
@@ -465,42 +579,66 @@
       "name": "PDG | Johnson Outdors",
       "isActive": false,
       "description": "We want people to get out and experience the great outdoors. We see it as our job to ensure that, from planning to unpacking, it's the best experience possible.",
-      "highlights": ["6 brands supported", "+500k USD net sale on 2018"],
+      "highlights": [
+        "6 brands supported",
+        "+500k USD net sale on 2018"
+      ],
       "url": "https://www.johnsonoutdoors.com/us"
     },
     {
       "name": "PDG | Car Configurator",
       "isActive": false,
       "description": "Style your car.",
-      "highlights": ["6 car brand supported", "BackboneJS", "Sass"],
+      "highlights": [
+        "6 car brand supported",
+        "BackboneJS",
+        "Sass"
+      ],
       "url": "https://www.nissan.co.uk/vehicles/new-vehicles/juke/version-explorer/configurator/cfg.shtml/BAZ9/Av4Dm4/exterior-colour"
     },
     {
       "name": "PDG | Test Drive Scheduler",
       "isActive": false,
       "description": "Book a test drive.",
-      "highlights": ["6 car brand supported", "BackboneJS", "Sass"],
+      "highlights": [
+        "6 car brand supported",
+        "BackboneJS",
+        "Sass"
+      ],
       "url": "https://www.nissan.co.uk/vehicles/new-vehicles/qashqai.html#C400_cmp_story_4924-primary-modal"
     },
     {
       "name": "Freelance | Carnes Supremo",
       "isActive": false,
       "description": "E-commerce for a local meat store.",
-      "highlights": ["PHP", "WooCommerce", "Wordpress"],
+      "highlights": [
+        "PHP",
+        "WooCommerce",
+        "Wordpress"
+      ],
       "url": "https://cpsupremo.com"
     },
     {
       "name": "Freelance | Licamba",
       "isActive": false,
       "description": "Website for the Liceo Campestre Bosque Andino, a local school in Sibaté.",
-      "highlights": ["PHP", "SEO", "Wordpress"],
+      "highlights": [
+        "PHP",
+        "SEO",
+        "Wordpress"
+      ],
       "url": "https://licamba.edu.co"
     },
     {
       "name": "Freelance | Pruyecta",
       "isActive": false,
       "description": "Website to schedule a meet with the architecture consultant Angel&Angel.",
-      "highlights": ["AstroJS", "Next.js", "Tailwind", "Vercel"],
+      "highlights": [
+        "AstroJS",
+        "Next.js",
+        "Tailwind",
+        "Vercel"
+      ],
       "url": "https://www.pruyecta.com"
     }
   ]
