@@ -15,8 +15,8 @@ const { skills } = i18n;
 <Section title={translate(".skills")}>
   <ul>
     {
-      skills.map(({ name }) => (
-        <li>
+      skills.map(({ name, level }) => (
+        <li class={`skill-${level}`}>
           <span>{name}</span>
         </li>
       ))
@@ -33,10 +33,23 @@ const { skills } = i18n;
 
   li {
     border-radius: 6px;
-    background: var(--main-fg-color);
-    color: var(--main-bg-color);
     font-size: 0.8rem;
     font-weight: 500;
     padding: 0.2rem 0.6rem;
+  }
+
+  .skill-basic {
+    background: var(--main-red-color);
+    color: var(--main-bg-color);
+  }
+
+  .skill-intermediate {
+    background: var(--main-yellow-color);
+    color: var(--main-fg0-color);
+  }
+
+  .skill-advanced {
+    background: var(--main-green-color);
+    color: var(--main-fg0-color);
   }
 </style>

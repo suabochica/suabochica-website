@@ -333,7 +333,7 @@
   "skills": [
     {
       "name": "HTML",
-      "level": "Master",
+      "level": "advanced",
       "keywords": [
         "Web development",
         "Frontend"
@@ -341,7 +341,7 @@
     },
     {
       "name": "CSS",
-      "level": "Master",
+      "level": "advanced",
       "keywords": [
         "Web development",
         "Frontend",
@@ -350,7 +350,7 @@
     },
     {
       "name": "Tailwind",
-      "level": "Advanced",
+      "level": "advanced",
       "keywords": [
         "Web development",
         "Frontend",
@@ -360,7 +360,7 @@
     },
     {
       "name": "JavaScript",
-      "level": "Master",
+      "level": "advanced",
       "keywords": [
         "Web development",
         "Frontend",
@@ -370,7 +370,7 @@
     },
     {
       "name": "TypeScript",
-      "level": "Advanced",
+      "level": "advanced",
       "keywords": [
         "Web development",
         "Frontend",
@@ -380,7 +380,7 @@
     },
     {
       "name": "Node",
-      "level": "Advanced",
+      "level": "advanced",
       "keywords": [
         "Web development",
         "Backend",
@@ -390,7 +390,7 @@
     },
     {
       "name": "Express",
-      "level": "Advanced",
+      "level": "advanced",
       "keywords": [
         "Web development",
         "Backend",
@@ -400,7 +400,7 @@
     },
     {
       "name": "MySQL",
-      "level": "Advanced",
+      "level": "advanced",
       "keywords": [
         "SQL",
         "Database",
@@ -409,7 +409,7 @@
     },
     {
       "name": "Linux",
-      "level": "Intermediate",
+      "level": "intermediate",
       "keywords": [
         "Operating System",
         "Command Line",
@@ -418,7 +418,7 @@
     },
     {
       "name": "Git",
-      "level": "Advanced",
+      "level": "advanced",
       "keywords": [
         "Version control",
         "Collaboration",
@@ -427,7 +427,7 @@
     },
     {
       "name": "GitHub",
-      "level": "Advanced",
+      "level": "advanced",
       "keywords": [
         "Version control",
         "Collaboration",
@@ -437,7 +437,7 @@
     },
     {
       "name": "React",
-      "level": "Advanced",
+      "level": "advanced",
       "keywords": [
         "Web development",
         "Frontend",
@@ -447,7 +447,7 @@
     },
     {
       "name": "React + TypeScript",
-      "level": "Avanzado",
+      "level": "advanced",
       "keywords": [
         "Web development",
         "Frontend",
@@ -457,7 +457,7 @@
     },
     {
       "name": "React Router",
-      "level": "Avanzado",
+      "level": "advanced",
       "keywords": [
         "Web development",
         "Frontend",
@@ -467,7 +467,7 @@
     },
     {
       "name": "React Query",
-      "level": "Avanzado",
+      "level": "advanced",
       "keywords": [
         "Web development",
         "Frontend",
@@ -477,7 +477,7 @@
     },
     {
       "name": "TanStack",
-      "level": "Advanced",
+      "level": "intermediate",
       "keywords": [
         "Web development",
         "Frontend",
@@ -487,7 +487,7 @@
     },
     {
       "name": "Next.js",
-      "level": "Advanced",
+      "level": "basic",
       "keywords": [
         "Web development",
         "Frontend",
