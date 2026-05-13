@@ -199,126 +199,126 @@
       "date": "2017-11-24",
       "issuer": "Udemy",
       "url": "https://www.udemy.com/course/understanding-typescript/",
-      "image": "./images/diplomas/udemy_understanding_typescript.png"
+      "image": "/images/diplomas/udemy_understanding_typescript.png"
     },
     {
       "name": "React Nanodegree",
       "date": "2018-09-11",
       "issuer": "Udacity",
       "url": "https://www.udacity.com/course/react-nanodegree--nd019",
-      "image": "./images/diplomas/udacity_react_nanodegree.png"
+      "image": "/images/diplomas/udacity_react_nanodegree.png"
     },
     {
       "name": "The Complete NodeJS Developer",
       "date": "2020-03-20",
       "issuer": "Udemy",
       "url": "https://www.udemy.com/course/the-complete-nodejs-developer-course-2/?srsltid=AfmBOoqAKwyYIJNY-3mc2BU6Dp0ZhTSXM2OWdsGXEp9LOD_yq646ylRj",
-      "image": "./images/diplomas/udemy_nodejs.png"
+      "image": "/images/diplomas/udemy_nodejs.png"
     },
     {
       "name": "RxJS in Practice",
       "date": "2020-05-27",
       "issuer": "Udemy",
       "url": "https://www.udemy.com/course/rxjs-course/",
-      "image": "./images/diplomas/udemy_nodejs.png"
+      "image": "/images/diplomas/udemy_nodejs.png"
     },
     {
       "name": "Just JavaScript",
       "date": "2021-09-07",
       "issuer": "JJS",
       "url": "https://justjavascript.com/",
-      "image": "./images/diplomas/just_javascript.png"
+      "image": "/images/diplomas/just_javascript.png"
     },
     {
       "name": "Blockchain Developer Nanodegree",
       "date": "2022-02-09",
       "issuer": "Udacity",
       "url": "https://www.udacity.com/course/blockchain-developer--nd1310",
-      "image": "./images/diplomas/udacity_blockchain_dev.png"
+      "image": "/images/diplomas/udacity_blockchain_dev.png"
     },
     {
       "name": "Modern JavaScript",
       "date": "2025-08-29",
       "issuer": "Fireship",
       "url": "https://fireship.dev/c/modern-javascript",
-      "image": "./images/diplomas/fireship_modern_javascript.png"
+      "image": "/images/diplomas/fireship_modern_javascript.png"
     },
     {
       "name": "React.gg",
       "date": "2025-08-04",
       "issuer": "Fireship",
       "url": "https://fireship.dev/c/react",
-      "image": "./images/diplomas/fireship_react.png"
+      "image": "/images/diplomas/fireship_react.png"
     },
     {
       "name": "Advanced JavaScript",
       "date": "2026-08-08",
       "issuer": "Fireship",
       "url": "https://fireship.dev/c/advanced-javascript",
-      "image": "./images/diplomas/fireship_advanced_javascript.png"
+      "image": "/images/diplomas/fireship_advanced_javascript.png"
     },
     {
       "name": "Query.gg",
       "date": "2025-09-18",
       "issuer": "Fireship",
       "url": "https://fireship.dev/c/query",
-      "image": "./images/diplomas/fireship_query.png"
+      "image": "/images/diplomas/fireship_query.png"
     },
     {
       "name": "React + TypeScript",
       "date": "2025-10-09",
       "issuer": "Fireship",
       "url": "https://fireship.dev/c/query",
-      "image": "./images/diplomas/fireship_react_typescript.png"
+      "image": "/images/diplomas/fireship_react_typescript.png"
     },
     {
       "name": "React Router",
       "date": "2025-11-25",
       "issuer": "Fireship",
       "url": "https://fireship.dev/c/react-router",
-      "image": "./images/diplomas/fireship_react_router.png"
+      "image": "/images/diplomas/fireship_react_router.png"
     },
     {
       "name": "TypeScript",
       "date": "2026-04-05",
       "issuer": "Fireship",
       "url": "https://fireship.dev/c/typescript",
-      "image": "./images/diplomas/fireship_typescript.png"
+      "image": "/images/diplomas/fireship_typescript.png"
     },
     {
       "name": "Deno",
       "date": "2026-04-20",
       "issuer": "Fireship",
       "url": "https://fireship.dev/c/deno",
-      "image": "./images/diplomas/fireship_deno.png"
+      "image": "/images/diplomas/fireship_deno.png"
     },
     {
       "name": "Linux",
       "date": "2026-04-20",
       "issuer": "Fireship",
       "url": "https://fireship.dev/c/linux",
-      "image": "./images/diplomas/fireship_linux.png"
+      "image": "/images/diplomas/fireship_linux.png"
     },
     {
       "name": "Supabase",
       "date": "2026-04-20",
       "issuer": "Fireship",
       "url": "https://fireship.dev/c/supabase",
-      "image": "./images/diplomas/fireship_supabase.png"
+      "image": "/images/diplomas/fireship_supabase.png"
     },
     {
       "name": "Next.js",
       "date": "2026-05-08",
       "issuer": "Fireship",
       "url": "https://fireship.dev/c/nextjs",
-      "image": "./images/diplomas/fireship_nextjs.png"
+      "image": "/images/diplomas/fireship_nextjs.png"
     },
     {
       "name": "Git",
       "date": "2026-05-11",
       "issuer": "Fireship",
       "url": "https://fireship.dev/c/git",
-      "image": "./images/diplomas/fireship_git.png"
+      "image": "/images/diplomas/fireship_git.png"
     }
   ],
   "publications": [
