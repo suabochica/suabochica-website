@@ -220,7 +220,7 @@
       "date": "2020-05-27",
       "issuer": "Udemy",
       "url": "https://www.udemy.com/course/rxjs-course/",
-      "image": "/images/diplomas/udemy_nodejs.png"
+      "image": "/images/diplomas/udemy_rxjs.png"
     },
     {
       "name": "Just JavaScript",
@@ -319,6 +319,34 @@
       "issuer": "Fireship",
       "url": "https://fireship.dev/c/git",
       "image": "/images/diplomas/fireship_git.png"
+    },
+    {
+      "name": "Firebase Security",
+      "date": "2026-05-18",
+      "issuer": "Fireship",
+      "url": "https://fireship.dev/c/firebase-security",
+      "image": "/images/diplomas/fireship_firebase_security.png"
+    },
+    {
+      "name": "Claude 101",
+      "date": "2026-06-16",
+      "issuer": "Anthropic",
+      "url": "https://anthropic.skilljar.com/claude-101",
+      "image": "/images/diplomas/claude_101.png"
+    },
+    {
+      "name": "Claude Code 101",
+      "date": "2026-06-17",
+      "issuer": "Anthropic",
+      "url": "https://anthropic.skilljar.com/claude-code-101",
+      "image": "/images/diplomas/claude_coude_101.png"
+    },
+    {
+      "name": "Claude Code in Action",
+      "date": "2026-06-18",
+      "issuer": "Anthropic",
+      "url": "https://anthropic.skilljar.com/claude-code-in-action",
+      "image": "/images/diplomas/claude_coude_in_action.png"
     }
   ],
   "publications": [
