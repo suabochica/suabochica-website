@@ -347,6 +347,13 @@
       "issuer": "Anthropic",
       "url": "https://anthropic.skilljar.com/claude-code-in-action",
       "image": "/images/diplomas/claude_coude_in_action.png"
+    },
+    {
+      "name": "Introduction to Model Context Protocol",
+      "date": "2026-07-22",
+      "issuer": "Anthropic",
+      "url": "https://anthropic.skilljar.com/introduction-to-model-context-protocol",
+      "image": "/images/diplomas/claude_coude_in_action.png"
     }
   ],
   "publications": [
