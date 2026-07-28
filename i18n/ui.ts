@@ -25,8 +25,7 @@ export const SECTION_TITLES = {
     '.projects': 'Proyectos',
     '.diplomas': 'Diplomas',
     '.skills': 'Habilidades',
-    '.skills.description': 'Las habilidades se clasifican en básico, intermedio y avanzado.',
-    '.skills.levels': 'El color rojo indica un nivel básico (conocimiento fundamental), el amarillo un nivel intermedio (dominio funcional) y el verde un nivel avanzado (dominio experto).',
+    '.skills.description': 'Mis habilidades se clasifican en una escala que va desde conceptos fundamentales hasta el dominio total. El nivel <strong>básico</strong> (píldora roja) abarca hechos esenciales y reglas estándar para resolver tareas sencillas. El nivel <strong>intermedio</strong> (píldora amarilla) combina la teoría con la aplicación práctica, lo que me permite trabajar de forma autónoma y solucionar problemas rutinarios. El nivel <strong>avanzado</strong> (píldora verde) representa una profunda experiencia, utilizada para resolver desafíos complejos, innovar en soluciones y evaluar metodologías.',
   },
   en: {
     '.about': 'About',
@@ -35,7 +34,6 @@ export const SECTION_TITLES = {
     '.projects': 'Projects',
     '.diplomas': 'Diplomas',
     '.skills': 'Skills',
-    '.skills.description': 'Skills are classified as basic, intermediate, and advanced.',
-    '.skills.levels': 'Red indicates basic level (foundational knowledge), yellow indicates intermediate level (functional proficiency), and green indicates advanced level (expert proficiency).',
+    '.skills.description': 'My skills scale from foundational concepts to total mastery. <strong>Basic</strong> (red pill) covers core facts and standard rules for handling simple tasks. <strong>Intermediate</strong> (yellow pill) blends theory with practical application, allowing me to work independently and troubleshoot routine problems. <strong>Advanced</strong> (green pill) represents deep expertise used to solve complex challenges, innovate solutions, and critique methodologies.',
   },
 } as const
