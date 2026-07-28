@@ -13,6 +13,8 @@ const { skills } = i18n;
 ---
 
 <Section title={translate(".skills")}>
+  <p>{translate(".skills.description")}</p>
+  <p>{translate(".skills.levels")}</p>
   <ul>
     {
       skills.map(({ name, level }) => (
@@ -25,6 +27,10 @@ const { skills } = i18n;
 </Section>
 
 <style>
+  p {
+    margin-bottom: 6px;
+  }
+
   ul {
     display: inline-flex;
     gap: 8px;
