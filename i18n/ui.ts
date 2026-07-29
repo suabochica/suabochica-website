@@ -28,7 +28,7 @@ export const SECTION_TITLES = {
     '.skills.description': 'Mis habilidades se clasifican en una escala que va desde conceptos fundamentales hasta el dominio total. El nivel <strong>básico</strong> (píldora roja) abarca hechos esenciales y reglas estándar para resolver tareas sencillas. El nivel <strong>intermedio</strong> (píldora amarilla) combina la teoría con la aplicación práctica, lo que me permite trabajar de forma autónoma y solucionar problemas rutinarios. El nivel <strong>avanzado</strong> (píldora verde) representa una profunda experiencia, utilizada para resolver desafíos complejos, innovar en soluciones y evaluar metodologías.',
   },
   en: {
-    '.about': 'About',
+    '.about': 'About me',
     '.work': 'Work',
     '.education': 'Education',
     '.projects': 'Projects',

@@ -13,5 +13,16 @@ const { summary } = i18n.basics;
 ---
 
 <Section title={translate(".about")}>
-  <p>{summary}</p>
+  {
+    summary.split("\n\n").map((paragraph) => <p class="paragraph">{paragraph}</p>)
+  }
 </Section>
+
+<style>
+  .paragraph {
+    margin-bottom: 1.4rem;
+  }
+  .paragraph:last-child {
+    margin-bottom: 0;
+  }
+</style>
