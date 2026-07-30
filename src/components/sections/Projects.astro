@@ -13,6 +13,7 @@ const { projects } = i18n;
 ---
 
 <Section title={translate(".projects")}>
+  <p set:html={translate(".projects.description")} />
   <ul>
     {
       projects.map(({ url, description, highlights, name, isActive }) => {
@@ -43,6 +44,10 @@ const { projects } = i18n;
 </Section>
 
 <style>
+  p {
+    margin-bottom: 1.4rem;
+  }
+
   ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
