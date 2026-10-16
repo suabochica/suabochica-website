@@ -6,7 +6,7 @@ Project with the content that I want to share in my personal webpage based in a 
 ☑️ TODO List
 ---
 
-- [ ] Add certificates section in en json.
+- [x] Add certificates section in en json.
 - [x] Add work section in en json.
 - [x] Add education section in en json.
 - [x] Add project section in en json.
@@ -47,6 +47,7 @@ This project uses Netlify to manage continuous integration in the content update
 📦 Resources
 ---
 
-- Brand icons - https://svgl.app
-- Flat icons - https://lucide.dev/icons/
-- Toggles - https://toggles.dev using classic toggle.
+- Brand icons - <https://svgl.app>
+- Flat icons - <https://lucide.dev/icons/>
+- Toggles - <https://toggles.dev> using classic toggle.
+

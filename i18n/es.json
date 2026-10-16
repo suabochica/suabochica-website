@@ -195,6 +195,34 @@
   ],
   "diplomas": [
     {
+      "name": "Ingeniería de Sistemas y Computación",
+      "date": "2013-08-23",
+      "issuer": "Universidad de los Andes",
+      "url": "https://uniandes.edu.co/",
+      "image": "/images/diplomas/uniandes_system_engineering.png"
+    },
+    {
+      "name": "Opción en Diseño",
+      "date": "2013-08-23",
+      "issuer": "Universidad de los Andes",
+      "url": "https://uniandes.edu.co/",
+      "image": "/images/diplomas/uniandes_desing_option.png"
+    },
+    {
+      "name": "Opción en Computación Visual",
+      "date": "2013-08-23",
+      "issuer": "Universidad de los Andes",
+      "url": "https://uniandes.edu.co/",
+      "image": "/images/diplomas/uniandes_visual_computer_option.png"
+    },
+    {
+      "name": "Diplomado de Creación de Videojuegos",
+      "date": "2014-12-05",
+      "issuer": "Konrad Lorenz",
+      "url": "https://www.konradlorenz.edu.co/home-aspirantes/",
+      "image": "/images/diplomas/konrad_lorenz_videogames.png"
+    },
+    {
       "name": "Understanding TypeScript",
       "date": "2017-11-24",
       "issuer": "Udemy",
@@ -286,6 +314,13 @@
       "image": "/images/diplomas/fireship_typescript.png"
     },
     {
+      "name": "VSCode Tricks",
+      "date": "2026-04-05",
+      "issuer": "Fireship",
+      "url": "https://fireship.dev/c/vscode-tricks",
+      "image": "/images/diplomas/fireship_vscode_tricks.png"
+    },
+    {
       "name": "Deno",
       "date": "2026-04-20",
       "issuer": "Fireship",
@@ -354,6 +389,13 @@
       "issuer": "Anthropic",
       "url": "https://anthropic.skilljar.com/introduction-to-model-context-protocol",
       "image": "/images/diplomas/claude_intro_to_mcp.png"
+    },
+    {
+      "name": "Backend Developer with Python Nanodegree",
+      "date": "2026-09-30",
+      "issuer": "Udacity",
+      "url": "https://www.udacity.com/certificate/e/327676ae-ab9d-11f1-bac0-a342038db3d1",
+      "image": "/images/diplomas/udacity_backend_development_nanodegree.jpeg"
     }
   ],
   "publications": [
