@@ -1,5 +1,6 @@
 ---
 import Section from "@/components/Section.astro";
+import { Badge } from 'suabochica-design-system';
 
 import { getI18N } from "@/i18n";
 import { useTranslations, getLangFromUrl } from "i18n/utils";
@@ -10,15 +11,18 @@ const translate = useTranslations(language);
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 const { skills } = i18n;
+const levelLabels: Record<string, string> = currentLocale === 'en'
+  ? { basic: 'Basic', intermediate: 'Intermediate', advanced: 'Advanced' }
+  : { basic: 'Básico', intermediate: 'Intermedio', advanced: 'Avanzado' };
 ---
 
 <Section title={translate(".skills")}>
-  <p set:html={translate(".skills.description")} />
+  <p class="introduction" set:html={translate(".skills.description")} />
   <ul>
     {
       skills.map(({ name, level }) => (
-        <li class={`skill-${level}`}>
-          <span>{name}</span>
+        <li>
+          <Badge tone="neutral">{name} · {levelLabels[level] ?? level}</Badge>
         </li>
       ))
     }
@@ -26,35 +30,17 @@ const { skills } = i18n;
 </Section>
 
 <style>
-  p {
-    margin-bottom: 1.4rem;
+  .introduction {
+    margin-bottom: var(--sua-space-lg);
   }
 
   ul {
     display: inline-flex;
-    gap: 8px;
+    gap: var(--sua-space-sm);
     flex-wrap: wrap;
   }
 
   li {
-    border-radius: 6px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    padding: 0.2rem 0.6rem;
-  }
-
-  .skill-basic {
-    background: var(--main-red-color);
-    color: var(--main-bg-color);
-  }
-
-  .skill-intermediate {
-    background: var(--main-yellow-color);
-    color: var(--main-fg0-color);
-  }
-
-  .skill-advanced {
-    background: var(--main-green-color);
-    color: var(--main-fg0-color);
+    max-width: 100%;
   }
 </style>

@@ -1,6 +1,7 @@
 ---
 import Section from "@/components/Section.astro";
 import ThemeSwitch from "@/components/ThemeSwitch.astro";
+import { Button, Figure, Heading, Text } from 'suabochica-design-system';
 
 import Mail from "@/components/icons/Mail.astro";
 import Phone from "@/components/icons/Phone.astro";
@@ -9,8 +10,6 @@ import File from "@/components/icons/File.astro";
 import LinkedIn from "@/components/icons/LinkedIn.astro";
 import GitHub from "@/components/icons/GitHub.astro";
 import MapPin from "@/components/icons/MapPin.astro";
-import Languages from "./icons/Languages.astro";
-import Globe from "./icons/Globe.astro";
 import X from "@/components/icons/X.astro";
 import Instagram from "./icons/Instagram.astro";
 
@@ -53,12 +52,12 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 <Section>
   <div class="container">
     <div class="info">
-      <h1>{name}</h1>
-      <h2>{label}</h2>
-      <span>
+      <Heading level={1} size="xl">{name}</Heading>
+      <Text variant="lead">{label}</Text>
+      <div class="location">
         <MapPin />
-        {city}, {region}
-      </span>
+        <Text as="span" variant="small" tone="muted">{city}, {region}</Text>
+      </div>
       <footer>
         <div class="print">
           {printInfo}
@@ -67,9 +66,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
           email && (
             <a
               href={`mailto:${email}`}
-              title={`${emailTitle} ${name}`}
-              target="_blank"
-              rel="noopener noreferer"
+              aria-label={`${emailTitle} ${name}`}
             >
               <Mail />
             </a>
@@ -79,9 +76,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
           phone && (
             <a
               href={`tel:${phone}`}
-              title={`${phoneTitle} ${phone}`}
-              target="_blank"
-              rel="noopener noreferer"
+              aria-label={`${phoneTitle} ${phone}`}
             >
               <Phone />
             </a>
@@ -91,9 +86,9 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
           blog && (
             <a
               href={`${blog}`}
-              title={`${blogTitle}`}
+              aria-label={`${blogTitle}`}
               target="_blank"
-              rel="noopener noreferer"
+              rel="noopener noreferrer"
             >
               <Book />
             </a>
@@ -103,9 +98,9 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
           cv && (
             <a
               href={`${cv}`}
-              title={`${cvTitle}`}
+              aria-label={`${cvTitle}`}
               target="_blank"
-              rel="noopener noreferer"
+              rel="noopener noreferrer"
             >
               <File />
             </a>
@@ -118,9 +113,9 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
             return (
               <a
                 href={url}
-                title={`${title} ${network}`}
+                aria-label={`${title} ${network}`}
                 target="_blank"
-                rel="noopener noreferer"
+                rel="noopener noreferrer"
               >
                 <Icon />
               </a>
@@ -131,29 +126,30 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
           currentLocale === "es" ? (
             <a
               href={`/en`}
-              title={`Perfil en inglés`}
-              target="_self"
-              rel="noopener noreferer"
+              aria-label="Perfil en inglés"
+              lang="en"
             >
-              <h4>EN</h4>
+              EN
             </a>
           ) : (
             <a
               href={`/`}
-              title={`Profile in Spanish`}
-              target="_self"
-              rel="noopener noreferer"
+              aria-label="Profile in Spanish"
+              lang="es"
             >
-              <h4>ES</h4>
+              ES
             </a>
           )
         }
+        <Button id="open-commands" type="button" variant="outline" size="small" aria-controls="command-palette">
+          {currentLocale === 'en' ? 'Commands' : 'Comandos'}
+        </Button>
         <ThemeSwitch />
       </footer>
     </div>
-    <figure>
-      <img src={image} alt={name} />
-    </figure>
+    <div class="portrait">
+      <Figure image={{ src: image, alt: name, width: 1024, height: 1024, loading: 'eager' }} />
+    </div>
   </div>
 </Section>
 
@@ -163,12 +159,12 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
     flex-direction: column;
     align-items: center;
 
-    figure::before {
+    .portrait::before {
       content: "";
       display: block;
       width: 100%;
       height: 1px;
-      background: var(--main-bg2-color);
+      background: var(--sua-border-strong);
       margin: 16px 0;
     }
   }
@@ -177,60 +173,75 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    padding-right: 32px;
+    min-width: 0;
     justify-content: center;
   }
 
-  h1 {
-    color: var(--main-orange-color);
-    font-size: 2rem;
-  }
-
-  h2 {
-    color: var(--main-fg0-color);
-    font-weight: 500;
-    font-size: 1.1rem;
-    text-wrap: balance;
-  }
-
-  img {
+  .portrait :global(img) {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     width: 128px;
-    border-radius: 16px;
+    height: 128px;
+    border-radius: var(--sua-radius-card);
   }
 
-  span {
-    color: var(--main-gray-color);
+  .location {
     display: flex;
-    align-items: start;
-    gap: 0.25rem;
-    font-size: 0.88rem;
-    letter-spacing: -0.06rem;
+    align-items: center;
+    gap: var(--sua-space-xs);
   }
 
   footer {
     display: flex;
-    gap: 4px;
+    flex-wrap: wrap;
+    gap: var(--sua-space-xs);
     margin-top: 8px;
   }
 
   footer a {
-    color: var(--main-gray-color);
+    color: var(--sua-link);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--main-bg2-color);
+    border: 1px solid var(--sua-border-control);
     padding: 4px;
-    height: 32px;
-    width: 32px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
+    height: 2.75rem;
+    width: 2.75rem;
+    border-radius: var(--sua-radius-control);
+    transition: background-color var(--sua-motion-duration) ease;
   }
 
   footer a:hover {
-    background: var(--main-bg2-color);
-    border: 1px solid var(--main-gray-color);
+    background: var(--sua-surface);
+    border-color: var(--sua-border-strong);
+  }
+
+  footer a:focus-visible {
+    outline: var(--sua-focus-width) solid var(--sua-focus);
+    outline-offset: var(--sua-focus-offset);
+  }
+
+  @media (forced-colors: active) {
+    footer a {
+      border-color: ButtonText;
+    }
+
+    footer a:focus-visible {
+      outline-color: Highlight;
+    }
+  }
+
+  @media print {
+    .portrait,
+    footer a,
+    footer :global(.sua-button),
+    footer :global(.theme-control) {
+      display: none;
+    }
+
+    footer {
+      margin-top: var(--sua-space-sm);
+    }
   }
 
   @media (min-width: 940px) {
@@ -240,7 +251,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
       justify-content: space-between;
       gap: 1rem;
 
-      figure::before {
+      .portrait::before {
         height: 0;
       }
     }

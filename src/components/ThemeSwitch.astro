@@ -1,83 +1,91 @@
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/theme-toggles@4.10.1/css/classic.min.css"
-/>
+---
+const { currentLocale } = Astro;
+const isEnglish = currentLocale === 'en';
+---
 
-<label id="switch-theme" class="theme-toggle" title="Toggle theme">
-  <input type="checkbox" />
-  <span class="theme-toggle-sr">Toggle theme</span>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    aria-hidden="true"
-    width="1em"
-    height="1em"
-    fill="currentColor"
-    stroke-linecap="round"
-    class="theme-toggle__classic"
-    viewBox="0 0 32 32"
-  >
-    <clipPath id="theme-toggle__classic__cutout">
-      <path d="M0-5h30a1 1 0 0 0 9 13v24H0Z" />
-    </clipPath>
-    <g clip-path="url(#theme-toggle__classic__cutout)">
-      <circle cx="16" cy="16" r="9.34" />
-      <g stroke="currentColor" stroke-width="1.5">
-        <path d="M16 5.5v-4" />
-        <path d="M16 30.5v-4" />
-        <path d="M1.5 16h4" />
-        <path d="M26.5 16h4" />
-        <path d="m23.4 8.6 2.8-2.8" />
-        <path d="m5.7 26.3 2.9-2.9" />
-        <path d="m5.8 5.8 2.8 2.8" />
-        <path d="m23.4 23.4 2.9 2.9" />
-      </g>
-    </g>
-  </svg>
-</label>
-
-<style>
-  .theme-toggle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--main-bg2-color);
-    cursor: pointer;
-    border-radius: 6px;
-    height: 32px;
-    width: 32px;
-    color: var(--main-fg0-color);
-  }
-</style>
+<div class="theme-control">
+  <label for="theme-preference">{isEnglish ? 'Theme' : 'Tema'}</label>
+  <select id="theme-preference" name="theme-preference">
+    <option value="system">{isEnglish ? 'System' : 'Sistema'}</option>
+    <option value="light">{isEnglish ? 'Light' : 'Claro'}</option>
+    <option value="dark">{isEnglish ? 'Dark' : 'Oscuro'}</option>
+  </select>
+</div>
 
 <script>
-  const themeToggle = document.querySelector('#switch-theme input[type="checkbox"]');
+  type Theme = 'light' | 'dark' | 'system';
   const STORAGE_KEY = 'theme-preference';
+  const select = document.querySelector<HTMLSelectElement>('#theme-preference');
 
-  function getThemePreference(): 'dark' | 'light' {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored === 'dark' || stored === 'light') {
-      return stored;
+  function readPreference(): Theme {
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (stored === 'light' || stored === 'dark' || stored === 'system') {
+        return stored;
+      }
+    } catch {
+      // Keep the system preference when storage is unavailable.
     }
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    return 'system';
   }
 
-  function applyTheme(theme: 'dark' | 'light') {
-    document.documentElement.setAttribute('data-theme', theme);
-    if (themeToggle) {
-      (themeToggle as HTMLInputElement).checked = theme === 'dark';
+  function applyPreference(preference: Theme) {
+    document.documentElement.dataset.theme = preference;
+    if (select) select.value = preference;
+  }
+
+  applyPreference(readPreference());
+
+  select?.addEventListener('change', () => {
+    const preference = select.value as Theme;
+    applyPreference(preference);
+    try {
+      localStorage.setItem(STORAGE_KEY, preference);
+    } catch {
+      // The selected theme still works for this page.
     }
-  }
+  });
 
-  function switchTheme(ev: Event) {
-    const isDark = (ev.target as HTMLInputElement)?.checked;
-    const theme = isDark ? 'dark' : 'light';
-    localStorage.setItem(STORAGE_KEY, theme);
-    applyTheme(theme);
-  }
-
-  // Apply saved theme on page load
-  const savedTheme = getThemePreference();
-  applyTheme(savedTheme);
-
-  themeToggle?.addEventListener('change', switchTheme, false);
+  window.addEventListener('storage', (event) => {
+    if (event.key === STORAGE_KEY || event.key === null) {
+      applyPreference(readPreference());
+    }
+  });
 </script>
+
+<style>
+  .theme-control {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sua-space-xs);
+    color: var(--sua-text);
+    font-family: var(--sua-font-heading);
+    font-size: var(--sua-text-small);
+  }
+
+  select {
+    background: var(--sua-surface);
+    border: 1px solid var(--sua-border-control);
+    border-radius: var(--sua-radius-control);
+    color: var(--sua-text);
+    font: inherit;
+    min-height: 2.75rem;
+    padding: var(--sua-space-xs);
+    cursor: pointer;
+  }
+
+  select:focus-visible {
+    outline: var(--sua-focus-width) solid var(--sua-focus);
+    outline-offset: var(--sua-focus-offset);
+  }
+
+  @media (forced-colors: active) {
+    select {
+      border-color: ButtonText;
+    }
+
+    select:focus-visible {
+      outline-color: Highlight;
+    }
+  }
+</style>

@@ -1,5 +1,6 @@
 ---
 import Section from "@/components/Section.astro";
+import { Figure, Heading, Surface, Text, TextLink } from 'suabochica-design-system';
 
 import { getI18N } from "@/i18n";
 import { useTranslations, getLangFromUrl } from "i18n/utils";
@@ -13,23 +14,21 @@ const { diplomas } = i18n;
 ---
 
 <Section title={translate(".diplomas")}>
-  <ul class="card-list">
+  <ul>
     {
       diplomas.map((diploma) => (
         <li>
-          <a href={diploma.url} target="_blank" rel="noopener noreferrer">
-            <header>
-              <h3>{diploma.issuer}</h3>
-            </header>
-            <p>{diploma.date}</p>
-            <img
-              src={diploma.image}
-              alt={`${diploma.name} logo`}
-              width="220"
-              height="160"
-              loading="lazy"
+          <Surface as="article" tone="paper" radius="card" padding="md" className="credential">
+            <Heading level={3} size="sm">{diploma.name}</Heading>
+            <Text variant="small" tone="muted">{diploma.issuer}</Text>
+            <time datetime={diploma.date}>{diploma.date}</time>
+            <Figure
+              image={{ src: diploma.image, alt: `${diploma.name} — ${diploma.issuer}`, width: 220, height: 160, loading: 'lazy' }}
             />
-          </a>
+            <TextLink href={diploma.url} target="_blank" rel="noopener noreferrer">
+              {currentLocale === 'en' ? 'View certificate' : 'Ver certificado'}: {diploma.name}
+            </TextLink>
+          </Surface>
         </li>
       ))
     }
@@ -39,39 +38,36 @@ const { diplomas } = i18n;
 <style>
   ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-  }
-
-  article {
-    border-radius: 8px;
-    border: 1px solid var(--main-fg-color);
-    gap: 16px;
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-    height: 100%;
-  }
-
-  article header {
-    flex: 1;
-  }
-
-  h3 {
-    color: var(--main-aqua-color);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    gap: var(--sua-space-md);
   }
 
   li {
-    transition: filter 150ms ease-in-out;
+    min-width: 0;
   }
 
-  .card-list:has(li:hover) li:not(:hover) {
-    filter: blur(4px);
+  .credential {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sua-space-sm);
+    height: 100%;
   }
 
-  @media (max-width: 380px) {
-    ul {
-      justify-items: center;
+  time {
+    color: var(--sua-text-muted);
+    font-size: var(--sua-text-small);
+  }
+
+  .credential :global(.sua-figure__image) {
+    display: block;
+    width: 100%;
+    height: 10rem;
+    object-fit: contain;
+  }
+
+  @media print {
+    .credential :global(.sua-figure__image) {
+      height: 5rem;
     }
   }
 </style>

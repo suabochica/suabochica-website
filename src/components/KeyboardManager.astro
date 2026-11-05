@@ -1,9 +1,11 @@
 ---
-import { basics } from "i18n/en.json";
+import { getI18N } from '@/i18n';
 
 import type { SocialIcon } from "@/types";
 
-const { profiles } = basics;
+const { currentLocale } = Astro;
+const isEnglish = currentLocale === 'en';
+const { profiles, blog, blogTitle, cv, cvTitle } = getI18N({ currentLocale }).basics;
 
 const SOCIAL_ICONS: SocialIcon = {
   GitHub: `<svg
@@ -52,38 +54,36 @@ const SOCIAL_ICONS: SocialIcon = {
 </svg>`,
 };
 
-const { currentLocale } = Astro;
-
-const profilesInfo = profiles.map(({ network, url }) => {
+const profilesInfo = profiles.map(({ network, url, title }) => {
   const icon = SOCIAL_ICONS[network as keyof SocialIcon];
-  const firstLetter = network.charAt(0).toUpperCase();
 
   return {
     id: network,
-    section: "Social",
-    title: `Visit ${network}`,
+    section: isEnglish ? 'Links' : 'Enlaces',
+    title: `${title} ${network}`,
     url,
     icon,
-    hotkey: `Ctrl + ${firstLetter}`,
   };
 });
+
+const linkInfo = [
+  blog && { id: 'blog', section: isEnglish ? 'Links' : 'Enlaces', title: blogTitle, url: blog },
+  cv && { id: 'cv', section: isEnglish ? 'Links' : 'Enlaces', title: cvTitle, url: cv },
+  ...profilesInfo,
+].filter(Boolean);
 ---
 
-{
-  currentLocale === "es" ? (
-    <footer>
-      Presiona <kbd>Cmd</kbd> + <kbd>K</kbd> en Mac ó <kbd>Ctrl</kbd> +{" "}
-      <kbd>K</kbd> en Windows/Linux para ver los atajos
-    </footer>
-  ) : (
-    <footer>
-      Press <kbd>Cmd</kbd> + <kbd>K</kbd> on Mac or <kbd>Ctrl</kbd> +{" "}
-      <kbd>K</kbd> on Windows/Linux to see the shortcuts
-    </footer>
-  )
-}
+<p class="shortcut-hint">
+  {isEnglish ? 'Open commands with' : 'Abre los comandos con'}
+  <kbd>⌘</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd>
+</p>
 
-<ninja-keys data-info={JSON.stringify(profilesInfo)} placeholder="Buscar atajo"
+<ninja-keys
+  id="command-palette"
+  data-info={JSON.stringify(linkInfo)}
+  data-locale={isEnglish ? 'en' : 'es'}
+  placeholder={isEnglish ? 'Search commands' : 'Buscar comandos'}
+  noautoloadmdicons
 ></ninja-keys>
 
 <script>
@@ -92,94 +92,106 @@ const profilesInfo = profiles.map(({ network, url }) => {
   const ninja = document.querySelector("ninja-keys");
 
   if (ninja != null) {
-    const info = ninja.getAttribute("data-info") ?? "[]";
-    const parsedInfo = JSON.parse(info);
-    const data = parsedInfo.map((item: any) => {
-      return {
-        ...item,
-        handler: () => {
-          window.open(item.url, "_blank");
-        },
-      };
-    });
+    const isEnglish = ninja.dataset.locale === 'en';
+    const links = JSON.parse(ninja.dataset.info ?? '[]') as Array<{
+      id: string;
+      section: string;
+      title: string;
+      url: string;
+      icon?: string;
+    }>;
 
     ninja.data = [
       {
         id: "print",
-        title: "🖨️ Imprimir",
-        hotkey: "Ctrl + P",
-        section: "Acciones",
+        title: isEnglish ? 'Print page' : 'Imprimir página',
+        section: isEnglish ? 'Actions' : 'Acciones',
         handler: () => {
           window.print();
         },
       },
       {
-        id: "en",
-        title: "🇺🇸 Profile in English",
-        hotkey: "Ctrl + E",
-        section: "Acciones",
+        id: isEnglish ? 'es' : 'en',
+        title: isEnglish ? 'Profile in Spanish' : 'Perfil en inglés',
+        section: isEnglish ? 'Actions' : 'Acciones',
         handler: () => {
-          window.open("/en", "_self");
+          window.location.assign(isEnglish ? '/' : '/en');
         },
       },
-      {
-        id: "es",
-        title: "🇨🇴 Perfil en Español",
-        hotkey: "Ctrl + U",
-        section: "Acciones",
-        handler: () => {
-          window.open("/", "_self");
-        },
-      },
-      ...data,
+      ...links.map((link) => ({
+        ...link,
+        handler: () => window.open(link.url, '_blank', 'noopener,noreferrer'),
+      })),
     ];
+
+    const trigger = document.querySelector<HTMLButtonElement>('#open-commands');
+    trigger?.addEventListener('click', () => ninja.open());
   }
 </script>
 
 <style>
-  @media print {
-    ninja-keys,
-    footer {
-      display: none;
-    }
+  ninja-keys {
+    --ninja-font-family: var(--sua-font-body);
+    --ninja-font-size: var(--sua-text-body);
+    --ninja-key-border-radius: var(--sua-radius-control);
+    --ninja-overflow-background: color-mix(in srgb, var(--sua-canvas) 70%, transparent);
+    --ninja-text-color: var(--sua-text);
+    --ninja-secondary-text-color: var(--sua-text-muted);
+    --ninja-group-text-color: var(--sua-text-muted);
+    --ninja-placeholder-color: var(--sua-placeholder);
+    --ninja-accent-color: var(--sua-focus);
+    --ninja-icon-color: var(--sua-text);
+    --ninja-modal-background: var(--sua-surface);
+    --ninja-modal-shadow: var(--sua-shadow-overlay);
+    --ninja-secondary-background-color: var(--sua-canvas);
+    --ninja-selected-background: var(--sua-surface-reading);
+    --ninja-selected-text-color: var(--sua-text);
+    --ninja-footer-background: var(--sua-canvas);
+    --ninja-separate-border: 1px solid var(--sua-border);
   }
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  ninja-keys::part(ninja-input):focus-visible {
+    outline: var(--sua-focus-width) solid var(--sua-focus);
+    outline-offset: calc(-1 * var(--sua-focus-width));
   }
 
-  footer {
-    position: fixed;
-    bottom: 0;
-    padding-block: 1rem;
-    color: var(--main-gray-color);
-    width: 100%;
-    background-color: var(--main-bg1-color);
-    border-top: 1px solid var(--main-bg-color);
-    font-size: 0.8rem;
+  .shortcut-hint {
+    padding: var(--sua-space-md);
+    color: var(--sua-text-muted);
+    background: var(--sua-surface);
+    border-top: 1px solid var(--sua-border);
+    font-size: var(--sua-text-small);
     text-align: center;
-    view-timeline: --revealing;
-    view-timeline-axis: block;
-    animation: linear 0.2s fadeIn;
-    animation-timeline: --revealing;
-    animation-range: entry 100% cover 10%;
-  }
-
-  @media (max-width: 1080px) {
-    footer {
-      display: none;
-    }
   }
 
   kbd {
-    background-color: var(--main-bg1-color);
-    border: 1px solid var(--main-bg-color);
-    border-radius: 3px;
-    padding: 0.1rem 0.3rem;
+    background: var(--sua-canvas);
+    border: 1px solid var(--sua-border);
+    border-radius: var(--sua-radius-control);
+    padding: var(--sua-space-xs);
+  }
+
+  @media (forced-colors: active) {
+    ninja-keys {
+      --ninja-text-color: CanvasText;
+      --ninja-secondary-text-color: CanvasText;
+      --ninja-selected-text-color: HighlightText;
+      --ninja-selected-background: Highlight;
+      --ninja-modal-background: Canvas;
+      --ninja-secondary-background-color: Canvas;
+      --ninja-accent-color: Highlight;
+      --ninja-separate-border: 1px solid CanvasText;
+    }
+
+    ninja-keys::part(ninja-input):focus-visible {
+      outline-color: Highlight;
+    }
+  }
+
+  @media print {
+    ninja-keys,
+    .shortcut-hint {
+      display: none;
+    }
   }
 </style>

@@ -1,9 +1,5 @@
 ---
-import '@fontsource/ia-writer-quattro/400.css';
-import '@fontsource/ia-writer-quattro/700.css';
-
-import '@fontsource/ia-writer-duo/400.css';
-import '@fontsource/ia-writer-duo/700.css';
+import 'suabochica-design-system/styles.css';
 
 interface Props {
 	title: string;
@@ -14,12 +10,18 @@ const { currentLocale } = Astro;
 ---
 
 <!doctype html>
-<html lang={currentLocale}>
+<html lang={currentLocale} class="sua-theme" data-theme="system">
 	<head>
 		<script is:inline>
-			const theme = localStorage.getItem('theme-preference') ||
-				(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-			document.documentElement.setAttribute('data-theme', theme);
+			let preference;
+			try {
+				preference = localStorage.getItem('theme-preference');
+			} catch {
+				// Private browsing may block storage; the system theme is the default.
+			}
+			if (preference === 'light' || preference === 'dark') {
+				document.documentElement.dataset.theme = preference;
+			}
 		</script>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -34,8 +36,9 @@ const { currentLocale } = Astro;
 </html>
 <style is:global>
 	html {
-		font-family: 'iA Writer Duo', monospace;
-		background: var(--main-bg-color);
+		font-family: var(--sua-font-body);
+		background: var(--sua-canvas);
+		color: var(--sua-text);
 	}
 
 	body,
@@ -43,10 +46,6 @@ const { currentLocale } = Astro;
 	ul {
 		margin: 0;
 		padding: 0;
-	}
-
-	a {
-		text-decoration: none;
 	}
 
 	ul {
@@ -64,62 +63,65 @@ const { currentLocale } = Astro;
 	h3,
 	h4 {
 		margin: 0;
-		font-family: 'iA Writer Quattro', sans-serif;
+		font-family: var(--sua-font-heading);
 	}
 
 	p {
-		color: var(--main-gray-color);
-		font-size: 0.8rem;
-		line-height: 1.5;
+		color: var(--sua-text);
+		font-size: var(--sua-text-body);
+		line-height: var(--sua-leading-body);
 		margin: 0;
-		text-wrap: prettyl;
+		text-wrap: pretty;
 	}
 
 	.print {
 		display: none;
 	}
 
-	:root {
-		color-scheme: light dark;
-	}
-
-	:root[data-theme="light"] {
-		--main-bg-color: #fbf1c7;
-		--main-bg1-color: #ebdbb2;
-		--main-bg2-color: #d5c4a1;
-		--main-fg-color: #3c3836;
-		--main-fg0-color: #282828;
-		--main-gray-color: #7c6f64;
-		--main-red-color: #9d0006;
-		--main-green-color: #79740e;
-		--main-yellow-color: #b57614;
-		--main-blue-color: #076678;
-		--main-purple-color: #8f3f71;
-		--main-aqua-color: #427b58;
-		--main-orange-color: #af3a03;
-	}
-
-	:root[data-theme="dark"] {
-		--main-bg-color: #282828;
-		--main-bg1-color: #3c3836;
-		--main-bg2-color: #504945;
-		--main-fg-color: #ebdbb2;
-		--main-fg0-color: #fbf1c7;
-		--main-gray-color: #f2e5bc;
-		--main-red-color: #cc241d;
-		--main-green-color: #98971a;
-		--main-yellow-color: #d79921;
-		--main-blue-color: #458588;
-		--main-purple-color: #b16286;
-		--main-aqua-color: #689d6a;
-		--main-orange-color: #d65d0e;
-	}
-
 	@media print {
+		@page {
+			margin: 14mm;
+		}
+
+		:root.sua-theme {
+			color-scheme: light;
+			--sua-canvas: white;
+			--sua-surface: white;
+			--sua-surface-reading: white;
+			--sua-text: black;
+			--sua-text-muted: black;
+			--sua-heading-h2-color: var(--sua-palette-coral-dark);
+			--sua-heading-h3-color: var(--sua-palette-teal-dark);
+			--sua-link: black;
+			--sua-on-primary: black;
+			--sua-action-primary: white;
+			--sua-action-primary-hover: white;
+			--sua-border: #777;
+			--sua-border-strong: #777;
+			--sua-border-control: #777;
+		}
+
+		body {
+			background: white;
+		}
+
+		a {
+			color: black;
+			text-decoration: underline;
+		}
+
+		article,
+		li {
+			break-inside: avoid;
+		}
+
+		.sua-surface {
+			box-shadow: none;
+		}
+
 		.print {
 			display: block;
-			background-color: white;
-			color: var(--main-gray-color);
+			color: var(--sua-text);
 		}
 	}
 </style>

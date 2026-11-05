@@ -1,0 +1,51 @@
+---
+import { Heading, Text } from 'suabochica-design-system';
+
+interface Props {
+  title: string;
+  detail: string;
+  startDate: string;
+  endDate?: string;
+}
+
+const { title, detail, startDate, endDate } = Astro.props;
+---
+
+<article class="resume-entry">
+  <header>
+    <div class="identity">
+      <Heading level={3} size="sm">{title}</Heading>
+      <Text variant="small" tone="muted">{detail}</Text>
+    </div>
+    <div class="dates">
+      <time datetime={startDate}>{startDate}</time>
+      {endDate && <> – <time datetime={endDate}>{endDate}</time></>}
+    </div>
+  </header>
+  <slot />
+</article>
+
+<style>
+  .resume-entry {
+    min-width: 0;
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--sua-space-xs) var(--sua-space-md);
+    margin-bottom: var(--sua-space-sm);
+  }
+
+  .identity {
+    min-width: 0;
+  }
+
+  .dates {
+    color: var(--sua-text-muted);
+    font-size: var(--sua-text-small);
+    font-family: var(--sua-font-body);
+  }
+</style>

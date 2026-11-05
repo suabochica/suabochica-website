@@ -1,5 +1,6 @@
 ---
 import Section from "@/components/Section.astro";
+import { ProjectShowcaseCard } from 'suabochica-design-system';
 
 import { getI18N } from "@/i18n";
 import { useTranslations, getLangFromUrl } from "i18n/utils";
@@ -13,29 +14,23 @@ const { projects } = i18n;
 ---
 
 <Section title={translate(".projects")}>
-  <p set:html={translate(".projects.description")} />
+  <p class="introduction" set:html={translate(".projects.description")} />
   <ul>
     {
       projects.map(({ url, description, highlights, name, isActive }) => {
         return (
           <li>
-            <article>
-              <header>
-                <h3>
-                  <a href={url} title={`Ver el proyecto ${name}`}>
-                    {name}
-                  </a>
-                  {isActive && <span>•</span>}
-                </h3>
-                <p>{description}</p>
-              </header>
-
-              <footer>
-                {highlights.map((highlight) => (
-                  <span>{highlight}</span>
-                ))}
-              </footer>
-            </article>
+            <ProjectShowcaseCard
+              title={name}
+              headingLevel={3}
+              summary={description}
+              link={{ href: url, target: '_blank', rel: 'noopener noreferrer' }}
+              actionLabel={currentLocale === 'en' ? 'View project' : 'Ver proyecto'}
+              metadata={isActive ? [{ key: 'status', content: currentLocale === 'en' ? 'Active project' : 'Proyecto activo' }] : []}
+              metadataLabel={currentLocale === 'en' ? 'Status' : 'Estado'}
+              tags={highlights.map((highlight, index) => ({ key: `${index}-${highlight}`, label: highlight }))}
+              tagsLabel={currentLocale === 'en' ? 'Highlights' : 'Aspectos destacados'}
+            />
           </li>
         );
       })
@@ -44,61 +39,17 @@ const { projects } = i18n;
 </Section>
 
 <style>
-  p {
-    margin-bottom: 1.4rem;
+  .introduction {
+    margin-bottom: var(--sua-space-lg);
   }
 
   ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-  }
-
-  article {
-    border-radius: 8px;
-    border: 1px solid var(--main-fg-color);
-    gap: 16px;
     display: flex;
     flex-direction: column;
-    padding: 16px;
-    height: 100%;
+    gap: var(--sua-space-lg);
   }
 
-  article header {
-    flex: 1;
-  }
-
-  article h3 span {
-    color: var(--main-green-color);
-  }
-
-  article a {
-    color: var(--main-aqua-color);
-  }
-
-  article a:hover {
-    text-decoration: underline;
-  }
-
-  article p {
-    font-size: 0.68rem;
-    line-height: 1.2rem;
-    margin-bottom: 4px;
-  }
-
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-    font-size: 0.6rem;
-  }
-
-  footer span {
-    border-radius: 6px;
-    background-color: var(--main-fg-color);
-    color: var(--main-bg2-color);
-    font-size: 0.6rem;
-    font-weight: 500;
-    padding: 0.2rem 0.6rem;
+  li {
+    min-width: 0;
   }
 </style>

@@ -13,11 +13,17 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.9",
-    "@fontsource/ia-writer-duo": "^5.0.11",
-    "@fontsource/ia-writer-quattro": "^5.0.11",
-    "astro": "^4.5.3",
+    "@astrojs/check": "0.9.12",
+    "@astrojs/react": "4.4.2",
+    "astro": "5.18.2",
     "ninja-keys": "^1.2.2",
-    "typescript": "^5.4.2"
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "suabochica-design-system": "1.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.2.3",
+    "typescript": "5.9.3"
   }
 }

@@ -18,7 +18,8 @@ const {name, label} = i18n.basics;
 ---
 
 <Layout title=`${name} - ${label}.`>
-	<main>
+	<a class="skip-link" href="#main-content">{currentLocale === 'en' ? 'Skip to content' : 'Saltar al contenido'}</a>
+	<main id="main-content">
 		<Hero />
 		<About />
 		<Experience />
@@ -32,16 +33,55 @@ const {name, label} = i18n.basics;
 </Layout>
 
 <style>
+	.skip-link {
+		position: absolute;
+		z-index: 2;
+		top: var(--sua-space-sm);
+		left: var(--sua-space-sm);
+		padding: var(--sua-space-sm);
+		background: var(--sua-surface);
+		color: var(--sua-link);
+		transform: translateY(-200%);
+	}
+
+	.skip-link:focus-visible {
+		transform: none;
+		outline: var(--sua-focus-width) solid var(--sua-focus);
+		outline-offset: var(--sua-focus-offset);
+	}
+
+	@media (forced-colors: active) {
+		.skip-link:focus-visible {
+			outline-color: Highlight;
+		}
+	}
+
 	main {
-		background-color: var(--main-bg-color);
-		padding: 2rem;
+		background-color: var(--sua-canvas);
+		padding: var(--sua-margin-mobile);
 		margin: auto;
 		width: 100%;
 	}
 
-	@media (min-width: 940px) {
-    main {
-			padding: 4rem;
-    }
-  }
+	@media (min-width: 48rem) {
+		main {
+			padding: var(--sua-margin-tablet);
+		}
+	}
+
+	@media (min-width: 75rem) {
+		main {
+			padding: var(--sua-margin-desktop);
+		}
+	}
+
+	@media print {
+		.skip-link {
+			display: none;
+		}
+
+		main {
+			padding: 0;
+		}
+	}
 </style>

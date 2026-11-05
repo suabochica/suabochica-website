@@ -1,5 +1,7 @@
 ---
 import Section from "@/components/Section.astro";
+import ResumeEntry from "@/components/ResumeEntry.astro";
+import { Text } from 'suabochica-design-system';
 
 import { getI18N } from "@/i18n";
 import { useTranslations, getLangFromUrl } from "i18n/utils";
@@ -18,20 +20,9 @@ const { work } = i18n;
       work.map(({ name, startDate, endDate, position, summary }) => {
         return (
           <li>
-            <article>
-              <header>
-                <div>
-                  <h3>{name}</h3>
-                  <h4>{position}</h4>
-                </div>
-                <time>
-                  {startDate} - {endDate}
-                </time>
-              </header>
-              <footer>
-                <p>{summary}</p>
-              </footer>
-            </article>
+            <ResumeEntry title={name} detail={position} startDate={startDate} endDate={endDate}>
+              <Text>{summary}</Text>
+            </ResumeEntry>
           </li>
         );
       })
@@ -43,27 +34,6 @@ const { work } = i18n;
   ul {
     display: flex;
     flex-direction: column;
-    gap: 32px;
-  }
-
-  article h3 {
-    color: var(--main-aqua-color);
-  }
-
-  article h4 {
-    color: var(--main-purple-color);
-    font-weight: 400;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 8px;
-  }
-
-  time {
-    font-size: 0.8em;
-    color: var(--main-green-color);
+    gap: var(--sua-space-xl);
   }
 </style>
