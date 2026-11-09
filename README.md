@@ -34,7 +34,7 @@ Use Node 24.22.1 (see `.nvmrc`) and pnpm. Install dependencies with:
 
     pnpm install --frozen-lockfile
 
-The website uses `suabochica-design-system@1.1.0` with Astro's React integration.
+The website uses `suabochica-design-system@1.4.0` with Astro's React integration.
 The package stylesheet is loaded once in `src/layouts/Layout.astro`; React
 components render to static HTML unless explicitly hydrated. The layout applies
 the `.sua-theme` boundary and owns the persisted light/dark/system preference

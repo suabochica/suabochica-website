@@ -1,0 +1,29 @@
+---
+import { ScrollTrack } from 'suabochica-design-system';
+import { getLangFromUrl } from 'i18n/utils';
+import { HOW_I_WORK } from 'i18n/ui';
+
+const content = HOW_I_WORK[getLangFromUrl(Astro.url)];
+---
+
+<div class="how-i-work">
+  <ScrollTrack {...content} id="how-i-work" headingLevel={2} />
+</div>
+
+<style>
+  .how-i-work {
+    max-width: var(--sua-reading);
+    margin: 0 auto var(--sua-space-lg);
+  }
+
+  .how-i-work :global(.sua-scroll-track__scene) {
+    --sua-st-w: min(612px, 100%);
+    inline-size: var(--sua-st-w);
+  }
+
+  @media (min-width: 940px) {
+    .how-i-work {
+      margin-bottom: var(--sua-space-xl);
+    }
+  }
+</style>

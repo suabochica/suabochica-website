@@ -19,7 +19,7 @@
     "ninja-keys": "^1.2.2",
     "react": "19.3.1",
     "react-dom": "19.3.1",
-    "suabochica-design-system": "1.1.0"
+    "suabochica-design-system": "1.4.0"
   },
   "devDependencies": {
     "@types/react": "19.3.0",

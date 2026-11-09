@@ -39,3 +39,26 @@ export const SECTION_TITLES = {
     '.skills.description': 'My skills scale from foundational concepts to total mastery. <strong>Basic</strong> (red pill) covers core facts and standard rules for handling simple tasks. <strong>Intermediate</strong> (yellow pill) blends theory with practical application, allowing me to work independently and troubleshoot routine problems. <strong>Advanced</strong> (green pill) represents deep expertise used to solve complex challenges, innovate solutions, and critique methodologies.',
   },
 } as const
+
+export const HOW_I_WORK = {
+  en: {
+    title: 'How I work',
+    description: 'Connecting engineering, user experience, and teamwork to turn ideas into sustainable products.',
+    hint: 'Scroll to explore',
+    layers: [
+      { id: 'developer', title: 'Developer', description: 'I build reliable, maintainable software that solves real problems and grows with the product.' },
+      { id: 'designer', title: 'Designer', description: 'I connect product goals with clear, accessible experiences, paying attention to the details that matter to users.' },
+      { id: 'manager', title: 'Manager', description: 'I align priorities, share knowledge, and help teams deliver with confidence through collaboration and continuous improvement.' },
+    ],
+  },
+  es: {
+    title: 'Cómo trabajo',
+    description: 'Conecto ingeniería, experiencia de usuario y trabajo en equipo para transformar ideas en productos sostenibles.',
+    hint: 'Desplázate para explorar',
+    layers: [
+      { id: 'developer', title: 'Desarrollador', description: 'Construyo software confiable y mantenible que resuelve problemas reales y crece con el producto.' },
+      { id: 'designer', title: 'Diseñador', description: 'Conecto los objetivos del producto con experiencias claras y accesibles, cuidando los detalles que les importan a los usuarios.' },
+      { id: 'manager', title: 'Gestor', description: 'Alineo prioridades, comparto conocimiento y ayudo a los equipos a entregar con confianza mediante la colaboración y la mejora continua.' },
+    ],
+  },
+} as const;
